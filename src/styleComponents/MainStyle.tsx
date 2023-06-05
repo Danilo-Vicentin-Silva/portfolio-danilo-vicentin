@@ -7,3 +7,7 @@ export const InitialInfoStyle = styled.section`
 `
 
 export const AboutMeStyle = styled.section``
+
+export const SKillsStyled = styled.section``
+
+export const ProjectsStyled = styled.section``

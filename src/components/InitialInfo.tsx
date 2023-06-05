@@ -1,5 +1,5 @@
 import DaniloImg from "../assets/images/danilo.webp"
-import DaniloCV from "../assets/pdfs/cv-danilo-vicentin-silva.pdf"
+import DaniloCV from "../assets/pdfs/danilo-vicentin-s-cv.pdf"
 import Button from "@mui/material/Button"
 import { InitialInfoStyle } from "../styleComponents/MainStyle"
 
