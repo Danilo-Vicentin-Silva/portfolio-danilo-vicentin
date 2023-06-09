@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: 'Arvo', serif;
     color: white;

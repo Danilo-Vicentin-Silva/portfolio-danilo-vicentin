@@ -1,4 +1,6 @@
 import AboutMe from "./components/AboutMe"
+import ContactForm from "./components/ContactForm"
+import Contacts from "./components/Contacts"
 import Header from "./components/Header"
 import InitialInfo from "./components/InitialInfo"
 import Projects from "./components/Projects"
@@ -12,9 +14,20 @@ const App = () => {
 			<main>
 				<InitialInfo />
 				<AboutMe />
-				<Skills />
+				<Skills/>
 				<Projects />
+				<Contacts />
+				<ContactForm />
 			</main>
+			<footer>
+				<h4>Foco, Trabalho&Disciplina</h4>
+				<p>
+					Site criado por{" "}
+					<a href="#" rel="nofollow" target="_blank">
+						mim
+					</a>
+				</p>
+			</footer>
 		</HomeStyle>
 	)
 }

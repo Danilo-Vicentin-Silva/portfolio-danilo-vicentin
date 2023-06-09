@@ -3,8 +3,11 @@ import DaniloCV from "../assets/pdfs/danilo-vicentin-s-cv.pdf"
 import Button from "@mui/material/Button"
 import { InitialInfoStyle } from "../styleComponents/MainStyle"
 
-
 const InitialInfo = () => {
+	const goToSection = (y: number) => {
+		window.scrollTo(0, y)
+	}
+
 	return (
 		<InitialInfoStyle>
 			<picture>
@@ -21,9 +24,15 @@ const InitialInfo = () => {
 				</Button>
 			</section>
 			<section>
-				<Button variant="outlined">Habilidades</Button>
-				<Button variant="contained">Contato</Button>
-				<Button variant="outlined">Projetos</Button>
+				<Button variant="outlined" onClick={() => goToSection(500)}>
+					Habilidades
+				</Button>
+				<Button variant="contained" onClick={() => goToSection(1500)}>
+					Contatos
+				</Button>
+				<Button variant="outlined" onClick={() => goToSection(900)}>
+					Projetos
+				</Button>
 			</section>
 		</InitialInfoStyle>
 	)
