@@ -1,7 +1,7 @@
 import * as React from "react"
 import emailjs from "@emailjs/browser"
 import { Alert } from "@mui/material"
-import { ContactFormStyle } from "../styleComponents/MainStyle"
+import { ContactFormStyle } from "../styles/styleComponents/MainStyle"
 
 const ContactForm = () => {
 	const [name, setName] = React.useState("")

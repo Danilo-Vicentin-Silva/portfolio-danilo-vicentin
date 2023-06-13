@@ -1,4 +1,4 @@
-import { SKillsStyled } from "../styleComponents/MainStyle"
+import { SKillsStyled } from "../styles/styleComponents/MainStyle"
 
 const Skills = () => {
 	return (
@@ -17,4 +17,3 @@ const Skills = () => {
 	)
 }
 export default Skills
-

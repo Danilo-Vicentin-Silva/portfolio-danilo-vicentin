@@ -4,32 +4,56 @@ const Contacts = () => {
 			<h3>Contatos</h3>
 			<ul>
 				<li>
-					<a href="#" rel="nofollow" target="_blank">
+					<a
+						href="mailto:danilovicentindasilva@gmail.com"
+						rel="nofollow"
+						target="_blank"
+					>
 						Email
 					</a>
 				</li>
 				<li>
-					<a href="#" rel="nofollow" target="_blank">
+					<a
+						href="https://www.linkedin.com/in/danilo-vicentin-da-silva-16a84022b/"
+						rel="nofollow"
+						target="_blank"
+					>
 						LinkedIn
 					</a>
 				</li>
 				<li>
-					<a href="#" rel="nofollow" target="_blank">
+					<a
+						href="https://github.com/Danilo-Vicentin-Silva"
+						rel="nofollow"
+						target="_blank"
+					>
 						Github
 					</a>
 				</li>
 				<li>
-					<a href="#" rel="nofollow" target="_blank">
+					<a
+						href="https://www.instagram.com/danilo_vicentin_silva/"
+						rel="nofollow"
+						target="_blank"
+					>
 						Instagram
 					</a>
 				</li>
 				<li>
-					<a href="#" rel="nofollow" target="_blank">
+					<a
+						href="https://www.facebook.com/profile.php?id=100092172424197"
+						rel="nofollow"
+						target="_blank"
+					>
 						Facebook
 					</a>
 				</li>
 				<li>
-					<a href="#" rel="nofollow" target="_blank">
+					<a
+						href="https://www.99freelas.com.br/user/Danilo-Vicentin-Silva"
+						rel="nofollow"
+						target="_blank"
+					>
 						99Frellas
 					</a>
 				</li>

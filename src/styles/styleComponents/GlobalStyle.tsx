@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Arvo', serif;
-    color: white;
-    background-color: #363540;
+    color: ${props => props.theme.colors.text};
+    background-color: ${props => props.theme.colors.background};
   }
 `
