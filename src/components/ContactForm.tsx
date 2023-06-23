@@ -55,7 +55,7 @@ const ContactForm = () => {
 
 	return (
 		<ContactFormStyle>
-			<h3>Converse comigo</h3>
+			<h3>Fale comigo!</h3>
 			<form onSubmit={sendEmail}>
 				<div>
 					<label htmlFor="name">Seu nome:</label>

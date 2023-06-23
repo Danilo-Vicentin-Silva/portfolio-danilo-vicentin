@@ -1,20 +1,20 @@
-import { AboutMeStyle } from "../styles/styleComponents/MainStyle"
+import { AboutMeStyle } from "../styles/styleComponents/MainStyle";
+import TopicSeparator from "./TopicSeparator";
 
 const AboutMe = () => {
-	return (
-		<AboutMeStyle>
-			<h3>Sobre Mim</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quis
-				dolorum cum sint voluptatibus laborum voluptatum ipsa aperiam earum
-				optio reiciendis, culpa esse commodi voluptate laboriosam ex cumque
-				nostrum mollitia? Lorem ipsum dolor sit amet consectetur adipisicing
-				elit. Aperiam magni eum commodi ratione reprehenderit, at nihil nemo
-				repellat temporibus officiis ducimus et obcaecati eligendi tempora
-				maiores beatae itaque assumenda id.
-			</p>
-		</AboutMeStyle>
-	)
-}
+  return (
+    <AboutMeStyle>
+      <TopicSeparator title="Sobre Mim" />
+      <p>
+        Desenvolvedor Web focado em oferecer as melhores soluções web! Sempre
+        utilizando as melhores técnicas e tecnologias do mercado, meu fluxo de
+        trabalho é rápido e focado, busco entender os objetivos e necessidades
+        do cliente/empresa de modo a garantir que o website fique 100% fiel a
+        sua ideia. Sou capaz de desenvolver toda parte frontend, desde o
+        protótipo, até a conclusão da interface de usuário.
+      </p>
+    </AboutMeStyle>
+  );
+};
 
-export default AboutMe
+export default AboutMe;
