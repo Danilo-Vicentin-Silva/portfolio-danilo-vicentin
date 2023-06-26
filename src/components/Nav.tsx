@@ -19,6 +19,7 @@ const Nav = () => {
 				variant="contained"
 				onClick={() => goToSection(1500)}
 				className="nav-button"
+				id="contact-button"
 			>
 				Contatos
 			</Button>
