@@ -75,11 +75,6 @@ export const SKillsStyled = styled.section`
     padding: 0;
   }
 
-  ul > li:hover {
-    box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.75);
-    transition: 0.5s;
-  }
-
   ul > li {
     color: #fff;
     background-color: ${(props) => props.theme.colors.primary};
@@ -95,7 +90,46 @@ export const SKillsStyled = styled.section`
   }
 `;
 
-export const ProjectsStyled = styled.section``;
+export const ProjectsStyled = styled.section`
+  ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .box {
+    border-radius: 7px;
+    width: 95vw;
+    height: 180px;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+`;
+
+export const ProjectVisible = styled.section`
+  margin: 10px 0;
+
+  position: relative;
+
+  img {
+    border: 1px solid ${(props) => props.theme.colors.tertiary};
+    border-radius: 7px 20px;
+
+    width: 300px;
+  }
+
+  h4 {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: overline;
+    text-shadow: 0px 0px 20px black;
+
+    position: absolute;
+    top: 5%;
+    left: 30%;
+  }
+`;
 
 export const ContactFormStyle = styled.section`
   .notification {
