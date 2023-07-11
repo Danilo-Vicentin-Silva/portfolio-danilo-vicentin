@@ -92,6 +92,11 @@ export const SKillsStyled = styled.section`
 
 export const ProjectsStyled = styled.section`
   ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
     list-style: none;
     text-align: center;
     padding: 0;
@@ -107,7 +112,7 @@ export const ProjectsStyled = styled.section`
   }
 `;
 
-export const ProjectVisible = styled.section`
+export const ProjectSection = styled.section`
   margin: 10px 0;
 
   position: relative;
@@ -128,6 +133,56 @@ export const ProjectVisible = styled.section`
     position: absolute;
     top: 5%;
     left: 30%;
+  }
+`;
+
+export const ProjectCard = styled.article`
+  background-color: ${(props) => props.theme.colors.primary};
+
+  border: 1px solid ${(props) => props.theme.colors.tertiary};
+  border-radius: 7px 20px;
+  height: 95vh;
+  width: 95vw;
+  margin: auto;
+  box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.75);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+
+  h4 {
+    font-size: 2em;
+    text-align: justify;
+  }
+
+  #card-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 70px;
+  }
+
+  hr {
+    margin: 10px;
+  }
+
+  #skills-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #skills-section span {
+    font-size: 2em;
+  }
+  p {
+    text-align: justify;
+    margin: 15px;
   }
 `;
 
