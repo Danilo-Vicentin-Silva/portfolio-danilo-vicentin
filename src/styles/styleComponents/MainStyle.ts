@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InitialInfoStyle = styled.section`
   img {
     border-radius: 50%;
-    width: 120px;
+    width: 110px;
   }
   #cv-section {
     font-size: 0.5em;
@@ -121,7 +121,7 @@ export const ProjectSection = styled.section`
     border: 1px solid ${(props) => props.theme.colors.tertiary};
     border-radius: 7px 20px;
 
-    width: 300px;
+    width: 90vw;
   }
 
   h4 {
@@ -137,12 +137,13 @@ export const ProjectSection = styled.section`
 `;
 
 export const ProjectCard = styled.article`
+  color: white;
   background-color: ${(props) => props.theme.colors.primary};
 
   border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
-  height: 95vh;
-  width: 95vw;
+  height: 90vh;
+  width: 90vw;
   margin: auto;
   box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.75);
 
@@ -155,6 +156,14 @@ export const ProjectCard = styled.article`
   h4 {
     font-size: 2em;
     text-align: justify;
+    height: 0;
+  }
+
+  h5 {
+    text-align: left;
+    margin-left: 50px;
+    height: 0;
+    font-size: 0.5em;
   }
 
   #card-header {
@@ -180,9 +189,24 @@ export const ProjectCard = styled.article`
   #skills-section span {
     font-size: 2em;
   }
+
   p {
     text-align: justify;
     margin: 15px;
+  }
+
+  .link-button {
+    background-color: ${(props) => props.theme.colors.background};
+    font-size: 0.7em;
+    padding: 15px;
+    height: 10px;
+    width: 120px;
+    margin: 7px;
+  }
+
+  .link-button a {
+    color: ${(props) => props.theme.colors.text};
+    text-decoration: none;
   }
 `;
 
@@ -194,4 +218,10 @@ export const ContactFormStyle = styled.section`
     right: 30px;
     top: 1800px;
   }
+`;
+
+export const LinkStyle = styled.a`
+  color: red;
+  text-decoration: overline;
+  font-size: 1.5em;
 `;
