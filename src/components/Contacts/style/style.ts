@@ -1,15 +1,5 @@
 import styled from "styled-components";
 
-export const ContactFormStyle = styled.section`
-  .notification {
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    right: 30px;
-    top: 1800px;
-  }
-`;
-
 export const ContactsStyled = styled.section`
   ul {
     list-style: none;
@@ -60,5 +50,35 @@ export const ContactStyled = styled.div`
   p {
     text-align: center;
     margin: 0;
+  }
+`;
+
+export const ContactFormStyle = styled.section`
+  .notification {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 30px;
+    top: 1800px;
+  }
+
+  form {
+    background-color: ${(props) => props.theme.colors.tertiary};
+    color: white;
+    text-align: center;
+
+    margin: 20px;
+    padding: 10px;
+    border-radius: 7px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #reset-button {
+    margin-right: 10px;
   }
 `;
