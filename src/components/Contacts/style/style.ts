@@ -55,11 +55,17 @@ export const ContactStyled = styled.div`
 
 export const ContactFormStyle = styled.section`
   .notification {
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    right: 30px;
-    top: 1800px;
+    font-size: 0.6em;
+
+    width: 80%;
+    align-items: center;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
   }
 
   form {

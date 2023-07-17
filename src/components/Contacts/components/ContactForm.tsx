@@ -91,7 +91,12 @@ const ContactForm = () => {
           />
         </div>
         <div>
-          <Button id="reset-button" type="reset" variant="outlined" startIcon={<DeleteIcon />}>
+          <Button
+            id="reset-button"
+            type="reset"
+            variant="outlined"
+            startIcon={<DeleteIcon />}
+          >
             Limpar
           </Button>
           <Button type="submit" variant="contained" endIcon={<SendIcon />}>
@@ -104,7 +109,7 @@ const ContactForm = () => {
           MENSAGEM ENVIADA COM SUCESSO!
         </Alert>
       )}
-      {errorStatus == true && (
+      {errorStatus === true && (
         <Alert variant="filled" severity="error" className="notification">
           PREENCHA TODOS OS CAMPOS CORRETAMENTE!
         </Alert>
