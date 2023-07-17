@@ -1,5 +1,12 @@
+import { IoShareSocialOutline } from "react-icons/io5";
+import { AiOutlineFacebook } from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FiGithub } from "react-icons/fi";
+import { CiLinkedin } from "react-icons/ci";
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
 import { ContactsStyled } from "../style/style";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import Contact from "./contact";
 
 const Contacts = () => {
   return (
@@ -7,58 +14,46 @@ const Contacts = () => {
       <TopicSeparator title="Contatos" />
       <ul>
         <li>
-          <a
-            href="mailto:danilovicentindasilva@gmail.com"
-            rel="nofollow"
-            target="_blank"
-          >
-            <span></span>
-          </a>
+          <Contact
+            icon={<MailOutlineIcon />}
+            link="mailto:danilovicentindasilva@gmail.com"
+            title="Email"
+          />
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/danilo-vicentin-da-silva-16a84022b/"
-            rel="nofollow"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
+          <Contact
+            icon={<CiLinkedin />}
+            link="https://www.linkedin.com/in/danilo-vicentin-da-silva-16a84022b/"
+            title="LinkedIn"
+          />
         </li>
         <li>
-          <a
-            href="https://github.com/Danilo-Vicentin-Silva"
-            rel="nofollow"
-            target="_blank"
-          >
-            Github
-          </a>
+          <Contact
+            icon={<FiGithub />}
+            link="https://github.com/Danilo-Vicentin-Silva"
+            title="Github"
+          />
         </li>
         <li>
-          <a
-            href="https://www.instagram.com/danilo_vicentin_silva/"
-            rel="nofollow"
-            target="_blank"
-          >
-            Instagram
-          </a>
+          <Contact
+            icon={<AiOutlineInstagram />}
+            link="https://www.instagram.com/danilo_vicentin_silva/"
+            title="Instagram"
+          />
         </li>
         <li>
-          <a
-            href="https://www.facebook.com/profile.php?id=100092172424197"
-            rel="nofollow"
-            target="_blank"
-          >
-            Facebook
-          </a>
+          <Contact
+            icon={<AiOutlineFacebook />}
+            link="https://www.facebook.com/profile.php?id=100092172424197"
+            title="Facebook"
+          />
         </li>
         <li>
-          <a
-            href="https://www.99freelas.com.br/user/Danilo-Vicentin-Silva"
-            rel="nofollow"
-            target="_blank"
-          >
-            99Frellas
-          </a>
+          <Contact
+            icon={<IoShareSocialOutline />}
+            link="https://www.99freelas.com.br/user/Danilo-Vicentin-Silva"
+            title="99Frellas"
+          />
         </li>
       </ul>
     </ContactsStyled>

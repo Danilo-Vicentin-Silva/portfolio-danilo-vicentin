@@ -23,20 +23,42 @@ export const ContactsStyled = styled.section`
     margin: 0;
     padding: 0;
   }
-  li > a {
-    color: white;
-    text-align: center;
-    background-color: ${(props) => props.theme.colors.primary};
 
-    border-radius: 50%;
-    padding: 10px;
-    height: 50px;
-    width: 50px;
-
+  ul a {
     text-decoration: none;
   }
 `;
 
 export const ContactStyled = styled.div`
-  
-`
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+
+  #icon {
+    text-align: center;
+    background-color: ${(props) => props.theme.colors.primary};
+
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    color: white;
+  }
+
+  span {
+    font-size: 2em;
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+  }
+`;
