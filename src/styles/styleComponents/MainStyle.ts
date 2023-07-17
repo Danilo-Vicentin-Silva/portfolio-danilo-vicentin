@@ -113,9 +113,8 @@ export const ProjectsStyled = styled.section`
 `;
 
 export const ProjectSection = styled.section`
-  margin: 10px 0;
-
   position: relative;
+  margin: 10px 0;
 
   img {
     border: 1px solid ${(props) => props.theme.colors.tertiary};
@@ -130,9 +129,10 @@ export const ProjectSection = styled.section`
     text-decoration: overline;
     text-shadow: 0px 0px 20px black;
 
+    width: 100%;
     position: absolute;
     top: 5%;
-    left: 30%;
+    left: 0%;
   }
 `;
 
@@ -140,18 +140,18 @@ export const ProjectCard = styled.article`
   color: white;
   background-color: ${(props) => props.theme.colors.primary};
 
+  height: 95vh;
+  width: 95vw;
+  margin: 10px;
+
   border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
-  height: 90vh;
-  width: 90vw;
-  margin: auto;
   box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.75);
 
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  left: 10;
+  z-index: 1;
 
   h4 {
     font-size: 2em;
