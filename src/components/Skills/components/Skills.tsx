@@ -1,4 +1,3 @@
-import { SKillsStyled } from "../styles/styleComponents/MainStyle";
 import {
   BiLogoTypescript,
   BiLogoCss3,
@@ -8,7 +7,8 @@ import {
   BiSearch,
 } from "react-icons/bi";
 import { RiJavascriptFill } from "react-icons/ri";
-import TopicSeparator from "./TopicSeparator";
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
+import { SKillsStyled } from "../style/style";
 
 const Skills = () => {
   return (

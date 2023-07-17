@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
-import DaniloImg from "../assets/images/danilo.webp";
-import DaniloCV from "../assets/pdfs/danilo-vicentin-s-cv.pdf";
-import { InitialInfoStyle } from "../styles/styleComponents/MainStyle";
+import DaniloImg from "../images/danilo.webp";
+import DaniloCV from "../pdfs/danilo-vicentin-s-cv.pdf";
+import { InitialInfoStyle } from "../styles/style";
 
 const InitialInfo = () => {
   return (

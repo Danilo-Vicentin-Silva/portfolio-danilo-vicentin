@@ -1,4 +1,4 @@
-import { TopicSeparatorStyle } from "../styles/styleComponents/MainStyle";
+import { TopicSeparatorStyled } from "../style/style";
 
 interface Topic {
   title: string;
@@ -6,10 +6,10 @@ interface Topic {
 
 const TopicSeparator: React.FC<Topic> = ({ title }) => {
   return (
-    <TopicSeparatorStyle>
+    <TopicSeparatorStyled>
       <h3>{title}</h3>
       <hr />
-    </TopicSeparatorStyle>
+    </TopicSeparatorStyled>
   );
 };
 

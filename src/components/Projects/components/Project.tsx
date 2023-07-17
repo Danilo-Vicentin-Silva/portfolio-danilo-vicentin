@@ -1,10 +1,7 @@
 import * as React from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import {
-  ProjectCard,
-  ProjectSection,
-} from "../styles/styleComponents/MainStyle";
 import { Button } from "@mui/joy";
+import { ProjectCard, ProjectSection } from "../style/style";
 
 interface Props {
   title: string;
@@ -72,9 +69,9 @@ const Project: React.FC<Props> = ({
       <h4>{title}</h4>
 
       <picture>
-        <source media="(max-width: 768px)" srcSet={images[2]} />
-        <source media="(max-width: 1200px)" srcSet={images[1]} />
-        <img src={images[0]} alt={title} />
+        <source media="(min-width: 1200px)" srcSet={images[0]} />
+        <source media="(min-width: 768px)" srcSet={images[1]} />
+        <img src={images[2]} alt={title} />
       </picture>
     </ProjectSection>
   );

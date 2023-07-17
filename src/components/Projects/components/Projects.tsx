@@ -1,18 +1,20 @@
-import { ProjectsStyled } from "../styles/styleComponents/MainStyle";
+
 import Project from "./Project";
 import { v4 as uuid } from "uuid";
-import TopicSeparator from "./TopicSeparator";
+
 import {
   CordelModernoImages,
   RacingF1Images,
   SiteAndroidImages,
   TaskListImages,
   TelaLoginImages,
-} from "./importImages";
+} from "../../Imports/importImages";
 
 import { IoLogoJavascript } from "react-icons/io";
 import { MdOutlineHtml, MdCss } from "react-icons/md";
 import { BiLogoReact } from "react-icons/bi";
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
+import { ProjectsStyled } from "../style/style";
 
 const Projects = () => {
   return (
