@@ -12,6 +12,7 @@ import Projects from "./components/Projects/components/Projects";
 import Contacts from "./components/Contacts/components/Contacts";
 import ContactForm from "./components/Contacts/components/ContactForm";
 import Footer from "./components/Footer/components/Footer";
+import ScrollTop from "./components/BackOnTop/components/BackOnTop";
 
 const App = () => {
   const [theme, setTheme] = React.useState(dark);
@@ -23,6 +24,7 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
+      <ScrollTop />
       <Header toggleTheme={toggleTheme} />
       <main>
         <InitialInfo />

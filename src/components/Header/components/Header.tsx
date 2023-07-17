@@ -9,7 +9,12 @@ interface Props {
 const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <HeaderStyled>
-      <ToggleThemeButton sx={{ m: 1 }} defaultChecked onClick={toggleTheme} />
+      <ToggleThemeButton
+        sx={{ m: 1 }}
+        defaultChecked
+        onClick={toggleTheme}
+        id="back-to-top-anchor"
+      />
     </HeaderStyled>
   );
 };
