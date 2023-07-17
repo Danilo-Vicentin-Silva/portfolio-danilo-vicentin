@@ -6,7 +6,7 @@ import { CiLinkedin } from "react-icons/ci";
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
 import { ContactsStyled } from "../style/style";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import Contact from "./contact";
+import Contact from "./Contact";
 
 const Contacts = () => {
   return (
