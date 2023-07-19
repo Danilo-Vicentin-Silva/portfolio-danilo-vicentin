@@ -11,11 +11,9 @@ export const NavStyled = styled.nav`
   }
 
   .nav-button {
+    text-align: justify;
+    font-size: 0.6em;
     color: ${(props) => props.theme.colors.text};
     border-color: ${(props) => props.theme.colors.secundary};
-    font-size: 0.7em;
-    padding: 15px;
-    height: 10px;
-    margin: 7px;
   }
 `;

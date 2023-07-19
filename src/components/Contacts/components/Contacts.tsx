@@ -44,7 +44,7 @@ const Contacts = () => {
         <li>
           <Contact
             icon={<AiOutlineFacebook />}
-            link="https://www.facebook.com/profile.php?id=100092172424197"
+            link="https://www.facebook.com/danilo.vicentin.33/"
             title="Facebook"
           />
         </li>
