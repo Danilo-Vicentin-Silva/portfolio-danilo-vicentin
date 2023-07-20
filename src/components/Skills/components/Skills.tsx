@@ -12,7 +12,11 @@ const Skills = () => {
       <ul>
         {skillsList.map((skill, i) => (
           <li key={i}>
-            <Skill title={skill.title} icon={skill.icon} />
+            <Skill
+              title={skill.title}
+              icon={skill.icon}
+              description={skill.description}
+            />
           </li>
         ))}
       </ul>
