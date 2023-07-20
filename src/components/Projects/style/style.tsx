@@ -20,11 +20,73 @@ export const ProjectsStyled = styled.section`
     margin: auto;
     margin-bottom: 20px;
   }
+
+  @media (min-width: 768px) {
+    ul {
+      gap: 20px;
+    }
+  }
 `;
 
 export const ProjectSection = styled.section`
-  position: relative;
+  @keyframes card-entry {
+    0% {
+      transform: scale(0);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0) scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px) scale(1.05);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+
   margin: 10px 0;
+
+  position: relative;
+
+  cursor: pointer;
 
   img {
     border: 1px solid ${(props) => props.theme.colors.tertiary};
@@ -40,9 +102,54 @@ export const ProjectSection = styled.section`
     text-shadow: 0px 0px 20px black;
 
     width: 100%;
+
     position: absolute;
     top: 5%;
     left: 0%;
+
+    z-index: 1;
+  }
+
+  #info {
+    font-size: 2em;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    @media (min-width: 768px) {
+      animation: tracking-in-expand 0.7s 1s cubic-bezier(0.215, 0.61, 0.355, 1)
+        both;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 30vw;
+
+    animation: card-entry 1s ease-in-out;
+
+    img {
+      width: 30vw;
+      height: 26vh;
+    }
+
+    h4 {
+      animation: text-focus-in 1s 5ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    }
+
+    img:hover {
+      border: 1px solid ${(props) => props.theme.colors.primary};
+
+      animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+    }
   }
 `;
 

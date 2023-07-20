@@ -22,15 +22,17 @@ const Project: React.FC<Props> = ({
   websiteLink,
   githubLink,
 }) => {
-  const [cardState, setCardState] = React.useState(false);
+  const [cardState, setCardState] = React.useState(true);
   const handleCardState = () => {
-    if (cardState === false) {
-      setCardState(true);
-      document.body.style.overflow = "hidden";
-    } else {
-      setCardState(false);
-      document.body.style.overflow = "";
-    }
+    setTimeout(() => {
+      if (cardState === false) {
+        setCardState(true);
+        document.body.style.overflow = "hidden";
+      } else {
+        setCardState(false);
+        document.body.style.overflow = "";
+      }
+    }, 250);
   };
 
   return cardState ? (
@@ -73,6 +75,11 @@ const Project: React.FC<Props> = ({
         <source media="(min-width: 768px)" srcSet={images[1]} />
         <img src={images[2]} alt={title} />
       </picture>
+
+      <div id="info">
+        {skillsUsed &&
+          skillsUsed.map((icon, index) => <span key={index}>{icon}</span>)}
+      </div>
     </ProjectSection>
   );
 };

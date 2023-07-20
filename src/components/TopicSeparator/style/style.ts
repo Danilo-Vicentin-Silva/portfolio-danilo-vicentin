@@ -6,4 +6,11 @@ export const TopicSeparatorStyled = styled.section`
   hr {
     border-color: ${(props) => props.theme.colors.secundary};
   }
+
+  @media (min-width: 768px) {
+    text-align: center;
+
+    margin: auto;
+    width: 50vw;
+  }
 `;
