@@ -5,6 +5,15 @@ export const AboutMeStyle = styled.section`
     text-align: justify;
     margin: 10px;
   }
+  @media (min-width: 768px) {
+    width: 60vw;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const TopicSeparatorStyle = styled.div`
@@ -19,6 +28,5 @@ export const TopicSeparatorStyle = styled.div`
     display: inline-block;
     height: 1px;
     border: none;
-    width: 50vw;
   }
 `;

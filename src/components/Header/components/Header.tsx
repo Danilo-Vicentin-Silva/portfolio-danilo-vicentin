@@ -13,7 +13,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         sx={{ m: 1 }}
         defaultChecked
         onClick={toggleTheme}
-        id="back-to-top-anchor"
+        
       />
     </HeaderStyled>
   );
