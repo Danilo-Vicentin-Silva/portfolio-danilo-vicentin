@@ -29,59 +29,6 @@ export const ProjectsStyled = styled.section`
 `
 
 export const ProjectSection = styled.section`
-  @keyframes card-entry {
-    0% {
-      transform: scale(0);
-      transform-origin: 0% 0%;
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-      transform-origin: 0% 0%;
-      opacity: 1;
-    }
-  }
-  @keyframes text-focus-in {
-    0% {
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  @keyframes scale-up-center {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.05);
-    }
-  }
-  @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes shadow-drop-2-center {
-    0% {
-      transform: translateZ(0) scale(1);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      transform: translateZ(50px) scale(1.05);
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
-  }
-
   margin: 10px 0;
   position: relative;
   cursor: pointer;
@@ -225,15 +172,6 @@ export const ProjectCard = styled.article`
   }
 
   @media (min-width: 768px) {
-    @keyframes scale-up-center {
-      0% {
-        transform: scale(0.5);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -243,7 +181,7 @@ export const ProjectCard = styled.article`
     height: 95vh;
     overflow: hidden;
 
-    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: scale-up-center1 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     box-shadow: 0px 0px 300px -10px rgba(0, 0, 0, 0.75);
 
     video {
@@ -290,6 +228,67 @@ export const ProjectCard = styled.article`
 
     #link-section {
       width: 100%;
+    }
+  }
+  @keyframes scale-up-center1 {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes card-entry {
+    0% {
+      transform: scale(0);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0) scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px) scale(1.05);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
 `

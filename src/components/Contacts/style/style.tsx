@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const ContactsStyled = styled.section`
   ul {
@@ -17,7 +17,7 @@ export const ContactsStyled = styled.section`
   ul a {
     text-decoration: none;
   }
-`;
+`
 
 export const ContactStyled = styled.div`
   display: flex;
@@ -51,7 +51,38 @@ export const ContactStyled = styled.div`
     text-align: center;
     margin: 0;
   }
-`;
+
+  @media (min-width: 768px) {
+    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    div:hover {
+      animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+    }
+  }
+
+  @keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+`
 
 export const ContactFormStyle = styled.section`
   .notification {
@@ -87,4 +118,4 @@ export const ContactFormStyle = styled.section`
   #reset-button {
     margin-right: 10px;
   }
-`;
+`
