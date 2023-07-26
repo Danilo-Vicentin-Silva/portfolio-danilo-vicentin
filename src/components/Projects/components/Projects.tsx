@@ -1,5 +1,5 @@
-import Project from "./Project";
-import { v4 as uuid } from "uuid";
+import Project from "./Project"
+import { v4 as uuid } from "uuid"
 
 import {
   CordelModernoImages,
@@ -7,13 +7,15 @@ import {
   SiteAndroidImages,
   TaskListImages,
   TelaLoginImages,
-} from "../../Imports/importImages";
+} from "../../Imports/importImages"
 
-import { IoLogoJavascript } from "react-icons/io";
-import { MdOutlineHtml, MdCss } from "react-icons/md";
-import { BiLogoReact } from "react-icons/bi";
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
-import { ProjectsStyled } from "../style/style";
+import { videos } from "../../Imports/ImportVideos"
+
+import { IoLogoJavascript } from "react-icons/io"
+import { MdOutlineHtml, MdCss } from "react-icons/md"
+import { BiLogoReact } from "react-icons/bi"
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
+import { ProjectsStyled } from "../style/style"
 
 const Projects = () => {
   return (
@@ -29,6 +31,7 @@ const Projects = () => {
           skillsUsed={[<IoLogoJavascript />, <MdOutlineHtml />, <MdCss />]}
           websiteLink="https://danilo-vicentin-silva.github.io/RacingF1/"
           githubLink="https://github.com/Danilo-Vicentin-Silva/RacingF1"
+          video={videos.RacingF1Video}
           key={uuid()}
         />
         <Project
@@ -44,6 +47,7 @@ const Projects = () => {
             <MdCss />,
             <MdOutlineHtml />,
           ]}
+          video={videos.TaskListVideo}
           key={uuid()}
         />
         <Project
@@ -54,6 +58,7 @@ const Projects = () => {
           githubLink="https://github.com/Danilo-Vicentin-Silva/Tela-Login"
           websiteLink="https://danilo-vicentin-silva.github.io/Tela-Login/"
           images={TelaLoginImages}
+          video={videos.TelaLoginVideo}
           key={uuid()}
         />
       </ul>
@@ -67,6 +72,7 @@ const Projects = () => {
           githubLink="https://github.com/Danilo-Vicentin-Silva/Cordel-Moderno"
           websiteLink="https://danilo-vicentin-silva.github.io/Cordel-Moderno/"
           images={CordelModernoImages}
+          video={videos.CordelModernoVideo}
           key={uuid()}
         />
         <Project
@@ -77,11 +83,12 @@ const Projects = () => {
           websiteLink="https://danilo-vicentin-silva.github.io/Site-Android/"
           skillsUsed={[<MdOutlineHtml />, <MdCss />]}
           images={SiteAndroidImages}
+          video={videos.SiteAndroidVideo}
           key={uuid()}
         />
       </ul>
     </ProjectsStyled>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

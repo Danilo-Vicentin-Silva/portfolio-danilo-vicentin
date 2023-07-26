@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const ProjectsStyled = styled.section`
   ul {
@@ -26,7 +26,7 @@ export const ProjectsStyled = styled.section`
       gap: 20px;
     }
   }
-`;
+`
 
 export const ProjectSection = styled.section`
   @keyframes card-entry {
@@ -83,9 +83,7 @@ export const ProjectSection = styled.section`
   }
 
   margin: 10px 0;
-
   position: relative;
-
   cursor: pointer;
 
   img {
@@ -137,7 +135,6 @@ export const ProjectSection = styled.section`
 
     img {
       width: 30vw;
-      height: 26vh;
     }
 
     h4 {
@@ -151,7 +148,7 @@ export const ProjectSection = styled.section`
         both;
     }
   }
-`;
+`
 
 export const ProjectCard = styled.article`
   color: white;
@@ -163,12 +160,13 @@ export const ProjectCard = styled.article`
 
   border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
-  box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.75);
+
+  box-shadow: 0px 0px 300px 0px rgba(0, 0, 0, 0.75);
 
   position: fixed;
   top: 0;
   left: 10;
-  z-index: 1;
+  z-index: 2;
 
   h4 {
     font-size: 2em;
@@ -225,4 +223,73 @@ export const ProjectCard = styled.article`
     color: ${(props) => props.theme.colors.text};
     text-decoration: none;
   }
-`;
+
+  @media (min-width: 768px) {
+    @keyframes scale-up-center {
+      0% {
+        transform: scale(0.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+
+    width: 90vw;
+    height: 95vh;
+    overflow: hidden;
+
+    animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    box-shadow: 0px 0px 300px -10px rgba(0, 0, 0, 0.75);
+
+    video {
+      display: flex;
+      width: 100%;
+      height: 200px;
+    }
+
+    #card-header {
+      padding: 20px;
+      height: 0;
+    }
+
+    #card-header span {
+      background-color: #0000007c;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 10px;
+      position: absolute;
+      top: 15px;
+      left: 93%;
+    }
+
+    h5 {
+      display: block;
+    }
+
+    hr {
+      width: 90%;
+    }
+
+    p {
+      width: 50vw;
+      margin: 0;
+    }
+
+    #skills-section {
+      padding: 0;
+      margin: 0;
+    }
+
+    #link-section {
+      width: 100%;
+    }
+  }
+`
