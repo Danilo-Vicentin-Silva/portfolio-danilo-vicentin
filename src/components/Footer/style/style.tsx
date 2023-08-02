@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const FooterStyled = styled.footer`
   font-size: 0.8em;
@@ -33,4 +33,32 @@ export const FooterStyled = styled.footer`
     color: white;
     text-decoration: overline;
   }
-`;
+
+  @media (min-width: 768px) {
+    height: auto;
+  }
+`
+
+export const DesktopFooterStyled = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+
+  article {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    width: 75vw;
+  }
+
+  h6 {
+    font-size: 1em;
+  }
+
+  hr {
+    display: block;
+    width: 100%;
+  }
+`

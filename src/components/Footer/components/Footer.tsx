@@ -1,9 +1,26 @@
-import { FooterStyled } from "../style/style";
-import Logo from "../images/logo.png";
+import { FooterStyled } from "../style/style"
+import Logo from "../images/logo.png"
+import DesktopFooter from "./DesktopFooter"
+import React from "react"
 
 const Footer = () => {
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
+
+  React.useEffect(() => {
+    const handleRezise = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener("resize", handleRezise)
+
+    return () => {
+      window.removeEventListener("resize", handleRezise)
+    }
+  })
+
   return (
     <FooterStyled>
+      {windowWidth >= 768 && <DesktopFooter />}
       <img src={Logo} alt="Logo" />
       <ul>
         <li>
@@ -35,7 +52,7 @@ const Footer = () => {
         </li>
       </ul>
     </FooterStyled>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
