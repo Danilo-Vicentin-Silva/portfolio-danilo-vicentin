@@ -118,4 +118,17 @@ export const ContactFormStyle = styled.section`
   #reset-button {
     margin-right: 10px;
   }
+
+  @media (min-width: 768px) {
+    margin: auto;
+    width: 50vw;
+
+
+    .notification {
+      width: 25vw;
+      top: 75%;
+
+      transform: translate(-50%, -75%);
+    }
+  }
 `

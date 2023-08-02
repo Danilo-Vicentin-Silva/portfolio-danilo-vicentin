@@ -25,10 +25,7 @@ export const TopicSeparatorStyled = styled.section`
     100% {
       transform: translateY(-10px);
       transform-origin: 50% 50%;
-      text-shadow: 0 1px 0 #00000053, 0 2px 0 #00000053, 0 3px 0 #00000053,
-        0 4px 0 #00000053, 0 5px 0 #00000053, 0 6px 0 #00000053,
-        0 7px 0 #00000053, 0 8px 0 #00000053, 0 9px 0 #00000053,
-        0 10px 0px rgba(0, 0, 0, 0.193);
+      text-shadow: 0 1px 0 #00000053, 0 2px 0 #00000053, 0 3px 0 #00000053;
     }
   }
 `

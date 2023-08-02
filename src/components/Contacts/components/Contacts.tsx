@@ -1,12 +1,11 @@
-import { IoShareSocialOutline } from "react-icons/io5";
-import { AiOutlineFacebook } from "react-icons/ai";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { FiGithub } from "react-icons/fi";
-import { CiLinkedin } from "react-icons/ci";
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
-import { ContactsStyled } from "../style/style";
-import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import Contact from "./Contact";
+import { AiOutlineFacebook } from "react-icons/ai"
+import { AiOutlineInstagram } from "react-icons/ai"
+import { FiGithub } from "react-icons/fi"
+import { CiLinkedin } from "react-icons/ci"
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
+import { ContactsStyled } from "../style/style"
+import MailOutlineIcon from "@mui/icons-material/MailOutline"
+import Contact from "./Contact"
 
 const Contacts = () => {
   return (
@@ -48,16 +47,9 @@ const Contacts = () => {
             title="Facebook"
           />
         </li>
-        <li>
-          <Contact
-            icon={<IoShareSocialOutline />}
-            link="https://www.99freelas.com.br/user/Danilo-Vicentin-Silva"
-            title="99Frellas"
-          />
-        </li>
       </ul>
     </ContactsStyled>
-  );
-};
+  )
+}
 
-export default Contacts;
+export default Contacts
