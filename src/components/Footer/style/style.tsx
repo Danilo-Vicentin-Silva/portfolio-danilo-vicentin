@@ -36,10 +36,24 @@ export const FooterStyled = styled.footer`
 
   @media (min-width: 768px) {
     height: auto;
+    animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 `
 
 export const DesktopFooterStyled = styled.div`
+  color: white;
+
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

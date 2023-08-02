@@ -56,6 +56,7 @@ export const ProjectSection = styled.section`
   }
 
   #info {
+    color: white;
     font-size: 2em;
 
     width: 100%;
@@ -93,6 +94,73 @@ export const ProjectSection = styled.section`
 
       animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         both;
+    }
+
+    #info:hover,
+    h4:hover {
+      color: ${(props) => props.theme.colors.secundary};
+    }
+  }
+
+  @keyframes scale-up-center1 {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes card-entry {
+    0% {
+      transform: scale(0);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      transform-origin: 0% 0%;
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.05);
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes shadow-drop-2-center {
+    0% {
+      transform: translateZ(0) scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      transform: translateZ(50px) scale(1.05);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
 `

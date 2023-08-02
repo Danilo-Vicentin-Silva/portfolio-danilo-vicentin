@@ -51,12 +51,15 @@ export const InitialInfoStyle = styled.section`
     font-size: 1em;
     gap: 30px;
 
+      img {
+        width: 15vw;
+      }
+
     #download-cv-button {
       font-size: 3em;
 
       opacity: 0;
       animation: imageTransition 0.5s ease-in-out 0.5s forwards;
-      transform: translateY(100%);
     }
 
     .animated-text {

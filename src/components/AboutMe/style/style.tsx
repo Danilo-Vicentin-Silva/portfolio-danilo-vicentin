@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const AboutMeStyle = styled.section`
   p {
@@ -13,8 +13,23 @@ export const AboutMeStyle = styled.section`
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+
+    p {
+      animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    }
   }
-`;
+
+  @keyframes text-focus-in {
+    0% {
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
+  }
+`
 
 export const TopicSeparatorStyle = styled.div`
   color: ${(props) => props.theme.colors.secundary};
@@ -29,4 +44,4 @@ export const TopicSeparatorStyle = styled.div`
     height: 1px;
     border: none;
   }
-`;
+`
