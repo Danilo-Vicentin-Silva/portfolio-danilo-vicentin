@@ -73,7 +73,10 @@ const Project: React.FC<Props> = ({
       </div>
     </ProjectCard>
   ) : (
-    <ProjectSection onClick={() => handleCardState()}>
+    <ProjectSection
+      className="project-section"
+      onClick={() => handleCardState()}
+    >
       <h4>{title}</h4>
 
       <picture>
