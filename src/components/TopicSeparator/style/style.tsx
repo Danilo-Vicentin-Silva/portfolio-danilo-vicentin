@@ -3,9 +3,12 @@ import styled from "styled-components"
 export const TopicSeparatorStyled = styled.section`
   color: ${(props) => props.theme.colors.secundary};
 
+  h3 {
+    margin-top: 50px;
+  }
+
   hr {
     border-color: ${(props) => props.theme.colors.secundary};
-    height: 1px;
   }
 
   @media (min-width: 768px) {
@@ -14,7 +17,10 @@ export const TopicSeparatorStyled = styled.section`
     margin: auto;
     width: 50vw;
 
-    animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    h3 {
+      margin-top: 200px;
+      animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
   }
   @keyframes text-pop-up-top {
     0% {

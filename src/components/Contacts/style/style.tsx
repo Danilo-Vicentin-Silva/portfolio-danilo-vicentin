@@ -53,8 +53,6 @@ export const ContactStyled = styled.div`
   }
 
   @media (min-width: 768px) {
-    animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
     div:hover {
       animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         both;
@@ -69,17 +67,6 @@ export const ContactStyled = styled.div`
     100% {
       transform: translateZ(50px);
       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    }
-  }
-
-  @keyframes slide-in-top {
-    0% {
-      transform: translateY(-1000px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
     }
   }
 `
@@ -113,6 +100,8 @@ export const ContactFormStyle = styled.section`
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
   #reset-button {
@@ -123,12 +112,22 @@ export const ContactFormStyle = styled.section`
     margin: auto;
     width: 50vw;
 
-
     .notification {
       width: 25vw;
       top: 75%;
 
       transform: translate(-50%, -75%);
+    }
+  }
+
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
     }
   }
 `

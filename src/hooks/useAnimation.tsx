@@ -1,29 +1,42 @@
-import { useEffect, useRef, useState } from "react"
+import React from "react"
+import "../styles/animations/animations.css"
 
-const useVisibleElement = () => {
-  const elementRef = useRef<HTMLDivElement>(null)
-  const [isVisible, setIsVisible] = useState(false)
+const useAnimation = () => {
+  const elementRef = React.useRef<HTMLElement>(null)
+  const [isVisible, setIsVisible] = React.useState(false)
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = elementRef.current
-      if (!element) return
-
-      const { top, bottom } = element.getBoundingClientRect()
-      const isVisible = top < window.innerHeight && bottom >= 0
-
-      setIsVisible(isVisible)
+  React.useEffect(() => {
+    const handleRezise = () => {
+      setWindowWidth(window.innerWidth)
     }
 
-    window.addEventListener("scroll", handleScroll)
-    handleScroll()
+    window.addEventListener("resize", handleRezise)
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener("resize", handleRezise)
     }
-  }, [])
+  })
 
-  return { elementRef, isVisible }
+  React.useEffect(() => {
+    if (windowWidth >= 768) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setIsVisible(true)
+          elementRef.current?.classList.add("entrance-animation")
+        }
+      })
+      observer.observe(elementRef.current as Element)
+      return () => observer.disconnect()
+    } else {
+      setIsVisible(true)
+    }
+  }, [elementRef, windowWidth])
+
+  return {
+    elementRef,
+    isVisible,
+  }
 }
 
-export default useVisibleElement
+export default useAnimation

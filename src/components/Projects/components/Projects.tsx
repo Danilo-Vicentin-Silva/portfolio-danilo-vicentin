@@ -13,15 +13,15 @@ import { MdOutlineHtml, MdCss } from "react-icons/md"
 import { BiLogoReact } from "react-icons/bi"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { ProjectsStyled } from "../style/style"
-import useVisibleElement from "../../../hooks/useAnimation"
+import useAnimation from "../../../hooks/useAnimation"
 
 const Projects = () => {
-  const { elementRef, isVisible } = useVisibleElement()
+  const { elementRef, isVisible } = useAnimation()
 
   return (
-    <div ref={elementRef}>
+    <ProjectsStyled ref={elementRef}>
       {isVisible && (
-        <ProjectsStyled>
+        <>
           <TopicSeparator title="Projetos" />
           <h4>Destaques</h4>
 
@@ -90,9 +90,9 @@ const Projects = () => {
               key={uuid()}
             />
           </ul>
-        </ProjectsStyled>
+        </>
       )}
-    </div>
+    </ProjectsStyled>
   )
 }
 

@@ -3,7 +3,6 @@ interface Props {
 }
 
 const Video: React.FC<Props> = ({ video }) => {
-  console.log(video)
   return (
     <video controls autoPlay loop>
       <source src={video} type="video/mp4" />

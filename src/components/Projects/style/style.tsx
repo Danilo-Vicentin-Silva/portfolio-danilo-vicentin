@@ -79,7 +79,7 @@ export const ProjectSection = styled.section`
   @media (min-width: 768px) {
     width: 30vw;
     animation: card-entry 1s ease-in-out;
-    
+
     img {
       width: 30vw;
     }
