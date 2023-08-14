@@ -1,10 +1,10 @@
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
-import { SKillsStyled } from "../style/style";
-import Skill from "./Skill";
-import { SkillList } from "./SkillsList";
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
+import { SKillsStyled } from "../style/style"
+import Skill from "./Skill"
+import { SkillList } from "./SkillsList"
 
 const Skills = () => {
-  const skillsList = SkillList;
+  const skillsList = SkillList
 
   return (
     <SKillsStyled>
@@ -21,6 +21,6 @@ const Skills = () => {
         ))}
       </ul>
     </SKillsStyled>
-  );
-};
-export default Skills;
+  )
+}
+export default Skills

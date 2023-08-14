@@ -1,23 +1,24 @@
-import Button from "@mui/material/Button";
-import { NavStyled } from "../style/style";
+import Button from "@mui/material/Button"
+import { NavStyled } from "../style/style"
 
 const Nav = () => {
-  const goToSection = (y: number) => {
-    window.scrollTo(0, y);
-  };
+  const scrollTo = (elementId: string) => {
+    const element = document.getElementById(elementId)
+    element?.scrollIntoView({ behavior: "smooth" })
+  }
 
   return (
     <NavStyled>
       <Button
         variant="outlined"
-        onClick={() => goToSection(500)}
         className="nav-button"
+        onClick={() => scrollTo("skills")}
       >
         Habilidades
       </Button>
       <Button
         variant="contained"
-        onClick={() => goToSection(2150)}
+        onClick={() => scrollTo("contacts")}
         className="nav-button"
         id="contact-button"
       >
@@ -25,13 +26,13 @@ const Nav = () => {
       </Button>
       <Button
         variant="outlined"
-        onClick={() => goToSection(1050)}
+        onClick={() => scrollTo("projects")}
         className="nav-button"
       >
         Projetos
       </Button>
     </NavStyled>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

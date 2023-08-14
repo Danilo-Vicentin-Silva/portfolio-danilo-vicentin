@@ -29,9 +29,15 @@ const App = () => {
         <InitialInfo />
         <Nav />
         <AboutMe />
-        <Skills />
-        <Projects />
-        <Contacts />
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contacts">
+          <Contacts />
+        </div>
         <ContactForm />
       </main>
       <Footer />
