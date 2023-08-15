@@ -169,9 +169,9 @@ export const ProjectCard = styled.article`
   color: white;
   background-color: ${(props) => props.theme.colors.primary};
 
+  overflow: hidden;
   width: 90vw;
   height: 90vh;
-  overflow: hidden;
 
   border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
@@ -180,7 +180,7 @@ export const ProjectCard = styled.article`
   position: fixed;
   top: 5%;
   left: 10;
-  z-index: 2;
+  z-index: 9999;
 
   h4 {
     font-size: 1.5em;
