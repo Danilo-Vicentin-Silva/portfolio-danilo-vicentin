@@ -6,15 +6,11 @@ import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { ContactsStyled } from "../style/style"
 import MailOutlineIcon from "@mui/icons-material/MailOutline"
 import Contact from "./Contact"
-import useAnimation from "../../../hooks/useAnimation"
 
 const Contacts = () => {
-  const { elementRef, isVisible } = useAnimation()
 
   return (
-    <ContactsStyled ref={elementRef}>
-      {isVisible && (
-        <>
+    <ContactsStyled >
           <TopicSeparator title="Contatos" />
           <ul>
             <li>
@@ -53,8 +49,6 @@ const Contacts = () => {
               />
             </li>
           </ul>
-        </>
-      )}
     </ContactsStyled>
   )
 }

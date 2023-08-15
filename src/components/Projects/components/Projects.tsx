@@ -13,15 +13,11 @@ import { MdOutlineHtml, MdCss } from "react-icons/md"
 import { BiLogoReact } from "react-icons/bi"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { ProjectsStyled } from "../style/style"
-import useAnimation from "../../../hooks/useAnimation"
 
 const Projects = () => {
-  const { elementRef, isVisible } = useAnimation()
 
   return (
-    <ProjectsStyled ref={elementRef}>
-      {isVisible && (
-        <>
+    <ProjectsStyled >
           <TopicSeparator title="Projetos" />
           <h4>Destaques</h4>
 
@@ -29,7 +25,7 @@ const Projects = () => {
             <Project
               title="Racing F1"
               date="28 de Outubro de 2022"
-              description="Meu primeiro projeto em Front End, este que foi um exercício pensado por mim mesmo afim de comprovar minhas capacidades nas principais tecnologias. Site focado na informação geral da categoria máxima do automobilismo, este que contêm um design inspirado nas cores tema da Formula 1, uma mistura de vermelho e amarelo que expressam determinação com o foco extremo da categoria (e uma cor cinza para contraste)."
+              description="Meu primeiro projeto em Front End, este que foi um exercício pensado por mim mesmo afim de comprovar minhas capacidades nas principais tecnologias. Site focado na informação geral da categoria máxima do automobilismo, este que contêm um design inspirado nas cores tema da Formula 1."
               images={RacingF1Images}
               skillsUsed={[<IoLogoJavascript />, <MdOutlineHtml />, <MdCss />]}
               websiteLink="https://danilo-vicentin-silva.github.io/RacingF1/"
@@ -90,8 +86,6 @@ const Projects = () => {
               key={uuid()}
             />
           </ul>
-        </>
-      )}
     </ProjectsStyled>
   )
 }

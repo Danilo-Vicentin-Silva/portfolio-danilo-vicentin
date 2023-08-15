@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const ProjectsStyled = styled.section`
+  position: relative;
+
   ul {
     display: flex;
     flex-flow: row wrap;
@@ -38,6 +40,13 @@ export const ProjectSection = styled.section`
     border-radius: 7px 20px;
 
     width: 90vw;
+  }
+
+  img:hover {
+    border: 1px solid ${(props) => props.theme.colors.primary};
+
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
   }
 
   h4 {
@@ -87,14 +96,6 @@ export const ProjectSection = styled.section`
     h4 {
       animation: text-focus-in 1s 5ms cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     }
-
-    img:hover {
-      border: 1px solid ${(props) => props.theme.colors.primary};
-
-      animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-        both;
-    }
-
     #info:hover,
     h4:hover {
       color: ${(props) => props.theme.colors.secundary};
@@ -168,22 +169,21 @@ export const ProjectCard = styled.article`
   color: white;
   background-color: ${(props) => props.theme.colors.primary};
 
-  height: 95vh;
-  width: 95vw;
-  margin: 10px;
+  width: 90vw;
+  height: 90vh;
+  overflow: hidden;
 
   border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
-
   box-shadow: 0px 0px 300px 0px rgba(0, 0, 0, 0.75);
 
   position: fixed;
-  top: 0;
+  top: 5%;
   left: 10;
   z-index: 2;
 
   h4 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: justify;
     height: 0;
   }
@@ -238,15 +238,20 @@ export const ProjectCard = styled.article`
     text-decoration: none;
   }
 
+  .link-button:hover {
+    background-color: ${(props) => props.theme.colors.secundary};
+  }
+
+  .link-button a:hover {
+    color: white;
+  }
+
   @media (min-width: 768px) {
+    width: 60vw;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     gap: 10px;
-
-    width: 90vw;
-    height: 95vh;
-    overflow: hidden;
 
     animation: scale-up-center1 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     box-shadow: 0px 0px 300px -10px rgba(0, 0, 0, 0.75);
@@ -255,6 +260,7 @@ export const ProjectCard = styled.article`
       display: flex;
       width: 100%;
       height: 200px;
+      object-fit: cover;
     }
 
     #card-header {
@@ -268,8 +274,10 @@ export const ProjectCard = styled.article`
       display: flex;
       align-items: center;
       justify-content: center;
+
       padding: 5px;
       border-radius: 10px;
+
       position: absolute;
       top: 15px;
       left: 93%;
@@ -296,7 +304,12 @@ export const ProjectCard = styled.article`
     #link-section {
       width: 100%;
     }
+    @media (min-width: 1990px) {
+      max-width: 70vw;
+      max-height: 70vh;
+    }
   }
+
   @keyframes scale-up-center1 {
     0% {
       transform: scale(0.5);

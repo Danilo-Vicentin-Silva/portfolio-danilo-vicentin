@@ -2,7 +2,6 @@ import { FooterStyled } from "../style/style"
 import Logo from "../images/logo.png"
 import DesktopFooter from "./DesktopFooter"
 import React from "react"
-import useVisibleElement from "../../../hooks/useAnimation"
 
 const Footer = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
@@ -19,45 +18,39 @@ const Footer = () => {
     }
   })
 
-  const { elementRef, isVisible } = useVisibleElement()
-
   return (
-    <FooterStyled ref={elementRef}>
-      {isVisible && (
-        <>
-          {windowWidth >= 768 && <DesktopFooter />}
-          <img src={Logo} alt="Logo" />
-          <ul>
-            <li>
-              <a
-                href="mailto:danilovicentindasilva@gmail.com"
-                rel="nofollow"
-                target="_blank"
-              >
-                Email
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/danilo-vicentin-da-silva-16a84022b/"
-                rel="nofollow"
-                target="_blank"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/Danilo-Vicentin-Silva"
-                rel="nofollow"
-                target="_blank"
-              >
-                Github
-              </a>
-            </li>
-          </ul>
-        </>
-      )}
+    <FooterStyled>
+      {windowWidth >= 768 && <DesktopFooter />}
+      <img src={Logo} alt="Logo" />
+      <ul>
+        <li>
+          <a
+            href="mailto:danilovicentindasilva@gmail.com"
+            rel="nofollow"
+            target="_blank"
+          >
+            Email
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/danilo-vicentin-da-silva-16a84022b/"
+            rel="nofollow"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/Danilo-Vicentin-Silva"
+            rel="nofollow"
+            target="_blank"
+          >
+            Github
+          </a>
+        </li>
+      </ul>
     </FooterStyled>
   )
 }

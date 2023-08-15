@@ -5,8 +5,6 @@ import { ContactFormStyle } from "../style/style"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import DeleteIcon from "@mui/icons-material/Delete"
 import SendIcon from "@mui/icons-material/Send"
-import useVisibleElement from "../../../hooks/useAnimation"
-import useAnimation from "../../../hooks/useAnimation"
 
 const ContactForm = () => {
   const [name, setName] = React.useState("")
@@ -58,12 +56,8 @@ const ContactForm = () => {
     }, 2500)
   }
 
-  const { elementRef, isVisible } = useAnimation()
-
   return (
-    <ContactFormStyle ref={elementRef}>
-      {isVisible && (
-        <>
+    <ContactFormStyle >
           <TopicSeparator title="Fale Comigo!" />
           <form onSubmit={sendEmail}>
             <div>
@@ -120,8 +114,6 @@ const ContactForm = () => {
               PREENCHA TODOS OS CAMPOS CORRETAMENTE!
             </Alert>
           )}
-        </>
-      )}
     </ContactFormStyle>
   )
 }
