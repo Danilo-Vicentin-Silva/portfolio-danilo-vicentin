@@ -37,8 +37,7 @@ const App = () => {
         </div>
         {/* <div id="contacts">
           <Contacts />
-        </div> */}
-        <ContactForm />
+        </div> */}<ContactForm />
       </main>
       <Footer />
     </ThemeProvider>
