@@ -1,3 +1,4 @@
+import { MdOutlineMailOutline } from "react-icons/md"
 import { BsWhatsapp } from "react-icons/bs"
 import { CgClose } from "react-icons/cg"
 import { AiOutlineFacebook } from "react-icons/ai"
@@ -6,7 +7,6 @@ import { FiGithub } from "react-icons/fi"
 import { CiLinkedin } from "react-icons/ci"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { ContactsStyled } from "../style/style"
-import MailOutlineIcon from "@mui/icons-material/MailOutline"
 import Contact from "./Contact"
 
 const Contacts = () => {
@@ -16,7 +16,7 @@ const Contacts = () => {
       <ul>
         <li>
           <Contact
-            icon={<MailOutlineIcon />}
+            icon={<MdOutlineMailOutline />}
             link="mailto:danilovicentindasilva@gmail.com"
             title="Email"
           />
