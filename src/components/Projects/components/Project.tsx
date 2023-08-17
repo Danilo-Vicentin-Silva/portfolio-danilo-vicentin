@@ -25,7 +25,7 @@ const Project: React.FC<Props> = ({
   githubLink,
   video,
 }) => {
-  const [cardState, setCardState] = React.useState(true) //!
+  const [cardState, setCardState] = React.useState(false)
   const handleCardState = () => {
     setTimeout(() => {
       if (cardState === false) {
