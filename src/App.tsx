@@ -9,7 +9,7 @@ import light from "./styles/themes/light"
 import dark from "./styles/themes/dark"
 import Nav from "./components/Nav/components/Nav"
 import Projects from "./components/Projects/components/Projects"
-import Contacts from "./components/Contacts/components/Contacts"
+// import Contacts from "./components/Contacts/components/Contacts"
 import ContactForm from "./components/Contacts/components/ContactForm"
 import Footer from "./components/Footer/components/Footer"
 import ScrollTop from "./components/BackOnTop/components/BackOnTop"
@@ -35,9 +35,9 @@ const App = () => {
         <div id="projects">
           <Projects />
         </div>
-        <div id="contacts">
+        {/* <div id="contacts">
           <Contacts />
-        </div>
+        </div> */}
         <ContactForm />
       </main>
       <Footer />
