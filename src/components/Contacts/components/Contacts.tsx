@@ -1,7 +1,5 @@
-import { BiX } from "react-icons/bi"
 import { BsWhatsapp } from "react-icons/bs"
 import { CgClose } from "react-icons/cg"
-import { BsWhatsapp } from "react-icons/bs"
 import { AiOutlineFacebook } from "react-icons/ai"
 import { AiOutlineInstagram } from "react-icons/ai"
 import { FiGithub } from "react-icons/fi"
