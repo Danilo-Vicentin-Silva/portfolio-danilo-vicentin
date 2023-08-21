@@ -4,7 +4,7 @@ Olá! Sou Danilo, desenvolvedor de sites. Desenvolvedor Web Front End focado em 
 
 ## Acessando/Executando o site
 
-- Voce pode acessar [aqui](https://danilo-vicentin-silva.github.io/)
+- Voce pode acessar [aqui](https://danilovicentinsilva.netlify.app/)
 
 <img src="/src/assets/images/project-cover.webp" alt="Projeto"/>
 
