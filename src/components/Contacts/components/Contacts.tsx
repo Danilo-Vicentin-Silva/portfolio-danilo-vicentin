@@ -7,7 +7,7 @@ import { FiGithub } from "react-icons/fi"
 import { CiLinkedin } from "react-icons/ci"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { ContactsStyled } from "../style/style"
-import Contact from "./Contact"
+import Contact from "./contact"
 
 const Contacts = () => {
   return (
