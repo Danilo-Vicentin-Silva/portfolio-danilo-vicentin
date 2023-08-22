@@ -6,11 +6,11 @@ import Login from "./pages/Login.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/home",
     element: <Login />,
   },
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
 ]);
