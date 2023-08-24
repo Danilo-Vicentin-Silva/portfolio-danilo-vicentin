@@ -1,6 +1,7 @@
 import * as React from "react";
 import ToggleThemeButton from "./ToggleThemeButton";
 import { HeaderStyled } from "../styles/style";
+import ToogleLanguageButton from "./ToggleLanguageButton";
 
 interface Props {
   toggleTheme(): void;
@@ -9,12 +10,8 @@ interface Props {
 const Header: React.FC<Props> = ({ toggleTheme }) => {
   return (
     <HeaderStyled>
-      <ToggleThemeButton
-        sx={{ m: 1 }}
-        defaultChecked
-        onClick={toggleTheme}
-        
-      />
+      <ToogleLanguageButton />
+      <ToggleThemeButton sx={{ m: 1 }} defaultChecked onClick={toggleTheme} />
     </HeaderStyled>
   );
 };

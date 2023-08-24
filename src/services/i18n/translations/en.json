@@ -1,3 +1,19 @@
 {
-    
+  "translation": {
+    "hello": "Hi! My name is",
+    "myName": "Danilo Vicentin da Silva",
+    "downloadCV": "Download my CV!",
+    "webDeveloper": "Web Developer",
+    "habilits": "Skills",
+    "contacts": "Contacts",
+    "projects": "Projects",
+    "aboutMe": "About me",
+    "aboutMeDescription": "Web Front End Developer focused on providing the best web solutions! Always using the best techniques and technologies on the market, my workflow is fast and focused, I seek to understand the objectives and needs of the client/company in order to ensure that the website is 100% faithful to its idea. I am able to develop every part of the frontend, from the prototype to the completion of the user interface",
+    "skills": "Skills",
+    "reactDescription": "Framework for web applications",
+    "typescriptDescription": "More sofisticated version of JS",
+    "javascriptDescription": "Programming language for web",
+    "css3Description": "Web styling language",
+    "html5Description": "Markup language for web"
+  }
 }

@@ -1,24 +1,6 @@
 import styled from "styled-components";
 
 export const InitialInfoStyle = styled.section`
-  @keyframes imageTransition {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes writtingText {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
   text-align: justify;
   font-size: 0.6em;
 
@@ -26,7 +8,9 @@ export const InitialInfoStyle = styled.section`
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  gap: 10px;
+  gap: 15px;
+
+  
 
   img {
     width: 30vw;
@@ -51,9 +35,9 @@ export const InitialInfoStyle = styled.section`
     font-size: 1em;
     gap: 30px;
 
-      img {
-        width: 15vw;
-      }
+    img {
+      width: 15vw;
+    }
 
     #download-cv-button {
       font-size: 3em;
@@ -71,6 +55,24 @@ export const InitialInfoStyle = styled.section`
     .image-transition {
       opacity: 0;
       animation: imageTransition 0.5s ease-in-out 0.5s forwards;
+    }
+  }
+
+  @keyframes imageTransition {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes writtingText {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
     }
   }
 `;

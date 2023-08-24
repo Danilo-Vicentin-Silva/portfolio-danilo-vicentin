@@ -1,3 +1,19 @@
 {
-    
+  "translation": {
+    "hello": "Olá, meu nome é",
+    "myName": "Danilo Vicentin da Silva",
+    "downloadCV": "Baixe meu currículo!",
+    "webDeveloper": "Desenvolvedor Web",
+    "habilits": "Habilidades",
+    "contacts": "Contatos",
+    "projects": "Projetos",
+    "aboutMe": "Sobre mim",
+    "aboutMeDescription": "Desenvolvedor Web Front End focado em oferecer as melhores soluções web! Sempre utilizando as melhores técnicas e tecnologias do mercado, meu fluxo de trabalho é rápido e focado, busco entender os objetivos e necessidades do cliente/empresa de modo a garantir que o website fique 100% fiel a sua ideia. Sou capaz de desenvolver toda parte frontend, desde o protótipo, até a conclusão da interface de usuário.",
+    "skills": "Habilidades",
+    "reactDescription": "Framework para aplicações web",
+    "typescriptDescription":"Versão mais sofisticada do JS",
+    "javascriptDescription": "Linguagem de programação para Web",
+    "css3Description": "Linguagem de estilização Web",
+    "html5Description" : "Linguagem de marcação Web"
+  }
 }
