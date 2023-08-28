@@ -1,11 +1,13 @@
-import Button from "@mui/material/Button"
-import { NavStyled } from "../style/style"
+import Button from "@mui/material/Button";
+import { NavStyled } from "../style/style";
+import { useTranslation } from "react-i18next";
 
 const Nav = () => {
   const scrollTo = (elementId: string) => {
-    const element = document.getElementById(elementId)
-    element?.scrollIntoView({ behavior: "smooth" })
-  }
+    const element = document.getElementById(elementId);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+  const { t } = useTranslation();
 
   return (
     <NavStyled>
@@ -14,7 +16,7 @@ const Nav = () => {
         className="nav-button"
         onClick={() => scrollTo("skills")}
       >
-        Habilidades
+        {t("habilits")}
       </Button>
       <Button
         variant="contained"
@@ -22,17 +24,17 @@ const Nav = () => {
         className="nav-button"
         id="contact-button"
       >
-        Contatos
+        {t("contacts")}
       </Button>
       <Button
         variant="outlined"
         onClick={() => scrollTo("projects")}
         className="nav-button"
       >
-        Projetos
+        {t("projects")}
       </Button>
     </NavStyled>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

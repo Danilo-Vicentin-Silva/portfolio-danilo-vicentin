@@ -3,8 +3,11 @@ import DaniloImg from "../images/danilo.webp";
 import DaniloLogo from "../images/logo.png";
 import DaniloCV from "../pdfs/danilo-vicentin-s-cv.pdf";
 import { InitialInfoStyle } from "../styles/style";
+import { useTranslation } from "react-i18next";
 
 const InitialInfo = () => {
+  const { t } = useTranslation();
+
   return (
     <InitialInfoStyle>
       <img
@@ -15,13 +18,12 @@ const InitialInfo = () => {
       />
       <img src={DaniloLogo} alt="Logo" className="logo" />
       <article>
-        <h2 className="animated-text">
-          Olá, meu nome é <br /> Danilo Vicentin da Silva <br />{" "}
-          <small>Desenvolvedor Web</small>
-        </h2>
+        <h2 className="animated-text">{t("hello")}</h2>
+        <h2 className="animated-text">{t("myName")}</h2>
+        <p className="animated-text">{t("webDeveloper")}</p>
         <Button variant="contained" id="download-cv-button">
           <a href={DaniloCV} download rel="nofollow" target="_blank">
-            Baixe meu currículo!
+            {t("downloadCV")}
           </a>
         </Button>
       </article>
