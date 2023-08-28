@@ -38,6 +38,13 @@
     "clear": "Limpar",
     "send": "Enviar",
     "successMessage": "MENSAGEM ENVIADA COM SUCESSO!",
-    "unsessessMessage": "PREENCHA TODOS OS CAMPOS CORRETAMENTE!"
+    "unsessessMessage": "PREENCHA TODOS OS CAMPOS CORRETAMENTE!",
+    "sinceTheIdeaTitle": "Desde a ideia",
+    "sinceTheIdea": "Desde a ideia",
+    "sinceTheIdeaDescription": "Sou capaz de desenvolver seu site desde a sua concepção! Desenvolvendo o site do completo zero, e sempre consultando a veracidade da aplicação em relação à ideia.",
+    "modernWebsitesTitle": "Sites Modernos",
+    "modernWebsitesDescritpion": "Utilizando as últimas técnicas e tecnologias do mercado, a promessade construir um site totalmente moderno, rápido e eficaz se cumpre. Sempre estou atualizando meu acervo de ferramentas para garantir um Site Moderno",
+    "supportTitle": "Suporte",
+    "supportDescription": "Mesmo depois de 'finalizado', ofereço suporte pós-projeto para garantir que o projeto se mantenha vivo e dentro do desejado."
   }
 }

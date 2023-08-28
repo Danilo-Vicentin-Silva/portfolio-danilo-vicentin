@@ -38,6 +38,12 @@
     "clear": "Clear",
     "send": "Send",
     "successMessage": "MESSAGE SUCCESSFULLY SENT!",
-    "unsessessMessage": "PLEASE FILL ALL THE FIELDS CORRECTLY!"
+    "unsessessMessage": "PLEASE FILL ALL THE FIELDS CORRECTLY!",
+    "sinceTheIdeaTitle": "Since the idea",
+    "sinceTheIdeaDescription": "I am able to develop your website from conception! Developing the website from scratch, and always consulting veracity of the application relative to the idea.",
+    "modernWebsitesTitle": "Modern Websites",
+    "modernWebsitesDescritpion": "Using the latest techniques and technologies on the market, the promise of building a completely modern, fast and efficient website is fulfilled. I'm always updating my collection of tools to guarantee a Modern Site",
+    "supportTitle": "Support",
+    "supportDescription": "Even after 'finished', I offer post-project support to ensure that the project stays alive and within the desired range."
   }
 }
