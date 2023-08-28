@@ -30,6 +30,14 @@
     "brazilianCordelDate": "6 July 2022",
     "websiteAndroidTitle": "Website Android",
     "websiteAndroidDescription": "Informative style site that applies almost all the basic concepts that I studied in HTML&CSS, this site has the objective of telling the story of the creation of the Android system icon, a very curious story by the way. This teaching proposal was great to consolidate my base in HTML&CSS.",
-    "websiteAndroidDate": "14th of September 2022"
+    "websiteAndroidDate": "14th of September 2022",
+    "contactsTitle": "Contacts",
+    "contactMe": "Contact me!",
+    "yourName": "Your Name",
+    "yourMessage": "Your Message",
+    "clear": "Clear",
+    "send": "Send",
+    "successMessage": "MESSAGE SUCCESSFULLY SENT!",
+    "unsessessMessage": "PLEASE FILL ALL THE FIELDS CORRECTLY!"
   }
 }
