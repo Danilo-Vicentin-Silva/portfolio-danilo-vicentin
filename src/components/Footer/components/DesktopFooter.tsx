@@ -1,8 +1,8 @@
-import { useTranslation } from "react-i18next";
-import { DesktopFooterStyled } from "../style/style";
+import { useTranslation } from "react-i18next"
+import { DesktopFooterStyled } from "../style/style"
 
 const DesktopFooter = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <DesktopFooterStyled>
@@ -22,7 +22,7 @@ const DesktopFooter = () => {
       </article>
       <hr />
     </DesktopFooterStyled>
-  );
-};
+  )
+}
 
-export default DesktopFooter;
+export default DesktopFooter

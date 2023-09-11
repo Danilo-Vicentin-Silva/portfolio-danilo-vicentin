@@ -10,7 +10,12 @@ const Contact: React.FC<Props> = ({ icon, title, link }) => {
   return (
     <ContactStyled>
       <div id="icon" key={title}>
-        <a href={link} rel="nofollow" target="_blank">
+        <a
+          href={link}
+          rel="nofollow"
+          target="_blank"
+          aria-label={`This link opens my ${title} in a new tab`}
+        >
           <span>{icon}</span>
         </a>
       </div>

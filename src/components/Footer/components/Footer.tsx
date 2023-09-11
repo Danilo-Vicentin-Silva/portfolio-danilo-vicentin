@@ -1,5 +1,5 @@
 import { FooterStyled } from "../style/style"
-import Logo from "../images/logo.png"
+import Logo from "../../../assets/images/logo.webp"
 import DesktopFooter from "./DesktopFooter"
 import React from "react"
 

@@ -1,7 +1,11 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const ProjectsStyled = styled.section`
   position: relative;
+
+  h4 {
+    margin: 5px;
+  }
 
   ul {
     display: flex;
@@ -28,7 +32,7 @@ export const ProjectsStyled = styled.section`
       gap: 20px;
     }
   }
-`
+`;
 
 export const ProjectSection = styled.section`
   margin: 10px 0;
@@ -163,15 +167,15 @@ export const ProjectSection = styled.section`
       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
-`
+`;
 
 export const ProjectCard = styled.article`
   color: white;
   background-color: ${(props) => props.theme.colors.primary};
 
   overflow: hidden;
-  width: 90vw;
-  height: 90vh;
+  width: 80vw;
+  padding: 5px;
 
   border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
@@ -226,10 +230,6 @@ export const ProjectCard = styled.article`
 
   .link-button {
     background-color: ${(props) => props.theme.colors.background};
-    font-size: 0.7em;
-    padding: 15px;
-    height: 10px;
-    width: 120px;
     margin: 7px;
   }
 
@@ -371,4 +371,4 @@ export const ProjectCard = styled.article`
       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
-`
+`;

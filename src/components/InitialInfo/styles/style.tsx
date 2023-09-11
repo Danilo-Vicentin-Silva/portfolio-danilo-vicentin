@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const InitialInfoStyle = styled.section`
   text-align: justify;
@@ -10,16 +10,10 @@ export const InitialInfoStyle = styled.section`
   flex-flow: row wrap;
   gap: 15px;
 
-  
-
   img {
     width: 30vw;
     border-radius: 50%;
-  }
-
-  .logo {
-    opacity: 0;
-    display: none;
+    margin: 5px;
   }
 
   #download-cv-button {
@@ -75,4 +69,4 @@ export const InitialInfoStyle = styled.section`
       width: 100%;
     }
   }
-`;
+`
