@@ -1,22 +1,20 @@
-import Project from "./Project";
-import { v4 as uuid } from "uuid";
-import {
-  CordelModernoImages,
-  RacingF1Images,
-  SiteAndroidImages,
-  TaskListImages,
-  TelaLoginImages,
-} from "../../Imports/importImages";
-import { videos } from "../../Imports/ImportVideos";
-import { IoLogoJavascript } from "react-icons/io";
-import { MdOutlineHtml, MdCss } from "react-icons/md";
-import { BiLogoReact } from "react-icons/bi";
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
-import { ProjectsStyled } from "../style/style";
-import { useTranslation } from "react-i18next";
+import Project from "./Project"
+import { v4 as uuid } from "uuid"
+import RacingF1Cover from "../../../assets/images/project-covers/racing-f1.webp"
+import TaskListCover from "../../../assets/images/project-covers/task-list.webp"
+import CordelModernoCover from "../../../assets/images/project-covers/modern-cordel.webp"
+import SiteAndroidCover from "../../../assets/images/project-covers/android-site.webp"
+import LoginScreenCover from "../../../assets/images/project-covers/login-screen.webp"
+import { videos } from "../../Imports/ImportVideos"
+import { IoLogoJavascript } from "react-icons/io"
+import { MdOutlineHtml, MdCss } from "react-icons/md"
+import { BiLogoReact } from "react-icons/bi"
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
+import { ProjectsStyled } from "../style/style"
+import { useTranslation } from "react-i18next"
 
 const Projects = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <ProjectsStyled>
@@ -28,7 +26,7 @@ const Projects = () => {
           title="Racing F1"
           date={t("racingF1Date")}
           description={t("racingF1Description")}
-          images={RacingF1Images}
+          image={RacingF1Cover}
           skillsUsed={[<IoLogoJavascript />, <MdOutlineHtml />, <MdCss />]}
           websiteLink="https://danilo-vicentin-silva.github.io/RacingF1/"
           githubLink="https://github.com/Danilo-Vicentin-Silva/RacingF1"
@@ -41,7 +39,7 @@ const Projects = () => {
           description={t("taskListDescription")}
           githubLink="https://github.com/Danilo-Vicentin-Silva/Task-list"
           websiteLink="https://danilotasklist.netlify.app/"
-          images={TaskListImages}
+          image={TaskListCover}
           skillsUsed={[
             <BiLogoReact />,
             <IoLogoJavascript />,
@@ -58,7 +56,7 @@ const Projects = () => {
           skillsUsed={[<MdOutlineHtml />, <MdCss />, <IoLogoJavascript />]}
           githubLink="https://github.com/Danilo-Vicentin-Silva/Tela-Login"
           websiteLink="https://danilo-vicentin-silva.github.io/Tela-Login/"
-          images={TelaLoginImages}
+          image={LoginScreenCover}
           video={videos.TelaLoginVideo}
           key={uuid()}
         />
@@ -72,7 +70,7 @@ const Projects = () => {
           skillsUsed={[<MdOutlineHtml />, <MdCss />]}
           githubLink="https://github.com/Danilo-Vicentin-Silva/Cordel-Moderno"
           websiteLink="https://danilo-vicentin-silva.github.io/Cordel-Moderno/"
-          images={CordelModernoImages}
+          image={CordelModernoCover}
           video={videos.CordelModernoVideo}
           key={uuid()}
         />
@@ -83,13 +81,13 @@ const Projects = () => {
           githubLink="https://github.com/Danilo-Vicentin-Silva/Site-Android"
           websiteLink="https://danilo-vicentin-silva.github.io/Site-Android/"
           skillsUsed={[<MdOutlineHtml />, <MdCss />]}
-          images={SiteAndroidImages}
+          image={SiteAndroidCover}
           video={videos.SiteAndroidVideo}
           key={uuid()}
         />
       </ul>
     </ProjectsStyled>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

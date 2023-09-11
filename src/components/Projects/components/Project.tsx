@@ -7,7 +7,7 @@ import Video from "./Video"
 interface Props {
   title: string
   date: string
-  images: string[]
+  image: string
   description: string
   skillsUsed?: React.ReactNode[]
   websiteLink: string
@@ -18,7 +18,7 @@ interface Props {
 const Project: React.FC<Props> = ({
   title,
   date,
-  images,
+  image,
   description,
   skillsUsed,
   websiteLink,
@@ -79,11 +79,7 @@ const Project: React.FC<Props> = ({
     >
       <h4>{title}</h4>
 
-      <picture>
-        <source media="(min-width: 1200px)" srcSet={images[0]} />
-        <source media="(min-width: 768px)" srcSet={images[1]} />
-        <img src={images[2]} alt={title} />
-      </picture>
+      <img src={image} alt={title + " project"} />
 
       <div id="info">
         {skillsUsed &&
