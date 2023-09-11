@@ -14,4 +14,9 @@ export const ErrorPageStyle = styled.main`
     text-decoration: none;
     margin: 5px;
   }
+
+  @media (min-width: 768px) {
+    justify-items: center;
+    align-items: center;
+  }
 `
