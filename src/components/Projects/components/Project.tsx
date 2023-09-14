@@ -3,6 +3,7 @@ import CloseIcon from "@mui/icons-material/Close"
 import { Button } from "@mui/joy"
 import { ProjectCard, ProjectSection } from "../style/style"
 import Video from "./Video"
+import { BlurBackground } from "../../../styles/effects/BlurBackrgound"
 
 interface Props {
   title: string
@@ -39,39 +40,37 @@ const Project: React.FC<Props> = ({
   }
 
   return cardState ? (
-    <ProjectCard>
-      {window.innerWidth >= 768 && <Video video={video} />}
-      <div id="card-header">
-        <h4>{title}</h4>
-        <span onClick={() => handleCardState()}>
-          <CloseIcon color="warning" />
-        </span>
-      </div>
-
-      <h5>{date}</h5>
-
-      <hr />
-
-      <div id="skills-section">
-        {skillsUsed &&
-          skillsUsed.map((icon, index) => <span key={index}>{icon}</span>)}
-      </div>
-
-      <p>{description}</p>
-
-      <div id="link-section">
-        <Button className="link-button" variant="outlined">
-          <a href={websiteLink} rel="nofollow" target="_blank">
-            Website
-          </a>
-        </Button>
-        <Button className="link-button" variant="outlined">
-          <a href={githubLink} rel="nofollow" target="_blank">
-            Github
-          </a>
-        </Button>
-      </div>
-    </ProjectCard>
+    <>
+      <BlurBackground />
+      <ProjectCard>
+        {window.innerWidth >= 768 && <Video video={video} />}
+        <div id="card-header">
+          <h4>{title}</h4>
+          <span onClick={() => handleCardState()}>
+            <CloseIcon color="warning" />
+          </span>
+        </div>
+        <h5>{date}</h5>
+        <hr />
+        <div id="skills-section">
+          {skillsUsed &&
+            skillsUsed.map((icon, index) => <span key={index}>{icon}</span>)}
+        </div>
+        <p>{description}</p>
+        <div id="link-section">
+          <Button className="link-button" variant="outlined">
+            <a href={websiteLink} rel="nofollow" target="_blank">
+              Website
+            </a>
+          </Button>
+          <Button className="link-button" variant="outlined">
+            <a href={githubLink} rel="nofollow" target="_blank">
+              Github
+            </a>
+          </Button>
+        </div>
+      </ProjectCard>
+    </>
   ) : (
     <ProjectSection
       className="project-section"

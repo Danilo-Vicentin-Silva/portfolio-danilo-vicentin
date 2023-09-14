@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./services/i18n/index"
 import ErrorPage from "./pages/ErrorPage.tsx"
 import ScrollTop from "./components/BackOnTop/components/BackOnTop.tsx"
+
 const router = createBrowserRouter([
   {
     path: "/",

@@ -1,12 +1,12 @@
-import { useTranslation } from "react-i18next";
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
-import { SKillsStyled } from "../style/style";
-import Skill from "./Skill";
-import { SkillList } from "./SkillsList";
+import { useTranslation } from "react-i18next"
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
+import { SKillsStyled } from "../style/SkillsStyled"
+import Skill from "./Skill"
+import { SkillList } from "./SkillsList"
 
 const Skills = () => {
-  const skillsList = SkillList();
-  const { t } = useTranslation();
+  const skillsList = SkillList()
+  const { t } = useTranslation()
 
   return (
     <SKillsStyled>
@@ -23,6 +23,6 @@ const Skills = () => {
         ))}
       </ul>
     </SKillsStyled>
-  );
-};
-export default Skills;
+  )
+}
+export default Skills

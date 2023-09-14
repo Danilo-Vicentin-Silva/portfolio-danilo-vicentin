@@ -48,6 +48,8 @@
     "comebackTo": "Comeback to the",
     "paginaPrincipal": "Home Page",
     "mainPage": "Main Page",
-    "orComebackLater": "or come back later"
+    "orComebackLater": "or come back later",
+    "dataGalaxyDate": "September 9, 2023",
+    "dataGalaxyDescription": "My first website developed using Next.js technology, this website pulls data from an API that contains information about Star Wars characters. Simple website for setting ideals to be professionally applied in future real projects."
   }
 }

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const ProjectsStyled = styled.section`
   position: relative;
@@ -32,7 +32,7 @@ export const ProjectsStyled = styled.section`
       gap: 20px;
     }
   }
-`;
+`
 
 export const ProjectSection = styled.section`
   margin: 10px 0;
@@ -167,7 +167,7 @@ export const ProjectSection = styled.section`
       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
-`;
+`
 
 export const ProjectCard = styled.article`
   color: white;
@@ -175,7 +175,7 @@ export const ProjectCard = styled.article`
 
   overflow: hidden;
   width: 80vw;
-  padding: 5px;
+  backdrop-filter: blur(20px);
 
   border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
@@ -371,4 +371,4 @@ export const ProjectCard = styled.article`
       box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
     }
   }
-`;
+`

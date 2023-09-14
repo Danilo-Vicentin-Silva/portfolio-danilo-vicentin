@@ -1,16 +1,22 @@
-import { useTranslation } from "react-i18next";
+import { SiNextdotjs } from "react-icons/si"
+import { useTranslation } from "react-i18next"
 import {
   BiLogoTypescript,
   BiLogoCss3,
   BiLogoReact,
   BiLogoHtml5,
-} from "react-icons/bi";
-import { RiJavascriptFill } from "react-icons/ri";
+} from "react-icons/bi"
+import { RiJavascriptFill } from "react-icons/ri"
 
 export const SkillList = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return [
+    {
+      title: "Next.js",
+      icon: <SiNextdotjs />,
+      description: "Framework Fullstack",
+    },
     {
       title: "React",
       icon: <BiLogoReact />,
@@ -36,5 +42,5 @@ export const SkillList = () => {
       icon: <BiLogoHtml5 />,
       description: t("html5Description"),
     },
-  ];
-};
+  ]
+}
