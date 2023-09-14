@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const AboutMeStyle = styled.section`
   p {
     text-align: justify;
+    word-spacing: 7px;
     margin: 10px;
   }
   @media (min-width: 768px) {
