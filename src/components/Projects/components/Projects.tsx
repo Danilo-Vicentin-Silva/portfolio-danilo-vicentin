@@ -1,7 +1,6 @@
 import { DiCss3 } from "react-icons/di"
 import { AiFillHtml5 } from "react-icons/ai"
 import { FaJsSquare } from "react-icons/fa"
-import { IoLogoJavascript } from "react-icons/io"
 import { FaReact } from "react-icons/fa"
 import { SiNextdotjs, SiTypescript } from "react-icons/si"
 import Project from "./Project"
@@ -12,7 +11,6 @@ import CordelModernoCover from "../../../assets/images/project-covers/modern-cor
 import SiteAndroidCover from "../../../assets/images/project-covers/android-site.webp"
 import LoginScreenCover from "../../../assets/images/project-covers/login-screen.webp"
 import { videos } from "../../Imports/ImportVideos"
-import { MdOutlineHtml, MdCss } from "react-icons/md"
 import { BiLogoReact } from "react-icons/bi"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { ProjectsStyled } from "../style/style"
@@ -34,6 +32,7 @@ const Projects = () => {
           description={t("dataGalaxyDescription")}
           image={DataGalaxyCover}
           skillsUsed={[<SiNextdotjs />, <SiTypescript />, <FaReact />]}
+          skillsName={["Next.js", "Typescript", "React"]}
           websiteLink="https://data-galaxy.vercel.app/"
           githubLink="https://github.com/Danilo-Vicentin-Silva/Data-Galaxy"
           video={videos.DataGalaxyVideo}
@@ -45,6 +44,7 @@ const Projects = () => {
           description={t("racingF1Description")}
           image={RacingF1Cover}
           skillsUsed={[<FaJsSquare />, <AiFillHtml5 />, <DiCss3 />]}
+          skillsName={["JavaScript", "HTML", "CSS"]}
           websiteLink="https://danilo-vicentin-silva.github.io/RacingF1/"
           githubLink="https://github.com/Danilo-Vicentin-Silva/RacingF1"
           video={videos.RacingF1Video}
@@ -58,6 +58,7 @@ const Projects = () => {
           websiteLink="https://danilotasklist.netlify.app/"
           image={TaskListCover}
           skillsUsed={[<BiLogoReact />, <SiTypescript />]}
+          skillsName={["React", "Typescript"]}
           video={videos.TaskListVideo}
           key={uuid()}
         />
@@ -69,6 +70,7 @@ const Projects = () => {
           description={t("loginScreenDescription")}
           date={t("loginScreenDate")}
           skillsUsed={[<AiFillHtml5 />, <DiCss3 />]}
+          skillsName={["HTML", "CSS"]}
           githubLink="https://github.com/Danilo-Vicentin-Silva/Tela-Login"
           websiteLink="https://danilo-vicentin-silva.github.io/Tela-Login/"
           image={LoginScreenCover}
@@ -80,6 +82,7 @@ const Projects = () => {
           description={t("brazilianCordelDescription")}
           date={t("brazilianCordelDate")}
           skillsUsed={[<AiFillHtml5 />, <DiCss3 />]}
+          skillsName={["HTML", "CSS"]}
           githubLink="https://github.com/Danilo-Vicentin-Silva/Cordel-Moderno"
           websiteLink="https://danilo-vicentin-silva.github.io/Cordel-Moderno/"
           image={CordelModernoCover}
@@ -93,6 +96,7 @@ const Projects = () => {
           githubLink="https://github.com/Danilo-Vicentin-Silva/Site-Android"
           websiteLink="https://danilo-vicentin-silva.github.io/Site-Android/"
           skillsUsed={[<AiFillHtml5 />, <DiCss3 />]}
+          skillsName={["HTML", "CSS"]}
           image={SiteAndroidCover}
           video={videos.SiteAndroidVideo}
           key={uuid()}

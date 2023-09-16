@@ -1,6 +1,7 @@
+import { BsGithub } from "react-icons/bs"
+import { AiOutlineLink } from "react-icons/ai"
+import { AiOutlineCloseCircle } from "react-icons/ai"
 import * as React from "react"
-import CloseIcon from "@mui/icons-material/Close"
-import { Button } from "@mui/joy"
 import { ProjectCard, ProjectSection } from "../style/style"
 import Video from "./Video"
 import { BlurBackground } from "../../../styles/effects/BlurBackrgound"
@@ -10,7 +11,8 @@ interface Props {
   date: string
   image: string
   description: string
-  skillsUsed?: React.ReactNode[]
+  skillsUsed: React.ReactNode[]
+  skillsName: string[]
   websiteLink: string
   githubLink: string
   video: string
@@ -22,6 +24,7 @@ const Project: React.FC<Props> = ({
   image,
   description,
   skillsUsed,
+  skillsName,
   websiteLink,
   githubLink,
   video,
@@ -42,32 +45,43 @@ const Project: React.FC<Props> = ({
   return cardState ? (
     <>
       <BlurBackground />
-      <ProjectCard>
+      <ProjectCard imageUrl={image}>
         {window.innerWidth >= 768 && <Video video={video} />}
         <div id="card-header">
-          <h4>{title}</h4>
+          <div>
+            <h4>{title}</h4>
+            <h5>{date}</h5>
+          </div>
           <span onClick={() => handleCardState()}>
-            <CloseIcon color="warning" />
+            <AiOutlineCloseCircle />
           </span>
         </div>
-        <h5>{date}</h5>
-        <hr />
-        <div id="skills-section">
-          {skillsUsed &&
-            skillsUsed.map((icon, index) => <span key={index}>{icon}</span>)}
-        </div>
+
         <p>{description}</p>
+        <hr />
+
+        <div id="skills-section">
+          <ul>
+            {skillsName &&
+              skillsName.map((name, index) => (
+                <li key={index}>
+                  <span>{name}</span>
+                </li>
+              ))}
+          </ul>
+        </div>
+
         <div id="link-section">
-          <Button className="link-button" variant="outlined">
+          <span>
             <a href={websiteLink} rel="nofollow" target="_blank">
-              Website
+              <AiOutlineLink />
             </a>
-          </Button>
-          <Button className="link-button" variant="outlined">
+          </span>
+          <span>
             <a href={githubLink} rel="nofollow" target="_blank">
-              Github
+              <BsGithub />
             </a>
-          </Button>
+          </span>
         </div>
       </ProjectCard>
     </>
