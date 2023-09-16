@@ -238,13 +238,16 @@ export const ProjectCard = styled.article<{ imageUrl: string }>`
   }
 
   #skills-section ul li {
-    color: ${(props) => props.theme.colors.text};
-    background-color: ${(props) => props.theme.colors.secundary};
+    background-color: ${(props) => props.theme.colors.tertiary};
     padding: 5px;
     border-radius: 15px;
     -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.405);
     -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.478);
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.383);
+  }
+
+  #skills-section span {
+    color: white;
   }
 
   #link-section {
@@ -260,7 +263,7 @@ export const ProjectCard = styled.article<{ imageUrl: string }>`
   }
 
   #link-section a {
-    color: ${(props) => props.theme.colors.secundary};
+    color: ${(props) => props.theme.colors.tertiary};
   }
 
   #link-section a:hover {

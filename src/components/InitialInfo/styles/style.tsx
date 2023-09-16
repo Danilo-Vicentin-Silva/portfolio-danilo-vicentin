@@ -8,12 +8,15 @@ export const InitialInfoStyle = styled.section`
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  gap: 15px;
 
   img {
     width: 30vw;
     border-radius: 50%;
-    margin: 5px;
+    margin: 10px;
+
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
   #download-cv-button {
