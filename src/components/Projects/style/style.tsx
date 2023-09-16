@@ -3,6 +3,10 @@ import styled from "styled-components"
 export const ProjectsStyled = styled.section`
   position: relative;
 
+  h4 {
+    margin: 5px;
+  }
+
   ul {
     display: flex;
     flex-flow: row wrap;
@@ -165,85 +169,105 @@ export const ProjectSection = styled.section`
   }
 `
 
-export const ProjectCard = styled.article`
+export const ProjectCard = styled.article<{ imageUrl: string }>`
   color: white;
   background-color: ${(props) => props.theme.colors.primary};
 
   overflow: hidden;
-  width: 90vw;
-  height: 90vh;
+  width: 80vw;
 
-  border: 1px solid ${(props) => props.theme.colors.tertiary};
   border-radius: 7px 20px;
   box-shadow: 0px 0px 300px 0px rgba(0, 0, 0, 0.75);
 
   position: fixed;
-  top: 5%;
-  left: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 9999;
 
-  h4 {
-    font-size: 1.5em;
-    text-align: justify;
-    height: 0;
-  }
-
-  h5 {
-    text-align: left;
-    margin-left: 50px;
-    height: 0;
-    font-size: 0.5em;
-  }
-
   #card-header {
+    background: url(${(props) => props.imageUrl}) no-repeat;
+    background-size: cover;
+
+    height: 150px;
+    padding: 15px;
+
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    height: 70px;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
 
-  hr {
-    margin: 10px;
-  }
-
-  #skills-section {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    align-items: center;
-    padding: 10px;
-  }
-
-  #skills-section span {
+  #card-header span {
     font-size: 2em;
   }
 
+  #card-header span:hover {
+    color: ${(props) => props.theme.colors.secundary};
+  }
+
+  #card-header h4 {
+    font-size: 1.2em;
+  }
+
+  #card-header h5 {
+    color: #ffffffba;
+    font-size: 0.6em;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    height: 0;
+  }
+
   p {
-    text-align: justify;
+    text-align: left;
     margin: 15px;
   }
 
-  .link-button {
-    background-color: ${(props) => props.theme.colors.background};
-    font-size: 0.7em;
-    padding: 15px;
-    height: 10px;
-    width: 120px;
-    margin: 7px;
+  hr {
+    width: 90%;
   }
 
-  .link-button a {
-    color: ${(props) => props.theme.colors.text};
-    text-decoration: none;
+  #skills-section ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
+    margin: 15px;
   }
 
-  .link-button:hover {
-    background-color: ${(props) => props.theme.colors.secundary};
+  #skills-section ul li {
+    background-color: ${(props) => props.theme.colors.tertiary};
+    padding: 5px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.405);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.478);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.383);
   }
 
-  .link-button a:hover {
+  #skills-section span {
     color: white;
+  }
+
+  #link-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    padding: 10px;
+  }
+
+  #link-section span {
+    font-size: 1.5em;
+  }
+
+  #link-section a {
+    color: ${(props) => props.theme.colors.tertiary};
+  }
+
+  #link-section a:hover {
+    color: ${(props) => props.theme.colors.text};
   }
 
   @media (min-width: 768px) {
@@ -253,57 +277,61 @@ export const ProjectCard = styled.article`
     align-items: center;
     gap: 10px;
 
+    top: 5%;
+    left: 20%;
+
     animation: scale-up-center1 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     box-shadow: 0px 0px 300px -10px rgba(0, 0, 0, 0.75);
 
     video {
-      display: flex;
-      width: 100%;
-      height: 200px;
+      z-index: -1;
+
+      width: 105%;
+      height: 350px;
       object-fit: cover;
     }
 
     #card-header {
-      padding: 20px;
+      background: none;
+      width: 95%;
       height: 0;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    #card-header h4,
+    h5 {
+      background-color: #00000079;
+      padding: 10px;
+      border-radius: 7px;
     }
 
     #card-header span {
-      background-color: #0000007c;
+      background-color: #0000003e;
 
       display: flex;
       align-items: center;
       justify-content: center;
 
       padding: 5px;
-      border-radius: 10px;
-
-      position: absolute;
-      top: 15px;
-      left: 93%;
-    }
-
-    h5 {
-      display: block;
-    }
-
-    hr {
-      width: 90%;
+      border-radius: 100%;
     }
 
     p {
-      width: 50vw;
-      margin: 0;
-    }
-
-    #skills-section {
-      padding: 0;
+      width: 50%;
       margin: 0;
     }
 
     #link-section {
-      width: 100%;
+      width: 90%;
     }
+
     @media (min-width: 1990px) {
       max-width: 70vw;
       max-height: 70vh;

@@ -1,15 +1,18 @@
+import { BsGithub } from "react-icons/bs"
+import { AiOutlineLink } from "react-icons/ai"
+import { AiOutlineCloseCircle } from "react-icons/ai"
 import * as React from "react"
-import CloseIcon from "@mui/icons-material/Close"
-import { Button } from "@mui/joy"
 import { ProjectCard, ProjectSection } from "../style/style"
 import Video from "./Video"
+import { BlurBackground } from "../../../styles/effects/BlurBackrgound"
 
 interface Props {
   title: string
   date: string
-  images: string[]
+  image: string
   description: string
-  skillsUsed?: React.ReactNode[]
+  skillsUsed: React.ReactNode[]
+  skillsName: string[]
   websiteLink: string
   githubLink: string
   video: string
@@ -18,9 +21,10 @@ interface Props {
 const Project: React.FC<Props> = ({
   title,
   date,
-  images,
+  image,
   description,
   skillsUsed,
+  skillsName,
   websiteLink,
   githubLink,
   video,
@@ -39,39 +43,48 @@ const Project: React.FC<Props> = ({
   }
 
   return cardState ? (
-    <ProjectCard>
-      {window.innerWidth >= 768 && <Video video={video} />}
-      <div id="card-header">
-        <h4>{title}</h4>
-        <span onClick={() => handleCardState()}>
-          <CloseIcon color="warning" />
-        </span>
-      </div>
+    <>
+      <BlurBackground />
+      <ProjectCard imageUrl={image}>
+        {window.innerWidth >= 768 && <Video video={video} />}
+        <div id="card-header">
+          <div>
+            <h4>{title}</h4>
+            <h5>{date}</h5>
+          </div>
+          <span onClick={() => handleCardState()}>
+            <AiOutlineCloseCircle />
+          </span>
+        </div>
 
-      <h5>{date}</h5>
+        <p>{description}</p>
+        <hr />
 
-      <hr />
+        <div id="skills-section">
+          <ul>
+            {skillsName &&
+              skillsName.map((name, index) => (
+                <li key={index}>
+                  <span>{name}</span>
+                </li>
+              ))}
+          </ul>
+        </div>
 
-      <div id="skills-section">
-        {skillsUsed &&
-          skillsUsed.map((icon, index) => <span key={index}>{icon}</span>)}
-      </div>
-
-      <p>{description}</p>
-
-      <div id="link-section">
-        <Button className="link-button" variant="outlined">
-          <a href={websiteLink} rel="nofollow" target="_blank">
-            Website
-          </a>
-        </Button>
-        <Button className="link-button" variant="outlined">
-          <a href={githubLink} rel="nofollow" target="_blank">
-            Github
-          </a>
-        </Button>
-      </div>
-    </ProjectCard>
+        <div id="link-section">
+          <span>
+            <a href={websiteLink} rel="nofollow" target="_blank">
+              <AiOutlineLink />
+            </a>
+          </span>
+          <span>
+            <a href={githubLink} rel="nofollow" target="_blank">
+              <BsGithub />
+            </a>
+          </span>
+        </div>
+      </ProjectCard>
+    </>
   ) : (
     <ProjectSection
       className="project-section"
@@ -79,11 +92,7 @@ const Project: React.FC<Props> = ({
     >
       <h4>{title}</h4>
 
-      <picture>
-        <source media="(min-width: 1200px)" srcSet={images[0]} />
-        <source media="(min-width: 768px)" srcSet={images[1]} />
-        <img src={images[2]} alt={title} />
-      </picture>
+      <img src={image} alt={title + " project"} />
 
       <div id="info">
         {skillsUsed &&

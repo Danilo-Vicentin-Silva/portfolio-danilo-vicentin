@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const TopicSeparatorStyled = styled.section`
   color: ${(props) => props.theme.colors.secundary};
+  margin: 5px;
 
   h3 {
     margin-top: 50px;

@@ -1,30 +1,23 @@
-import * as React from "react";
-import AboutMe from "../components/AboutMe/components/AboutMe";
-import Header from "../components/Header/components/Header";
-import InitialInfo from "../components/InitialInfo/components/InitialInfo";
-import Skills from "../components/Skills/components/Skills";
-import { GlobalStyle } from "../styles/GlobalStyle";
-import { ThemeProvider } from "styled-components";
-import light from "../styles/themes/light";
-import dark from "../styles/themes/dark";
-import Nav from "../components/Nav/components/Nav";
-import Projects from "../components/Projects/components/Projects";
-import Contacts from "../components/Contacts/components/Contacts";
-import ContactForm from "../components/Contacts/components/ContactForm";
-import Footer from "../components/Footer/components/Footer";
-import ScrollTop from "../components/BackOnTop/components/BackOnTop";
+import AboutMe from "../components/AboutMe/components/AboutMe"
+import InitialInfo from "../components/InitialInfo/components/InitialInfo"
+import Skills from "../components/Skills/components/Skills"
+import Nav from "../components/Nav/components/Nav"
+import Projects from "../components/Projects/components/Projects"
+import Contacts from "../components/Contacts/components/Contacts"
+import ContactForm from "../components/Contacts/components/ContactForm"
+import Footer from "../components/Footer/components/Footer"
+import Header from "../components/Header/components/Header"
+import useTheme from "../hooks/useTheme"
+import { ThemeProvider } from "styled-components"
+import { GlobalStyle } from "../styles/GlobalStyle"
 
 const Home = () => {
-  const [theme, setTheme] = React.useState(dark);
-  const toggleTheme = () => {
-    setTheme(theme.title === "light" ? dark : light);
-  };
+  const { theme, switchTheme } = useTheme()
 
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <ScrollTop />
-      <Header toggleTheme={toggleTheme} />
+      <Header toggleTheme={switchTheme} />
       <main>
         <InitialInfo />
         <Nav />
@@ -42,7 +35,7 @@ const Home = () => {
       </main>
       <Footer />
     </ThemeProvider>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

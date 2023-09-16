@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const InitialInfoStyle = styled.section`
   text-align: justify;
@@ -8,18 +8,15 @@ export const InitialInfoStyle = styled.section`
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  gap: 15px;
-
-  
 
   img {
     width: 30vw;
     border-radius: 50%;
-  }
+    margin: 10px;
 
-  .logo {
-    opacity: 0;
-    display: none;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   }
 
   #download-cv-button {
@@ -75,4 +72,4 @@ export const InitialInfoStyle = styled.section`
       width: 100%;
     }
   }
-`;
+`

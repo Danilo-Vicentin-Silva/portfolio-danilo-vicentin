@@ -44,6 +44,12 @@
     "modernWebsitesTitle": "Modern Websites",
     "modernWebsitesDescritpion": "Using the latest techniques and technologies on the market, the promise of building a completely modern, fast and efficient website is fulfilled. I'm always updating my collection of tools to guarantee a Modern Site",
     "supportTitle": "Support",
-    "supportDescription": "Even after 'finished', I offer post-project support to ensure that the project stays alive and within the desired range."
+    "supportDescription": "Even after 'finished', I offer post-project support to ensure that the project stays alive and within the desired range.",
+    "comebackTo": "Comeback to the",
+    "paginaPrincipal": "Home Page",
+    "mainPage": "Main Page",
+    "orComebackLater": "or come back later",
+    "dataGalaxyDate": "September 9, 2023",
+    "dataGalaxyDescription": "My first website developed using Next.js technology, this website pulls data from an API that contains information about Star Wars characters. Simple website for setting ideals to be professionally applied in future real projects."
   }
 }
