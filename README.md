@@ -4,9 +4,9 @@ Olá! Sou Danilo, desenvolvedor de sites. Desenvolvedor Web Front End focado em 
 
 ## Acessando/Executando o site
 
-- Voce pode acessar [aqui](https://danilovicentinsilva.netlify.app/)
+- Voce pode acessar [aqui](https://portfolio-danilo-vicentin.vercel.app/)
 
-<img src="/src/assets/images/project-cover.webp" alt="Projeto"/>
+<img src="src/assets/images/project-covers/project.webp" alt="Projeto"/>
 
 ### Tecnologias Usadas
 
