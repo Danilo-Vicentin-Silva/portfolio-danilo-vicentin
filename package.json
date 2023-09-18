@@ -23,6 +23,7 @@
     "@mui/styled-engine-sc": "^5.14.8",
     "@mui/system": "^5.14.8",
     "@react-spring/web": "^9.7.3",
+    "@vercel/analytics": "^1.0.2",
     "i18next": "^23.4.4",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

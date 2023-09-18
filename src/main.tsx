@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import "./services/i18n/index"
 import ErrorPage from "./pages/ErrorPage.tsx"
 import ScrollTop from "./components/BackOnTop/components/BackOnTop.tsx"
+import { Analytics } from "@vercel/analytics/react"
 
 const router = createBrowserRouter([
   {
@@ -18,5 +19,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <ScrollTop />
     <RouterProvider router={router} />
+    <Analytics />
   </React.StrictMode>
 )
