@@ -1,29 +1,29 @@
-import * as React from "react";
-import emailjs from "@emailjs/browser";
-import { Alert, Button, TextField } from "@mui/material";
-import { ContactFormStyle } from "../style/style";
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator";
-import DeleteIcon from "@mui/icons-material/Delete";
-import SendIcon from "@mui/icons-material/Send";
-import { useTranslation } from "react-i18next";
+import * as React from "react"
+import emailjs from "@emailjs/browser"
+import { Alert, Button, TextField } from "@mui/material"
+import { ContactFormStyle } from "../style/style"
+import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
+import DeleteIcon from "@mui/icons-material/Delete"
+import SendIcon from "@mui/icons-material/Send"
+import { useTranslation } from "react-i18next"
 
 const ContactForm = () => {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
-  const [sendStatus, setSendStatus] = React.useState(false);
-  const [errorStatus, setErrorStatus] = React.useState(false);
+  const [name, setName] = React.useState("")
+  const [email, setEmail] = React.useState("")
+  const [message, setMessage] = React.useState("")
+  const [sendStatus, setSendStatus] = React.useState(false)
+  const [errorStatus, setErrorStatus] = React.useState(false)
 
   const sendEmail = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
+    e.preventDefault()
     if (name === "" || email === "" || message === "") {
-      handleSetErrorStatus();
+      handleSetErrorStatus()
     } else {
       const templateParams = {
         from_name: name,
         message: message,
         email: email,
-      };
+      }
       emailjs
         .send(
           "service_ytp2g72",
@@ -31,33 +31,33 @@ const ContactForm = () => {
           templateParams,
           "wIQCNcAh30t4NsnyC"
         )
-        .then(
-          () => {
-            handleSetSendStatus();
-            setName("");
-            setEmail("");
-            setMessage("");
-          },
-          (error) => console.error(error)
-        );
+        .then(() => {
+          handleSetSendStatus()
+          setName("")
+          setEmail("")
+          setMessage("")
+        })
+        .catch(() => {
+          handleSetErrorStatus()
+        })
     }
-  };
+  }
 
   const handleSetSendStatus = () => {
-    setSendStatus(true);
+    setSendStatus(true)
     setTimeout(() => {
-      setSendStatus(false);
-    }, 2500);
-  };
+      setSendStatus(false)
+    }, 2500)
+  }
 
   const handleSetErrorStatus = () => {
-    setErrorStatus(true);
+    setErrorStatus(true)
     setTimeout(() => {
-      setErrorStatus(false);
-    }, 2500);
-  };
+      setErrorStatus(false)
+    }, 2500)
+  }
 
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <ContactFormStyle>
@@ -118,7 +118,7 @@ const ContactForm = () => {
         </Alert>
       )}
     </ContactFormStyle>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
