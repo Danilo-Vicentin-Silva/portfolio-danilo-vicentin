@@ -4,4 +4,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://danilovicentinsilva.netlify.app/sitemap.xml
+Sitemap: https://portfolio-danilo-vicentin.vercel.app/sitemap.xml
