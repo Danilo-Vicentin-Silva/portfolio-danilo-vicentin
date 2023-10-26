@@ -34,21 +34,23 @@ const Projects = () => {
       </ul>
 
       <h5>{t("moreProjects")}</h5>
-      {moreProjects.map((project, i) => (
-        <li key={i}>
-          <Project
-            title={project.title}
-            date={project.date}
-            image={project.image}
-            description={project.description}
-            skillsUsed={project.skillsUsed}
-            skillsName={project.skillsName}
-            websiteLink={project.websiteLink}
-            githubLink={project.githubLink}
-            video={project.video}
-          />
-        </li>
-      ))}
+      <ul>
+        {moreProjects.map((project, i) => (
+          <li key={i}>
+            <Project
+              title={project.title}
+              date={project.date}
+              image={project.image}
+              description={project.description}
+              skillsUsed={project.skillsUsed}
+              skillsName={project.skillsName}
+              websiteLink={project.websiteLink}
+              githubLink={project.githubLink}
+              video={project.video}
+            />
+          </li>
+        ))}
+      </ul>
     </ProjectsStyled>
   )
 }

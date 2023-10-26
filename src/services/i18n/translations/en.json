@@ -52,6 +52,7 @@
     "dataGalaxyDate": "September 9, 2023",
     "dataGalaxyDescription": "My first website developed using Next.js technology, this website pulls data from an API that contains information about Star Wars characters. Simple website for setting ideals to be professionally applied in future real projects.",
     "figmaDescription": "UX/UI website prototyping tool",
-    "wordpressDescription": "CMS for website creation"
+    "wordpressDescription": "CMS for website creation",
+    "tailwindDescription": "CSS Framework"
   }
 }

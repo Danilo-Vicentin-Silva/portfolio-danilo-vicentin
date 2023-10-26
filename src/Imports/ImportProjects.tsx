@@ -1,3 +1,4 @@
+import { SiTailwindcss } from "react-icons/si"
 import { useTranslation } from "react-i18next"
 import {
   BiLogoCss3,
@@ -42,6 +43,11 @@ export const SkillList = () => {
       title: "Figma",
       icon: <SiFigma />,
       description: t("figmaDescription"),
+    },
+    {
+      title: "Tailwind",
+      icon: <SiTailwindcss />,
+      description: t("tailwindDescription"),
     },
     {
       title: "CSS3",
@@ -99,6 +105,42 @@ export const ProjectsList = () => {
       skillsUsed: [<BiLogoReact />, <SiTypescript />],
       skillsName: ["React", "Typescript"],
       video: videos.TaskListVideo,
+      key: uuid(),
+    },
+    {
+      title: t("loginScreenTitle"),
+      description: t("loginScreenDescription"),
+      date: t("loginScreenDate"),
+      skillsUsed: [<AiFillHtml5 />, <DiCss3 />],
+      skillsName: ["HTML", "CSS"],
+      githubLink: "https://github.com/Danilo-Vicentin-Silva/Tela-Login",
+      websiteLink: "https://danilo-vicentin-silva.github.io/Tela-Login/",
+      image: projectsCovers.LoginScreenCover,
+      video: videos.TelaLoginVideo,
+      key: uuid(),
+    },
+    {
+      title: t("brazilianCordelTitle"),
+      description: t("brazilianCordelDescription"),
+      date: t("brazilianCordelDate"),
+      skillsUsed: [<AiFillHtml5 />, <DiCss3 />],
+      skillsName: ["HTML", "CSS"],
+      githubLink: "https://github.com/Danilo-Vicentin-Silva/Cordel-Moderno",
+      websiteLink: "https://danilo-vicentin-silva.github.io/Cordel-Moderno/",
+      image: projectsCovers.CordelModernoCover,
+      video: videos.CordelModernoVideo,
+      key: uuid(),
+    },
+    {
+      title: t("websiteAndroidTitle"),
+      description: t("websiteAndroidDescription"),
+      date: t("websiteAndroidDate"),
+      githubLink: "https://github.com/Danilo-Vicentin-Silva/Site-Android",
+      websiteLink: "https://danilo-vicentin-silva.github.io/Site-Android/",
+      skillsUsed: [<AiFillHtml5 />, <DiCss3 />],
+      skillsName: ["HTML", "CSS"],
+      image: projectsCovers.SiteAndroidCover,
+      video: videos.SiteAndroidVideo,
       key: uuid(),
     },
   ]

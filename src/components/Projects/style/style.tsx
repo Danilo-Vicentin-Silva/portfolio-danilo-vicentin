@@ -51,7 +51,7 @@ export const ProjectSection = styled.section`
       both;
   }
 
-  h4 {
+  #project-title {
     color: white;
     font-size: 1.5em;
     text-decoration: overline;
@@ -67,7 +67,7 @@ export const ProjectSection = styled.section`
   }
 
   #info {
-    color: white;
+    color: ${(props) => props.theme.colors.text};
     font-size: 2em;
 
     width: 100%;
@@ -87,14 +87,19 @@ export const ProjectSection = styled.section`
     }
   }
 
+  #info ul,
+  h4 {
+    background-color: #0000005f;
+    border-radius: 5px;
+    padding: 8px 5px 0 5px;
+  }
+
   @media (min-width: 768px) {
     width: 30vw;
-    height: 230px;
     animation: card-entry 1s ease-in-out;
 
     img {
       width: 100%;
-      
     }
 
     h4 {
