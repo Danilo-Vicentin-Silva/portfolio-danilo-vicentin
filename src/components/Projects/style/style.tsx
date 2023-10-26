@@ -40,15 +40,13 @@ export const ProjectSection = styled.section`
   cursor: pointer;
 
   img {
-    border: 1px solid ${(props) => props.theme.colors.tertiary};
-    border-radius: 7px 20px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid ${(props) => props.theme.colors.secundary};
 
     width: 90vw;
   }
 
   img:hover {
-    border: 1px solid ${(props) => props.theme.colors.primary};
-
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
   }
@@ -91,10 +89,12 @@ export const ProjectSection = styled.section`
 
   @media (min-width: 768px) {
     width: 30vw;
+    height: 230px;
     animation: card-entry 1s ease-in-out;
 
     img {
-      width: 30vw;
+      width: 100%;
+      
     }
 
     h4 {

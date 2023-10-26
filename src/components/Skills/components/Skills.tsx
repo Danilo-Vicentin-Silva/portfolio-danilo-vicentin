@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { SKillsStyled } from "../style/SkillsStyled"
 import Skill from "./Skill"
-import { SkillList } from "./SkillsList"
+import { SkillList } from "../../../Imports/ImportProjects"
 
 const Skills = () => {
   const skillsList = SkillList()
