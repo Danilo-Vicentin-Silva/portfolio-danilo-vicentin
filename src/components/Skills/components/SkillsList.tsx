@@ -1,4 +1,4 @@
-import { SiNextdotjs } from "react-icons/si"
+import { SiNextdotjs, SiFigma, SiWordpress } from "react-icons/si"
 import { useTranslation } from "react-i18next"
 import {
   BiLogoTypescript,
@@ -33,6 +33,11 @@ export const SkillList = () => {
       description: t("javascriptDescription"),
     },
     {
+      title: "Figma",
+      icon: <SiFigma />,
+      description: t("figmaDescription"),
+    },
+    {
       title: "CSS3",
       icon: <BiLogoCss3 />,
       description: t("css3Description"),
@@ -42,5 +47,10 @@ export const SkillList = () => {
       icon: <BiLogoHtml5 />,
       description: t("html5Description"),
     },
+    {
+      title: "Wordpress",
+      icon: <SiWordpress />,
+      description: t("wordpressDescription"),
+    }
   ]
 }
