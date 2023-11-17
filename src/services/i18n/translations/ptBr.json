@@ -1,5 +1,7 @@
 {
   "translation": {
+    "landingPageDate": "09 de Outubro de 2023",
+    "landingPageDescription": "Projeto de um exemplo prático de uma landing page criada usando a tecnologia Next.js e Tailwindcss para estilização. Um site propositalmente bem simples.",
     "hello": "Olá, meu nome é",
     "myName": "Danilo Vicentin da Silva",
     "downloadCV": "Baixe meu currículo!",

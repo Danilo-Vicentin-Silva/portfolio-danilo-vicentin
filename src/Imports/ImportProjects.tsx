@@ -72,6 +72,18 @@ export const ProjectsList = () => {
 
   return [
     {
+      title: "Landing Page",
+      date: t("landingPageDate"),
+      description: t("landingPageDescription"),
+      image: projectsCovers.LandingPageCover,
+      skillsUsed: [<SiNextdotjs />, <SiTypescript />, <SiTailwindcss />, <SiFigma />],
+      skillsName: ["Next.js", "Typescript", "Tailwind", "Figma"],
+      websiteLink: "https://danilo-vicentin-silva.github.io/LandingPage/",
+      githubLink: "https://github.com/Danilo-Vicentin-Silva/LandingPage",
+      video: videos.LandingPageVideo,
+      key: uuid(),
+    },
+    {
       title: "Data Galaxy",
       date: t("dataGalaxyDate"),
       description: t("dataGalaxyDescription"),
@@ -143,5 +155,5 @@ export const ProjectsList = () => {
       video: videos.SiteAndroidVideo,
       key: uuid(),
     },
-  ]
+  ];
 }

@@ -100,8 +100,8 @@ const Project: React.FC<Props> = ({
         <ul>
           {skillsUsed &&
             skillsUsed.map((icon, index) => (
-              <li>
-                <span key={index}>{icon}</span>
+              <li key={index}>
+                <span>{icon}</span>
               </li>
             ))}
         </ul>

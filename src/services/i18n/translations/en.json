@@ -1,5 +1,7 @@
 {
   "translation": {
+    "landingPageDate": "Octyber 09, 2023",
+    "landingPageDescription": "Practical example of a landing page designed using the Next.js Framework and styling with Tailwind CSS",
     "hello": "Hi! My name is",
     "myName": "Danilo Vicentin da Silva",
     "downloadCV": "Download my CV!",
