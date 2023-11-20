@@ -1,3 +1,4 @@
+import Logo from "../../../assets/images/logo.webp"
 import * as React from "react"
 import ToggleThemeButton from "./ToggleThemeButton"
 import { HeaderStyled } from "../styles/style"
@@ -13,6 +14,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
 
   return (
     <HeaderStyled>
+      <img src={Logo} alt="Logo" id="logo"/>
       <ToogleLanguageButton />
       <ToggleThemeButton
         sx={{ m: 1 }}

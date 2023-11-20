@@ -9,10 +9,32 @@ export const HeaderStyled = styled.header`
   width: 100%;
   z-index: 1;
 
+  animation: slide-in-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
   @media (min-width: 768px) {
     position: fixed;
     top: 0;
     right: 0;
+  }
+
+  #logo {
+    display: inline;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+  }
+
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
   }
 `;
 

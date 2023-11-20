@@ -92,6 +92,7 @@ export const ProjectSection = styled.section`
     background-color: #0000005f;
     border-radius: 5px;
     padding: 8px 5px 0 5px;
+    gap: 20px;
   }
 
   @media (min-width: 768px) {
