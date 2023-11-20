@@ -1,3 +1,4 @@
+import { SiPowerbi } from "react-icons/si"; 
 import { SiTailwindcss } from "react-icons/si"
 import { useTranslation } from "react-i18next"
 import {
@@ -64,6 +65,11 @@ export const SkillList = () => {
       icon: <SiWordpress />,
       description: t("wordpressDescription"),
     },
+    {
+      title: "Power BI",
+      icon: <SiPowerbi />,
+      description: t("powerBiDescription"),
+    }
   ]
 }
 
