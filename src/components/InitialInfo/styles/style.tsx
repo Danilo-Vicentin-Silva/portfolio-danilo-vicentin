@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const InitialInfoStyle = styled.section`
   text-align: justify;
@@ -34,6 +34,13 @@ export const InitialInfoStyle = styled.section`
 
     img {
       width: 15vw;
+    }
+
+    img:hover {
+      -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+      transition: 0.5s;
     }
 
     #download-cv-button {
@@ -72,4 +79,4 @@ export const InitialInfoStyle = styled.section`
       width: 100%;
     }
   }
-`
+`;

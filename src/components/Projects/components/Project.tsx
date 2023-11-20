@@ -90,13 +90,21 @@ const Project: React.FC<Props> = ({
       className="project-section"
       onClick={() => handleCardState()}
     >
-      <h4>{title}</h4>
+      <div id="project-title">
+        <h4>{title}</h4>
+      </div>
 
       <img src={image} alt={title + " project"} />
 
       <div id="info">
-        {skillsUsed &&
-          skillsUsed.map((icon, index) => <span key={index}>{icon}</span>)}
+        <ul>
+          {skillsUsed &&
+            skillsUsed.map((icon, index) => (
+              <li key={index}>
+                <span>{icon}</span>
+              </li>
+            ))}
+        </ul>
       </div>
     </ProjectSection>
   )

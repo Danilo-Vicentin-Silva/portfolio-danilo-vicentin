@@ -1,5 +1,8 @@
 {
   "translation": {
+    "powerBiDescription": "Business analytics and data", 
+    "landingPageDate": "Octyber 09, 2023",
+    "landingPageDescription": "Practical example of a landing page designed using the Next.js Framework and styling with Tailwind CSS",
     "hello": "Hi! My name is",
     "myName": "Danilo Vicentin da Silva",
     "downloadCV": "Download my CV!",
@@ -50,6 +53,9 @@
     "mainPage": "Main Page",
     "orComebackLater": "or come back later",
     "dataGalaxyDate": "September 9, 2023",
-    "dataGalaxyDescription": "My first website developed using Next.js technology, this website pulls data from an API that contains information about Star Wars characters. Simple website for setting ideals to be professionally applied in future real projects."
+    "dataGalaxyDescription": "My first website developed using Next.js technology, this website pulls data from an API that contains information about Star Wars characters. Simple website for setting ideals to be professionally applied in future real projects.",
+    "figmaDescription": "UX/UI website prototyping tool",
+    "wordpressDescription": "CMS for website creation",
+    "tailwindDescription": "CSS Framework"
   }
 }

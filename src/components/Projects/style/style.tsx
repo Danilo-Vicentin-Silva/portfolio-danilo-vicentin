@@ -40,20 +40,18 @@ export const ProjectSection = styled.section`
   cursor: pointer;
 
   img {
-    border: 1px solid ${(props) => props.theme.colors.tertiary};
-    border-radius: 7px 20px;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid ${(props) => props.theme.colors.secundary};
 
     width: 90vw;
   }
 
   img:hover {
-    border: 1px solid ${(props) => props.theme.colors.primary};
-
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
   }
 
-  h4 {
+  #project-title {
     color: white;
     font-size: 1.5em;
     text-decoration: overline;
@@ -69,7 +67,7 @@ export const ProjectSection = styled.section`
   }
 
   #info {
-    color: white;
+    color: ${(props) => props.theme.colors.text};
     font-size: 2em;
 
     width: 100%;
@@ -89,12 +87,20 @@ export const ProjectSection = styled.section`
     }
   }
 
+  #info ul,
+  h4 {
+    background-color: #0000005f;
+    border-radius: 5px;
+    padding: 8px 5px 0 5px;
+    gap: 20px;
+  }
+
   @media (min-width: 768px) {
     width: 30vw;
     animation: card-entry 1s ease-in-out;
 
     img {
-      width: 30vw;
+      width: 100%;
     }
 
     h4 {
