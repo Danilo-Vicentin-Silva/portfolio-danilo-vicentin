@@ -1,23 +1,28 @@
-import { SiPowerbi } from "react-icons/si"; 
-import { SiTailwindcss } from "react-icons/si"
-import { useTranslation } from "react-i18next"
+import { SiPowerbi } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 import {
   BiLogoCss3,
   BiLogoHtml5,
   BiLogoReact,
   BiLogoTypescript,
-} from "react-icons/bi"
-import { RiJavascriptFill } from "react-icons/ri"
-import { SiFigma, SiNextdotjs, SiTypescript, SiWordpress } from "react-icons/si"
-import { projectsCovers } from "../Imports/ImportProjectsCovers"
-import { FaJsSquare, FaReact } from "react-icons/fa"
-import { videos } from "../Imports/ImportVideos"
-import { v4 as uuid } from "uuid"
-import { AiFillHtml5 } from "react-icons/ai"
-import { DiCss3 } from "react-icons/di"
+} from "react-icons/bi";
+import { RiJavascriptFill } from "react-icons/ri";
+import {
+  SiFigma,
+  SiNextdotjs,
+  SiTypescript,
+  SiWordpress,
+} from "react-icons/si";
+import { projectsCovers } from "../Imports/ImportProjectsCovers";
+import { FaJsSquare, FaReact } from "react-icons/fa";
+import { videos } from "../Imports/ImportVideos";
+import { v4 as uuid } from "uuid";
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3 } from "react-icons/di";
 
 export const SkillList = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return [
     {
@@ -69,12 +74,12 @@ export const SkillList = () => {
       title: "Power BI",
       icon: <SiPowerbi />,
       description: t("powerBiDescription"),
-    }
-  ]
-}
+    },
+  ];
+};
 
 export const ProjectsList = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return [
     {
@@ -82,10 +87,16 @@ export const ProjectsList = () => {
       date: t("landingPageDate"),
       description: t("landingPageDescription"),
       image: projectsCovers.LandingPageCover,
-      skillsUsed: [<SiNextdotjs />, <SiTypescript />, <SiTailwindcss />, <SiFigma />],
+      skillsUsed: [
+        <SiNextdotjs />,
+        <SiTypescript />,
+        <SiTailwindcss />,
+        <SiFigma />,
+      ],
       skillsName: ["Next.js", "Typescript", "Tailwind", "Figma"],
-      websiteLink: "https://danilo-vicentin-silva.github.io/LandingPage/",
-      githubLink: "https://github.com/Danilo-Vicentin-Silva/LandingPage",
+      websiteLink: "https://landing-page-example-wine.vercel.app/",
+      githubLink:
+        "https://github.com/Danilo-Vicentin-Silva/landing-page-example",
       video: videos.LandingPageVideo,
       key: uuid(),
     },
@@ -162,4 +173,4 @@ export const ProjectsList = () => {
       key: uuid(),
     },
   ];
-}
+};
