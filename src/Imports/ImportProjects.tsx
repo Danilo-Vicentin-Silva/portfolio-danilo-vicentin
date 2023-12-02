@@ -1,4 +1,3 @@
-import { SiPowerbi } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import {
