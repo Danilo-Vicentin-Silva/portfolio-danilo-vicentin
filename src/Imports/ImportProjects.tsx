@@ -70,11 +70,6 @@ export const SkillList = () => {
       icon: <SiWordpress />,
       description: t("wordpressDescription"),
     },
-    {
-      title: "Power BI",
-      icon: <SiPowerbi />,
-      description: t("powerBiDescription"),
-    },
   ];
 };
 
