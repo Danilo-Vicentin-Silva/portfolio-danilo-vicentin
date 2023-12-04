@@ -4,6 +4,7 @@ import CordelModernoVideo from "../assets/videos/projects-videos/modern-cordel.m
 import SiteAndroidVideo from "../assets/videos/projects-videos//android-site.mp4"
 import TelaLoginVideo from "../assets/videos/projects-videos/login-screen.mp4"
 import DataGalaxyVideo from "../assets/videos/projects-videos/data-galaxy.mp4"
+import LandingPageExample from "../assets/videos/projects-videos/landing-page-example.mp4"
 
 export const videos = {
   RacingF1Video,
@@ -12,4 +13,5 @@ export const videos = {
   SiteAndroidVideo,
   TelaLoginVideo,
   DataGalaxyVideo,
+  LandingPageExample,
 }
