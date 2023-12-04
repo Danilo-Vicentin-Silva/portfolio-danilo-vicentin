@@ -5,6 +5,7 @@ export const BlogHeaderStyled = styled.article`
 
   h1 {
     text-align: center;
+    margin: 0;
   }
   img {
     border-radius: 50%;
@@ -29,7 +30,6 @@ export const BlogHeaderStyled = styled.article`
     margin-bottom: 20px;
   }
 `
-
 export const BlogNavStyled = styled.nav`
   margin: 10px;
 
@@ -47,8 +47,38 @@ export const BlogNavStyled = styled.nav`
     text-decoration: none;
   }
 `
-
 export const BlogPostSeparatorStyled = styled.hr`
   border-color: gray;
   border-style: dashed;
+`
+export const BlogPostStyled = styled.section`
+  margin: 10px;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  #p-author {
+    color: gray;
+    font-size: 0.8em;
+    margin: 0 0 7px 0;
+  }
+  #p-content {
+    text-align: justify;
+    font-size: 0.8em;
+  }
+  #p-date {
+    color: gray;
+    display: inline;
+    margin: 10px 0;
+  }
+  #p-tags {
+    color: lightgray;
+    display: inline;
+    margin-left: 7px;
+  }
+  #p-post-footer {
+    font-size: 0.8em;
+    margin: 15px 0;
+  }
 `
