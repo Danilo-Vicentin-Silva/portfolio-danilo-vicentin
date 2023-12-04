@@ -13,6 +13,7 @@ const BlogPosts = () => {
             image={post.image}
             date={post.date}
             tags={post.tags}
+            key={uuid}
           />
         </section>
       ))}
