@@ -1,22 +1,27 @@
-import { SiTailwindcss } from "react-icons/si"
-import { useTranslation } from "react-i18next"
+import { SiTailwindcss } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 import {
   BiLogoCss3,
   BiLogoHtml5,
   BiLogoReact,
   BiLogoTypescript,
-} from "react-icons/bi"
-import { RiJavascriptFill } from "react-icons/ri"
-import { SiFigma, SiNextdotjs, SiTypescript, SiWordpress } from "react-icons/si"
-import { projectsCovers } from "../Imports/ImportProjectsCovers"
-import { FaJsSquare, FaReact } from "react-icons/fa"
-import { videos } from "../Imports/ImportVideos"
-import { v4 as uuid } from "uuid"
-import { AiFillHtml5 } from "react-icons/ai"
-import { DiCss3 } from "react-icons/di"
+} from "react-icons/bi";
+import { RiJavascriptFill } from "react-icons/ri";
+import {
+  SiFigma,
+  SiNextdotjs,
+  SiTypescript,
+  SiWordpress,
+} from "react-icons/si";
+import { projectsCovers } from "../Imports/ImportProjectsCovers";
+import { FaJsSquare, FaReact } from "react-icons/fa";
+import { videos } from "../Imports/ImportVideos";
+import { v4 as uuid } from "uuid";
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3 } from "react-icons/di";
 
 export const SkillList = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return [
     {
@@ -64,13 +69,31 @@ export const SkillList = () => {
       icon: <SiWordpress />,
       description: t("wordpressDescription"),
     },
-  ]
-}
+  ];
+};
 
 export const ProjectsList = () => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return [
+    {
+      title: "Landing Page",
+      date: t("landingPageDate"),
+      description: t("landingPageDescription"),
+      image: projectsCovers.LandingPageCover,
+      skillsUsed: [
+        <SiNextdotjs />,
+        <SiTypescript />,
+        <SiTailwindcss />,
+        <SiFigma />,
+      ],
+      skillsName: ["Next.js", "Typescript", "Tailwind", "Figma"],
+      websiteLink: "https://landing-page-example-wine.vercel.app/",
+      githubLink:
+        "https://github.com/Danilo-Vicentin-Silva/landing-page-example",
+      video: videos.LandingPageVideo,
+      key: uuid(),
+    },
     {
       title: "Data Galaxy",
       date: t("dataGalaxyDate"),
@@ -156,5 +179,5 @@ export const ProjectsList = () => {
       video: videos.SiteAndroidVideo,
       key: uuid(),
     },
-  ]
-}
+  ];
+};

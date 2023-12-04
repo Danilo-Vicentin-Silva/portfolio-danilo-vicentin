@@ -67,7 +67,7 @@ export const ProjectSection = styled.section`
   }
 
   #info {
-    color: ${(props) => props.theme.colors.text};
+    color: white;
     font-size: 2em;
 
     width: 100%;
@@ -92,6 +92,7 @@ export const ProjectSection = styled.section`
     background-color: #0000005f;
     border-radius: 5px;
     padding: 8px 5px 0 5px;
+    gap: 20px;
   }
 
   @media (min-width: 768px) {

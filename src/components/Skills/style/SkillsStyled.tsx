@@ -34,6 +34,7 @@ export const SkillCard = styled.div`
   height: 135px;
   width: 95px;
   padding: 15px;
+  gap: 100px;
 
   display: flex;
   flex-flow: column wrap;
