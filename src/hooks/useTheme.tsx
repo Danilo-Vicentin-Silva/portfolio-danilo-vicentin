@@ -4,7 +4,7 @@ import light from "../styles/themes/light.ts"
 
 const useTheme = () => {
   const [theme, setTheme] = React.useState(
-    localStorage.getItem("theme") === "light" ? dark : light
+    localStorage.getItem("theme") === "dark" ? light : dark
   )
   const switchTheme = () => {
     setTheme(theme.title === "light" ? dark : light)
