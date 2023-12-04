@@ -60,6 +60,10 @@ export const BlogNavStyled = styled.nav`
     color: gray;
     text-decoration: none;
   }
+  @media (min-width: 768px) {
+    font-size: 1em;
+    margin: 50px;
+  }
 `
 export const BlogPostSeparatorStyled = styled.hr`
   border-color: gray;
@@ -94,5 +98,10 @@ export const BlogPostStyled = styled.section`
   #p-post-footer {
     font-size: 0.8em;
     margin: 15px 0;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 1.4em;
+    margin: 50px;
   }
 `

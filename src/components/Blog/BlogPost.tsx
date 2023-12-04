@@ -27,17 +27,17 @@ const BlogPost: React.FC<PostProps> = ({
       </section>
       <section>
         <p id="p-content">{text}</p>
-        <img src={image} alt={title} />
+        <img src={image} alt={title} width={"100%"} height={"auto"} />
       </section>
       <section id="p-post-footer">
-          <p id="p-date">
-            <small>{date}</small>
-          </p>
-          <p id="p-tags">
-            {tags.map((tag) => (
-              <span>{tag} </span>
-            ))}
-          </p>
+        <p id="p-date">
+          <small>{date}</small>
+        </p>
+        <p id="p-tags">
+          {tags.map((tag) => (
+            <span>{tag} </span>
+          ))}
+        </p>
       </section>
       <BlogPostSeparatorStyled />
     </BlogPostStyled>
