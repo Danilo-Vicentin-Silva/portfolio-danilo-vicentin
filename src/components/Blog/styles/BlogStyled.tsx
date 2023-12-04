@@ -29,6 +29,20 @@ export const BlogHeaderStyled = styled.article`
   #about-me-p {
     margin-bottom: 20px;
   }
+
+  @media (min-width: 768px) {
+    font-size: 1.4em;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 50px;
+
+    h1 {
+      align-self: center;
+    }
+  }
 `
 export const BlogNavStyled = styled.nav`
   margin: 10px;
