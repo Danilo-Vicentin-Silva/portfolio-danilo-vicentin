@@ -1,3 +1,4 @@
+import React from "react";
 import AboutMe from "../components/AboutMe/components/AboutMe";
 import InitialInfo from "../components/InitialInfo/components/InitialInfo";
 import Skills from "../components/Skills/components/Skills";
