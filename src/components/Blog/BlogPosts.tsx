@@ -1,5 +1,6 @@
 import BlogPost from "./BlogPost"
 import { posts } from "./postsList"
+import uuid from "react-uuid"
 
 const BlogPosts = () => {
   return (
@@ -13,6 +14,7 @@ const BlogPosts = () => {
             image={post.image}
             date={post.date}
             tags={post.tags}
+            key={uuid()}
           />
         </section>
       ))}

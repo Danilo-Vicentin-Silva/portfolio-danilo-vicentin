@@ -7,8 +7,12 @@ const BlogNav = () => {
         <li>
           <a href="/">Home</a>
         </li>
-        <li onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
-          Sobre
+        <li>
+          <button
+            onClick={() => window.scrollTo(0, document.body.scrollHeight)}
+          >
+            Sobre
+          </button>
         </li>
       </ul>
       <BlogPostSeparatorStyled />

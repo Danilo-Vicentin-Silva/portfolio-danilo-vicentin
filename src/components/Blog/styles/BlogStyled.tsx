@@ -26,6 +26,9 @@ export const BlogHeaderStyled = styled.article`
     color: gray;
     text-decoration: none;
   }
+  a:hover {
+    color: black;
+  }
   #about-me-p {
     margin-bottom: 20px;
   }
@@ -43,6 +46,19 @@ export const BlogHeaderStyled = styled.article`
       align-self: center;
     }
   }
+  @media (min-width: 992px) {
+    font-size: 1.2em;
+    margin: 10px 300px;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+  }
 `
 export const BlogNavStyled = styled.nav`
   margin: 10px;
@@ -56,13 +72,28 @@ export const BlogNavStyled = styled.nav`
     align-items: center;
     gap: 10px;
   }
+  a:hover,
+  button:hover {
+    color: black;
+  }
   a {
     color: gray;
     text-decoration: none;
   }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: gray;
+  }
   @media (min-width: 768px) {
     font-size: 1em;
     margin: 50px;
+  }
+  @media (min-width: 992px) {
+    font-size: 1.2em;
+    margin: 10px 300px;
   }
 `
 export const BlogPostSeparatorStyled = styled.hr`
