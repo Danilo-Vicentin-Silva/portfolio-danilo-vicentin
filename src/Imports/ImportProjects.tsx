@@ -131,18 +131,6 @@ export const ProjectsList = () => {
       key: uuid(),
     },
     {
-      title: t("landingPageTitle"),
-      description: t("landingPageDescription"),
-      date: t("landingPageDate"),
-      githubLink: "https://github.com/Danilo-Vicentin-Silva/Site-Android",
-      websiteLink: "https://danilo-vicentin-silva.github.io/Site-Android/",
-      skillsUsed: [<AiFillHtml5 />, <DiCss3 />],
-      skillsName: ["HTML", "CSS"],
-      image: projectsCovers.LandingPageCover,
-      video: videos.LandingPageExample,
-      key: uuid(),
-    },
-    {
       title: t("loginScreenTitle"),
       description: t("loginScreenDescription"),
       date: t("loginScreenDate"),
@@ -151,7 +139,7 @@ export const ProjectsList = () => {
       githubLink:
         "https://github.com/Danilo-Vicentin-Silva/landing-page-example",
       websiteLink: "https://landing-page-example-wine.vercel.app/",
-      image: projectsCovers.landingPageCover,
+      image: projectsCovers.LoginScreenCover,
       video: videos.TelaLoginVideo,
       key: uuid(),
     },
