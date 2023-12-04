@@ -1,4 +1,5 @@
 import { posts } from "../Blog/post"
+import { BlogPostSeparatorStyled } from "./styles/BlogStyled"
 
 const BlogPosts = () => {
   return (
@@ -19,7 +20,7 @@ const BlogPosts = () => {
               <span>{tag} </span>
             ))}
           </p>
-          <hr />
+          <BlogPostSeparatorStyled />
         </section>
       ))}
     </section>

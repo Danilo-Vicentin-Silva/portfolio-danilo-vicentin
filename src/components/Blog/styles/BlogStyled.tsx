@@ -29,3 +29,26 @@ export const BlogHeaderStyled = styled.article`
     margin-bottom: 20px;
   }
 `
+
+export const BlogNavStyled = styled.nav`
+  margin: 10px;
+
+  ul {
+    color: gray;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  a {
+    color: gray;
+    text-decoration: none;
+  }
+`
+
+export const BlogPostSeparatorStyled = styled.hr`
+  border-color: gray;
+  border-style: dashed;
+`

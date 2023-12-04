@@ -1,14 +1,18 @@
+import { BlogNavStyled, BlogPostSeparatorStyled } from "./styles/BlogStyled"
+
 const BlogNav = () => {
   return (
-    <nav>
+    <BlogNavStyled>
       <ul>
         <li>
           <a href="/">Home</a>
         </li>
+        <li onClick={() => window.scrollTo(0, document.body.scrollHeight)}>
+          Sobre
+        </li>
       </ul>
-      <li>Sobre</li>
-      <hr />
-    </nav>
+      <BlogPostSeparatorStyled />
+    </BlogNavStyled>
   )
 }
 

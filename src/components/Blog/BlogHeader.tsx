@@ -1,5 +1,5 @@
 import DaniloImg from "../../assets/images/danilo.webp"
-import { BlogHeaderStyled } from "./BlogStyled"
+import { BlogHeaderStyled } from "./styles/BlogStyled"
 
 const BlogHeader = () => {
   return (
