@@ -4,6 +4,7 @@ import ToggleThemeButton from "./ToggleThemeButton"
 import { HeaderStyled } from "../styles/style"
 import ToogleLanguageButton from "./ToggleLanguageButton"
 import useSwitch from "../../../hooks/useSwitch"
+import { useLocation } from "react-router-dom"
 
 interface Props {
   toggleTheme(): void
@@ -11,10 +12,13 @@ interface Props {
 
 const Header: React.FC<Props> = ({ toggleTheme }) => {
   const { checked, handleSwitch } = useSwitch()
+  const location = useLocation()
+  const currentUrl = location.pathname
 
   return (
     <HeaderStyled>
-      <img src={Logo} alt="Logo" id="logo"/>
+      <img src={Logo} alt="Logo" id="logo" />
+      {currentUrl !== "/blog" && <a href="/blog" rel="next" target="_self">Blog</a>}
       <ToogleLanguageButton />
       <ToggleThemeButton
         sx={{ m: 1 }}

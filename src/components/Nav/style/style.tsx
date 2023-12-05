@@ -1,13 +1,14 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const NavStyled = styled.nav`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
   margin: 10px;
 
-  #contact-button {
+  .contact-button {
     color: #fff;
     background-color: ${(props) => props.theme.colors.primary};
   }
@@ -18,12 +19,9 @@ export const NavStyled = styled.nav`
     color: ${(props) => props.theme.colors.text};
     border-color: ${(props) => props.theme.colors.secundary};
   }
-
   @media (min-width: 768px) {
     font-size: 1.5em;
-
     margin-top: 30px;
-
     gap: 50px;
   }
-`;
+`

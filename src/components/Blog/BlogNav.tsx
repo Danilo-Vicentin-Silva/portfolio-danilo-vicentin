@@ -5,7 +5,9 @@ const BlogNav = () => {
     <BlogNavStyled>
       <ul>
         <li>
-          <a href="/">Home</a>
+          <a href="/" rel="prev" target="_self">
+            Home
+          </a>
         </li>
         <li>
           <button
