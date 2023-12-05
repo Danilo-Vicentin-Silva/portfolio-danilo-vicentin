@@ -36,7 +36,7 @@ const BlogPost: React.FC<PostProps> = ({
         </p>
         <p id="p-tags">
           {tags.map((tag) => (
-            <span key={uuid()}>{tag}</span>
+            <span key={uuid()}>{tag} </span>
           ))}
         </p>
       </section>

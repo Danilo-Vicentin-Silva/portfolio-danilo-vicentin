@@ -48,7 +48,7 @@ export const BlogHeaderStyled = styled.article`
   }
   @media (min-width: 992px) {
     font-size: 1.2em;
-    margin: 10px 300px;
+    margin: 10px 400px;
 
     img {
       width: 150px;
@@ -93,7 +93,7 @@ export const BlogNavStyled = styled.nav`
   }
   @media (min-width: 992px) {
     font-size: 1.2em;
-    margin: 10px 300px;
+    margin: 10px 400px;
   }
 `
 export const BlogPostSeparatorStyled = styled.hr`
@@ -134,5 +134,9 @@ export const BlogPostStyled = styled.section`
   @media (min-width: 768px) {
     font-size: 1.4em;
     margin: 50px;
+  }
+  @media (min-width: 992px){
+    font-size: 1.2em;
+    margin: 10px 400px;
   }
 `
