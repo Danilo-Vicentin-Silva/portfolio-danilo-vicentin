@@ -5,7 +5,7 @@ interface PostProps {
   title: string
   author: string
   text: string
-  image: string
+  image?: string
   date: string
   tags: string[]
 }
@@ -28,7 +28,9 @@ const BlogPost: React.FC<PostProps> = ({
       </section>
       <section>
         <p id="p-content">{text}</p>
-        <img src={image} alt={title} width={"100%"} height={"auto"} />
+        {image && (
+          <img src={image} alt={title} width={"100%"} height={"auto"} />
+        )}
       </section>
       <section id="p-post-footer">
         <p id="p-date">

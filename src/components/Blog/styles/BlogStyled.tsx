@@ -115,6 +115,7 @@ export const BlogPostStyled = styled.section`
   #p-content {
     text-align: justify;
     font-size: 0.8em;
+    line-height: 1.5em;
   }
   #p-date {
     color: gray;
