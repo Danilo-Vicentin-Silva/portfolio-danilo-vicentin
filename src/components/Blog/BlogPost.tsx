@@ -1,4 +1,5 @@
 import { BlogPostSeparatorStyled, BlogPostStyled } from "./styles/BlogStyled"
+import uuid from "react-uuid"
 
 interface PostProps {
   title: string
@@ -35,7 +36,7 @@ const BlogPost: React.FC<PostProps> = ({
         </p>
         <p id="p-tags">
           {tags.map((tag) => (
-            <span>{tag} </span>
+            <span key={uuid()}>{tag}</span>
           ))}
         </p>
       </section>
