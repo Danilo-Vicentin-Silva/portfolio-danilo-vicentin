@@ -1,7 +1,0 @@
-User-agents: Googlebot
-Disallow: /nogooglebot/
-
-User-agent: *
-Allow: /
-
-Sitemap: https://danilovicentinsilva.netlify.app/sitemap.xml
