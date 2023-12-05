@@ -56,6 +56,7 @@
     "dataGalaxyDescription": "Meu primeiro site desenvolvido utilizando a tecnologia Next.js, esse site puxa os dados de uma API que contem informações sobre personagens de Star Wars. Site simples para fixação de ideais a serem aplicadas profissionalmente em projetos reais futuros.",
     "figmaDescription": "Ferramenta de criação de UX/UI de sites",
     "wordpressDescription": "CMS para criação de sites",
-    "tailwindDescription": "Framework CSS "
+    "tailwindDescription": "Framework CSS ",
+    "landingPageTitle": "Landing Page"
   }
 }

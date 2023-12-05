@@ -33,6 +33,11 @@ const Footer = () => {
           </a>
         </li>
         <li>
+          <a href="/blog" rel="next" target="_self">
+            Blog
+          </a>
+        </li>
+        <li>
           <a
             href="https://www.linkedin.com/in/danilo-vicentin-da-silva-16a84022b/"
             rel="nofollow"

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const HeaderStyled = styled.header`
   display: flex;
@@ -26,6 +26,22 @@ export const HeaderStyled = styled.header`
     margin: 10px;
   }
 
+  a {
+    color: ${(props) => props.theme.colors.text};
+    font-size: 0.8em;
+    margin: 10px;
+  }
+  a:hover {
+    color: ${(props) => props.theme.colors.secundary};
+    text-decoration: overline;
+  }
+
+  @media (min-width: 992px) {
+    a {
+      font-size: 1.2em;
+    }
+  }
+
   @keyframes slide-in-top {
     0% {
       transform: translateY(-1000px);
@@ -36,7 +52,7 @@ export const HeaderStyled = styled.header`
       opacity: 1;
     }
   }
-`;
+`
 
 export const ToggleLanguageButtonStyle = styled.div`
   button {
@@ -49,4 +65,4 @@ export const ToggleLanguageButtonStyle = styled.div`
   button:hover {
     color: ${(props) => props.theme.colors.secundary};
   }
-`;
+`

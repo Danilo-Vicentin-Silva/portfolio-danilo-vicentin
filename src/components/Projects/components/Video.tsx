@@ -1,5 +1,6 @@
+import React from "react";
 interface Props {
-  video: string
+  video: string;
 }
 
 const Video: React.FC<Props> = ({ video }) => {
@@ -8,7 +9,7 @@ const Video: React.FC<Props> = ({ video }) => {
       <source src={video} type="video/mp4" />
       Seu navegador nao suporta esse recurso
     </video>
-  )
-}
+  );
+};
 
-export default Video
+export default Video;

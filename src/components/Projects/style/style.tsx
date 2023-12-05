@@ -67,7 +67,7 @@ export const ProjectSection = styled.section`
   }
 
   #info {
-    color: ${(props) => props.theme.colors.text};
+    color: white;
     font-size: 2em;
 
     width: 100%;

@@ -1,4 +1,3 @@
-import { SiPowerbi } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 import {
@@ -70,11 +69,6 @@ export const SkillList = () => {
       icon: <SiWordpress />,
       description: t("wordpressDescription"),
     },
-    {
-      title: "Power BI",
-      icon: <SiPowerbi />,
-      description: t("powerBiDescription"),
-    },
   ];
 };
 
@@ -142,8 +136,9 @@ export const ProjectsList = () => {
       date: t("loginScreenDate"),
       skillsUsed: [<AiFillHtml5 />, <DiCss3 />],
       skillsName: ["HTML", "CSS"],
-      githubLink: "https://github.com/Danilo-Vicentin-Silva/Tela-Login",
-      websiteLink: "https://danilo-vicentin-silva.github.io/Tela-Login/",
+      githubLink:
+        "https://github.com/Danilo-Vicentin-Silva/landing-page-example",
+      websiteLink: "https://landing-page-example-wine.vercel.app/",
       image: projectsCovers.LoginScreenCover,
       video: videos.TelaLoginVideo,
       key: uuid(),
