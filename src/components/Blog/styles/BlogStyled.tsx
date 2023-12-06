@@ -16,7 +16,7 @@ export const BlogHeaderStyled = styled.article`
   h2,
   p {
     text-align: justify;
-    font-size: 0.8em;
+    font-size: 1em;
     margin: 0;
   }
   h2 {
@@ -102,6 +102,7 @@ export const BlogPostSeparatorStyled = styled.hr`
 `
 export const BlogPostStyled = styled.section`
   margin: 10px;
+  font-size: 1.2em;
 
   h3 {
     margin-bottom: 0;
