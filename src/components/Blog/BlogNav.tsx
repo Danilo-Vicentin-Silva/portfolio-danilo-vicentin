@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { BlogNavStyled, BlogPostSeparatorStyled } from "./styles/BlogStyled"
 
 const BlogNav = () => {
@@ -5,9 +6,9 @@ const BlogNav = () => {
     <BlogNavStyled>
       <ul>
         <li>
-          <a href="/" rel="prev" target="_self">
+          <Link to="/" rel="prev" target="_self">
             Home
-          </a>
+          </Link>
         </li>
         <li>
           <button
