@@ -15,4 +15,12 @@ export const posts: PostProps[] = [
     date: "5 de dezembro de 2023",
     tags: ["#meuprimeiropost", "#blog"],
   },
+  {
+    title: "Rotas Dinâmicas",
+    author: "@danilo_vicentin_silva",
+    text: "Estou estudando rotas dinâmicas, mas para o que isso serve? Simples, imagine que você precise criar uma página para cada produto da sua empresa? Seria quase impossível, por isso existem as rotas dinâmicas, aplicando isso Next.js, cada vez que surgir um novo produto no banco de dados da empresa, por exemplo, uma página para o produto será criada automaticamente e seguindo um modelo padrão.",
+    image: "../../src/assets/images/posts/dynamic-routes.webp",
+    date: "7 de dezembro de 2023",
+    tags: ["#rotasdinamicas", "#nextjs"],
+  },
 ]
