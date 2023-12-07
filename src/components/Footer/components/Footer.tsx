@@ -2,6 +2,7 @@ import { FooterStyled } from "../style/style"
 import Logo from "../../../assets/images/logo.webp"
 import DesktopFooter from "./DesktopFooter"
 import React from "react"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth)
@@ -33,9 +34,9 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="/blog" rel="next" target="_self">
+          <Link to={"/blog"} rel="next" target="_self">
             Blog
-          </a>
+          </Link>
         </li>
         <li>
           <a

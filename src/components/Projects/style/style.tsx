@@ -289,12 +289,13 @@ export const ProjectCard = styled.article<{ imageUrl: string }>`
     animation: scale-up-center1 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     box-shadow: 0px 0px 300px -10px rgba(0, 0, 0, 0.75);
 
-    video {
+    .video {
       z-index: -1;
 
       width: 105%;
       height: 350px;
       object-fit: cover;
+      border: none;
     }
 
     #card-header {

@@ -1,10 +1,17 @@
-const RacingF1Video = "https://www.youtube.com/watch?v=d0Xqo_2e2Gg";
-const TaskListVideo = "https://www.youtube.com/watch?v=yHyDs4zM680";
-const CordelModernoVideo = "https://www.youtube.com/watch?v=nwvz4tZiZkg";
-const SiteAndroidVideo = "https://www.youtube.com/watch?v=Riixv2Zz16Y";
-const TelaLoginVideo = "https://www.youtube.com/watch?v=-7OX4wTwnnE";
-const DataGalaxyVideo = "https://www.youtube.com/watch?v=1pd2czSTis8";
-const LandingPageVideo = "https://www.youtube.com/watch?v=BjVJaCdmPxg";
+const RacingF1Video =
+  "https://www.youtube.com/embed/d0Xqo_2e2Gg?si=E5iUKBdU2VI3AK1i"
+const TaskListVideo =
+  "https://www.youtube.com/embed/yHyDs4zM680?si=7r9V6ssbnnJxvW7P"
+const CordelModernoVideo =
+  "https://www.youtube.com/embed/nwvz4tZiZkg?si=DGQple8VULWn_uf0"
+const SiteAndroidVideo =
+  "https://www.youtube.com/embed/Riixv2Zz16Y?si=HSY4xcRdPa3zaLWz"
+const TelaLoginVideo =
+  "https://www.youtube.com/embed/-7OX4wTwnnE?si=E0uC2b10axNUWN4E"
+const DataGalaxyVideo =
+  "https://www.youtube.com/embed/1pd2czSTis8?si=7ImOVcTt51DAvm0r"
+const LandingPageVideo =
+  "https://www.youtube.com/embed/BjVJaCdmPxg?si=1c_YwTDIGx4BDB-z"
 
 export const videos = {
   LandingPageVideo,
@@ -14,4 +21,4 @@ export const videos = {
   SiteAndroidVideo,
   TelaLoginVideo,
   DataGalaxyVideo,
-};
+}
