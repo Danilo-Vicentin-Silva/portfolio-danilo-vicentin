@@ -24,6 +24,7 @@
     "@mui/system": "^5.14.8",
     "@react-spring/web": "^9.7.3",
     "@vercel/analytics": "^1.0.2",
+    "@vercel/speed-insights": "^1.0.1",
     "i18next": "^23.6.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
