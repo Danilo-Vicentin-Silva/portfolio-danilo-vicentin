@@ -87,13 +87,13 @@ export const ContactFormStyle = styled.section`
   }
 
   form {
-    background-color: ${(props) => props.theme.colors.tertiary};
     color: white;
     text-align: center;
 
     margin: 20px;
     padding: 10px;
     border-radius: 7px;
+    border-color: white;
 
     display: flex;
     flex-flow: column wrap;
@@ -102,6 +102,39 @@ export const ContactFormStyle = styled.section`
     gap: 10px;
 
     animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .custom-input {
+    position: relative;
+    margin: 20px;
+  }
+
+  .custom-input label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: white;
+    transition: transform 0.2s, font-size 0.2s;
+  }
+
+  .custom-input input:focus + label,
+  .custom-input input:not(:placeholder-shown) + label {
+    transform: translateY(-200%);
+    font-size: 12px;
+    color: white;
+  }
+
+  .custom-input input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    caret-color: white;
   }
 
   #reset-button {

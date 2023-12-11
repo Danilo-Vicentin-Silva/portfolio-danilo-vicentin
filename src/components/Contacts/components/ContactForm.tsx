@@ -63,30 +63,31 @@ const ContactForm = () => {
     <ContactFormStyle>
       <TopicSeparator title={t("contactMe")} />
       <form onSubmit={sendEmail}>
-        <div>
-          <TextField
-            label={t("yourName")}
-            variant="filled"
-            name="name"
-            id="name"
+        <div id="custom-input">
+          <input
             type="text"
+            name="name"
+            className="customInput"
+            placeholder=" "
             onChange={(e) => setName(e.target.value)}
           />
+          <label htmlFor="customInput1">{t("yourName")}</label>
         </div>
-        <div>
-          <TextField
-            type="email"
+        <div id="custom-input">
+          <input
+            type="text"
             name="email"
-            id="email"
-            label="Email"
-            variant="filled"
+            className="customInput"
+            placeholder=" "
             onChange={(e) => setEmail(e.target.value)}
           />
+          <label htmlFor="customInput2">Email</label>
         </div>
         <div>
           <TextField
             name="message"
             id="message"
+            variant="filled"
             label={t("yourMessage")}
             multiline
             rows={7}
