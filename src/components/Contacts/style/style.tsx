@@ -109,6 +109,31 @@ export const ContactFormStyle = styled.section`
     margin: 20px;
   }
 
+  .custom-input input,
+  .custom-input textarea {
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    max-height: 120px; /* Altura máxima da textarea */
+    overflow-y: auto; /* Adiciona uma barra de rolagem quando a altura máxima é atingida */
+  }
+
+  .custom-input input:focus,
+  .custom-input textarea:focus {
+    border-bottom: 1px solid ${(props) => props.theme.colors.tertiary};
+    transition: 0.5s;
+  }
+
+  .custom-input textarea {
+    max-width: 200px;
+    height: 120px;
+  }
+
   .custom-input label {
     position: absolute;
     top: 50%;
@@ -119,22 +144,31 @@ export const ContactFormStyle = styled.section`
   }
 
   .custom-input input:focus + label,
-  .custom-input input:not(:placeholder-shown) + label {
+  .custom-input textarea:focus + label,
+  .custom-input input:not(:placeholder-shown) + label,
+  .custom-input textarea:not(:placeholder-shown) + label {
     transform: translateY(-200%);
     font-size: 12px;
     color: white;
   }
 
-  .custom-input input {
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    color: white;
-    width: 200px;
-    padding: 10px;
-    font-size: 16px;
-    outline: none;
-    caret-color: white;
+  .custom-input input:-webkit-autofill,
+  .custom-input textarea:-webkit-autofill,
+  .custom-input input:-webkit-autofill:hover,
+  .custom-input textarea:-webkit-autofill:hover,
+  .custom-input input:-webkit-autofill:focus,
+  .custom-input textarea:-webkit-autofill:focus {
+    background-color: transparent;
+    background-image: none;
+    color: inherit;
+    border-radius: 0;
+    box-shadow: none;
+    transition: none;
+  }
+
+  .custom-input textarea {
+    resize: none;
+    background-color: #ffffff29;
   }
 
   #reset-button {
