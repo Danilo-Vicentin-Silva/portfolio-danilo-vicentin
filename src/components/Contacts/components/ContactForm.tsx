@@ -63,35 +63,35 @@ const ContactForm = () => {
     <ContactFormStyle>
       <TopicSeparator title={t("contactMe")} />
       <form onSubmit={sendEmail}>
-        <div>
-          <TextField
-            label={t("yourName")}
-            variant="filled"
-            name="name"
-            id="name"
+        <div className="custom-input">
+          <input
             type="text"
+            id="input1"
+            placeholder=" "
+            autoComplete="off"
             onChange={(e) => setName(e.target.value)}
           />
+          <label htmlFor="input1">{t("yourName")}</label>
         </div>
-        <div>
-          <TextField
-            type="email"
-            name="email"
-            id="email"
-            label="Email"
-            variant="filled"
+
+        <div className="custom-input">
+          <input
+            type="text"
+            id="input2"
+            placeholder=" "
+            autoComplete="off"
             onChange={(e) => setEmail(e.target.value)}
           />
+          <label htmlFor="input2">Email</label>
         </div>
-        <div>
-          <TextField
-            name="message"
-            id="message"
-            label={t("yourMessage")}
-            multiline
-            rows={7}
+
+        <div className="custom-input">
+          <textarea
+            id="textarea1"
+            placeholder={t("yourMessage")}
             onChange={(e) => setMessage(e.target.value)}
-          />
+          ></textarea>
+          <label htmlFor="textarea1"></label>
         </div>
         <div>
           <Button
