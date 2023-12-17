@@ -22,8 +22,17 @@ export const ContactsStyled = styled.section`
 export const ContactStyled = styled.li`
   background-color: ${(props) => props.theme.colors.primary};
   display: flex;
-    button {
-    background-color: ${(props) => props.theme.colors.primary};
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  border-radius: 7px;
+  
+  span {
+    font-size: 2em;
+  }
+  hr {
+    width: 100%;
   }
   a {
     color: #fff;
