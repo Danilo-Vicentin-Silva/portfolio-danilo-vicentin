@@ -3,7 +3,6 @@ import InitialInfo from "../components/InitialInfo/components/InitialInfo";
 import Skills from "../components/Skills/components/Skills";
 import Nav from "../components/Nav/components/Nav";
 import Projects from "../components/Projects/components/Projects";
-import Contacts from "../components/Contacts/components/Contacts";
 import ContactForm from "../components/Contacts/components/ContactForm";
 import Footer from "../components/Footer/components/Footer";
 import Header from "../components/Header/components/Header";
@@ -29,9 +28,8 @@ const Home = () => {
           <Projects />
         </div>
         <div id="contacts">
-          <Contacts />
-        </div>
         <ContactForm />
+        </div>
       </main>
       <Footer />
     </ThemeProvider>

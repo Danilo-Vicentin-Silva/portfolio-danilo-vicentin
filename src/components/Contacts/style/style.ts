@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const ContactsStyled = styled.section`
+  margin: 20px 5px;
+
   ul {
     list-style: none;
 
@@ -20,22 +22,29 @@ export const ContactsStyled = styled.section`
 `
 
 export const ContactStyled = styled.li`
-  background-color: ${(props) => props.theme.colors.primary};
+  background-color: ${(props) => props.theme.colors.secundary};
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  padding: 7px;
-  border-radius: 7px;
-  
-  span {
-    font-size: 2em;
+
+  :hover {
+    background-color: ${(props) => props.theme.colors.tertiary};
   }
-  hr {
-    width: 100%;
+
+  span {
+    font-size: 1.8em;
   }
   a {
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div {
+    display: none;
   }
 
   @keyframes shadow-drop-2-center {
