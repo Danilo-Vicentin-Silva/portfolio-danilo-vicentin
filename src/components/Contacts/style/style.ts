@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 export const ContactsStyled = styled.section`
+  margin: 20px 5px;
+
   ul {
     list-style: none;
 
@@ -19,54 +21,83 @@ export const ContactsStyled = styled.section`
   }
 `
 
-export const ContactStyled = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-  align-items: center;
+export const ContactStyled = styled.li`
+  margin: 5px;
+  cursor: pointer;
 
-  #icon {
-    text-align: center;
-    background-color: ${(props) => props.theme.colors.primary};
-
+  .span-contact {
+    background-color: ${(props) => props.theme.colors.secundary};
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    padding: 5px;
-    margin: 10px;
-
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  a {
-    color: white;
+
+  .span-contact:hover {
+    background-color: ${(props) => props.theme.colors.tertiary};
   }
 
   span {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
-  p {
-    text-align: center;
-    margin: 0;
+  a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    display: none;
   }
 
   @media (min-width: 768px) {
-    div:hover {
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    font-size: 0.8em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+    div {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h3,
+    p {
+      margin: 2px;
+    }
+    span:hover {
       animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
         both;
     }
-  }
 
-  @keyframes shadow-drop-2-center {
-    0% {
-      transform: translateZ(0);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    @keyframes scale-in-center {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
-    100% {
-      transform: translateZ(50px);
-      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    @keyframes shadow-drop-2-center {
+      0% {
+        transform: translateZ(0);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+      100% {
+        transform: translateZ(50px);
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+      }
     }
   }
 `
@@ -87,7 +118,7 @@ export const ContactFormStyle = styled.section`
   }
 
   form {
-    color: white;
+    color: ${(props) => props.theme.colors.text};
     text-align: center;
 
     margin: 20px;
@@ -112,15 +143,15 @@ export const ContactFormStyle = styled.section`
   .custom-input input,
   .custom-input textarea {
     background-color: transparent;
-    color: white;
+    color: ${(props) => props.theme.colors.text};
     width: 200px;
     padding: 10px;
     font-size: 16px;
     border: none;
     border-bottom: 1px solid white;
     outline: none;
-    max-height: 120px; /* Altura máxima da textarea */
-    overflow-y: auto; /* Adiciona uma barra de rolagem quando a altura máxima é atingida */
+    max-height: 120px;
+    overflow-y: auto;
   }
 
   .custom-input input:focus,
@@ -139,7 +170,7 @@ export const ContactFormStyle = styled.section`
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    color: white;
+    color: ${(props) => props.theme.colors.text};
     transition: transform 0.2s, font-size 0.2s;
   }
 
@@ -149,7 +180,7 @@ export const ContactFormStyle = styled.section`
   .custom-input textarea:not(:placeholder-shown) + label {
     transform: translateY(-200%);
     font-size: 12px;
-    color: white;
+    color: ${(props) => props.theme.colors.text};
   }
 
   .custom-input input:-webkit-autofill,
@@ -168,7 +199,7 @@ export const ContactFormStyle = styled.section`
 
   .custom-input textarea {
     resize: none;
-    background-color: #ffffff29;
+    background-color: ${(props) => props.theme.colors.background};
   }
 
   #reset-button {
@@ -178,6 +209,12 @@ export const ContactFormStyle = styled.section`
   @media (min-width: 768px) {
     margin: auto;
     width: 50vw;
+
+    .custom-input input,
+    .custom-input textarea {
+      width: 400px;
+      max-width: 400px;
+    }
 
     .notification {
       width: 25vw;

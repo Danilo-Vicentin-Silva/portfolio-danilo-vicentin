@@ -3,13 +3,13 @@ import InitialInfo from "../components/InitialInfo/components/InitialInfo";
 import Skills from "../components/Skills/components/Skills";
 import Nav from "../components/Nav/components/Nav";
 import Projects from "../components/Projects/components/Projects";
-import Contacts from "../components/Contacts/components/Contacts";
 import ContactForm from "../components/Contacts/components/ContactForm";
 import Footer from "../components/Footer/components/Footer";
 import Header from "../components/Header/components/Header";
 import useTheme from "../hooks/useTheme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/GlobalStyle";
+import Contacts from "../components/Contacts/components/Contacts";
 
 const Home = () => {
   const { theme, switchTheme } = useTheme();
@@ -29,13 +29,13 @@ const Home = () => {
           <Projects />
         </div>
         <div id="contacts">
+          <ContactForm />
           <Contacts />
         </div>
-        <ContactForm />
       </main>
       <Footer />
     </ThemeProvider>
-  );
+  )
 };
 
 export default Home;
