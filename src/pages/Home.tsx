@@ -9,6 +9,7 @@ import Header from "../components/Header/components/Header";
 import useTheme from "../hooks/useTheme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "../styles/GlobalStyle";
+import Contacts from "../components/Contacts/components/Contacts";
 
 const Home = () => {
   const { theme, switchTheme } = useTheme();
@@ -28,12 +29,13 @@ const Home = () => {
           <Projects />
         </div>
         <div id="contacts">
-        <ContactForm />
+          <ContactForm />
+          <Contacts />
         </div>
       </main>
       <Footer />
     </ThemeProvider>
-  );
+  )
 };
 
 export default Home;

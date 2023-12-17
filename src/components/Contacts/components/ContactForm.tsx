@@ -1,12 +1,11 @@
 import * as React from "react"
 import emailjs from "@emailjs/browser"
-import { Alert, Button, TextField } from "@mui/material"
+import { Alert, Button } from "@mui/material"
 import { ContactFormStyle } from "../style/style"
 import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import DeleteIcon from "@mui/icons-material/Delete"
 import SendIcon from "@mui/icons-material/Send"
 import { useTranslation } from "react-i18next"
-import Contacts from "./Contacts"
 
 const ContactForm = () => {
   const [name, setName] = React.useState("")
@@ -61,7 +60,6 @@ const ContactForm = () => {
   const { t } = useTranslation()
 
   return (
-    <>
       <ContactFormStyle>
         <TopicSeparator title={t("contactMe")} />
         <form onSubmit={sendEmail}>
@@ -120,8 +118,6 @@ const ContactForm = () => {
           </Alert>
         )}
       </ContactFormStyle>
-      <Contacts />
-    </>
   )
 }
 
