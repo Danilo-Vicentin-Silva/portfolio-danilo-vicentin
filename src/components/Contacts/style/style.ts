@@ -19,62 +19,14 @@ export const ContactsStyled = styled.section`
   }
 `
 
-export const ContactStyled = styled.div`
-  .contact-card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 100px;
-    margin: 10px;
-    transition: transform 0.3s;
-
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+export const ContactStyled = styled.li`
+  background-color: ${(props) => props.theme.colors.primary};
+  display: flex;
+    button {
+    background-color: ${(props) => props.theme.colors.primary};
   }
-
-  .contact-card:hover {
-    transform: scale(1.05);
-  }
-
-  .contact-card span {
-    font-size: 2.5em;
-    color: black;
-    width: 100%;
-    height: 50px;
-    display: block;
-    object-fit: cover;
-    border-bottom: 1px solid #ddd;
-  }
-
-  .contact-card-content {
-    padding: 20px;
-  }
-
-  .contact-card h2 {
-    font-size: 0.8em;
-    margin-top: 0;
-    color: #333;
-  }
-
-  .contact-card p {
-    color: #777;
-  }
-
-  .contact-card a {
-    display: block;
-    text-decoration: none;
-    color: #3498db;
-    margin-top: 10px;
-  }
-
-  @media (min-width: 768px) {
-    div:hover {
-      animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-        both;
-    }
+  a {
+    color: #fff;
   }
 
   @keyframes shadow-drop-2-center {

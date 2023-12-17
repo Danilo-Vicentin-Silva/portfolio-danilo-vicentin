@@ -1,19 +1,22 @@
+import { Button } from "@mui/material"
 import { ContactStyled } from "../style/style"
 
 interface Props {
-  title: string
   icon: React.ReactNode
+  title: string
+  username: string
   link: string
 }
 
-const Contact: React.FC<Props> = ({ icon, title, link }) => {
+const Contact: React.FC<Props> = ({ icon, title, username, link }) => {
   return (
-    <ContactStyled>
-      <div className="contact-card" key={title}>
-        <span>{icon}</span>
-        <div className="contact-card-content">
-          <h2>{title}</h2>
-          <p>{title}</p>
+    <ContactStyled key={title}>
+      <span>{icon}</span>
+      <hr />
+      <div>
+        <h3>{title}</h3>
+        <p>{username}</p>
+        <Button variant="contained">
           <a
             href={link}
             rel="nofollow"
@@ -22,7 +25,7 @@ const Contact: React.FC<Props> = ({ icon, title, link }) => {
           >
             Acesse
           </a>
-        </div>
+        </Button>
       </div>
     </ContactStyled>
   )
