@@ -15,9 +15,19 @@ export const NavStyled = styled.nav`
     border-color: ${(props) => props.theme.colors.secundary};
   }
 
+  .nav-button:hover {
+    color: ${(props) => props.theme.colors.secundary};
+    border-color: ${(props) => props.theme.colors.tertiary};
+  }
+
   .contact-button {
     color: white;
     background-color: ${(props) => props.theme.colors.primary};
+  }
+
+  .contact-button:hover {
+    color: ${(props) => props.theme.colors.quarternay};
+    background-color: ${(props) => props.theme.colors.secundary};
   }
   
   @media (min-width: 768px) {
