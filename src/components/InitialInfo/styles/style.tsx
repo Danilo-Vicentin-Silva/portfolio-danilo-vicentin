@@ -28,6 +28,10 @@ export const InitialInfoStyle = styled.section`
     text-decoration: none;
   }
 
+  #download-cv-button:hover {
+    background-color: ${(props) => props.theme.colors.secundary};
+  }
+
   @media (min-width: 768px) {
     font-size: 1em;
     gap: 30px;

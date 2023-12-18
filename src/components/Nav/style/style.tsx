@@ -26,7 +26,7 @@ export const NavStyled = styled.nav`
   }
 
   .contact-button:hover {
-    color: ${(props) => props.theme.colors.quarternay};
+    color: white;
     background-color: ${(props) => props.theme.colors.secundary};
   }
   
