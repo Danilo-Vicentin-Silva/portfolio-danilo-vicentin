@@ -3,8 +3,15 @@ import styled from "styled-components"
 export const TopicSeparatorStyled = styled.section`
   color: ${(props) => props.theme.colors.secundary};
   margin: 5px;
+  display: flex;
+  flex-flow: ;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
 
   h3 {
+    display: flex;
+    justify-self: center;
     margin-top: 50px;
   }
 
