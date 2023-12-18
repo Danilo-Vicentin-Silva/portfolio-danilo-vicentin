@@ -1,5 +1,4 @@
 import Project from "./Project"
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import { ProjectsStyled } from "../style/style"
 import { useTranslation } from "react-i18next"
 import { ProjectsList } from "../../../Imports/ImportProjects"
@@ -12,7 +11,6 @@ const Projects = () => {
 
   return (
     <ProjectsStyled>
-      <TopicSeparator title={t("projectsTitle")} />
       <h4>{t("highlights")}</h4>
 
       <ul>

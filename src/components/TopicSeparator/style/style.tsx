@@ -2,21 +2,27 @@ import styled from "styled-components"
 
 export const TopicSeparatorStyled = styled.section`
   color: ${(props) => props.theme.colors.secundary};
-  margin: 5px;
+  text-align: left;
+
   display: flex;
-  flex-flow: ;
+  flex-flow: column wrap;
   justify-content: left;
   align-items: left;
-  text-align: left;
+
+  margin-left: 5px;
 
   h3 {
     display: flex;
     justify-self: center;
+    margin: 50px 0 0 0;
     margin-top: 50px;
   }
 
   hr {
+    display: inline;
+    margin: 0;
     border-color: ${(props) => props.theme.colors.secundary};
+    width: 50%;
   }
 
   @media (min-width: 768px) {

@@ -2,7 +2,6 @@ import * as React from "react"
 import emailjs from "@emailjs/browser"
 import { Alert, Button } from "@mui/material"
 import { ContactFormStyle } from "../style/style"
-import TopicSeparator from "../../TopicSeparator/components/TopicSeparator"
 import DeleteIcon from "@mui/icons-material/Delete"
 import SendIcon from "@mui/icons-material/Send"
 import { useTranslation } from "react-i18next"
@@ -61,7 +60,6 @@ const ContactForm = () => {
 
   return (
       <ContactFormStyle>
-        <TopicSeparator title={t("contactMe")} />
         <form onSubmit={sendEmail}>
           <div className="custom-input">
             <input
