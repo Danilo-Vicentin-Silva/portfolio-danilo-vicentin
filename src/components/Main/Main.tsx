@@ -7,6 +7,7 @@ import Nav from "../Nav/components/Nav"
 import Projects from "../Projects/components/Projects"
 import Skills from "../Skills/components/Skills"
 import TopicSeparator from "../TopicSeparator/components/TopicSeparator"
+import { ContactsContainer } from "../ContactsContainer/ContactsContainer"
 
 const Main = () => {
   const { t } = useTranslation()
@@ -15,19 +16,17 @@ const Main = () => {
     <main>
       <InitialInfo />
       <Nav />
-
       <TopicSeparator title={t("aboutMe")} />
       <AboutMe />
-
       <TopicSeparator title={t("skillsTitle")} id="skills" />
       <Skills />
-
       <TopicSeparator title={t("projectsTitle")} id="projects" />
       <Projects />
-
       <TopicSeparator title={t("contactMe")} id="contacts" />
-      <ContactForm />
-      <Contacts />
+      <ContactsContainer>
+        <ContactForm />
+        <Contacts />
+      </ContactsContainer>
     </main>
   )
 }

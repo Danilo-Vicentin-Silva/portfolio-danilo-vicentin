@@ -6,7 +6,6 @@ const Skills = () => {
   const skillsList = SkillList()
   return (
     <SKillsStyled>
-     
       <ul>
         {skillsList.map((skill, i) => (
           <li key={i}>
