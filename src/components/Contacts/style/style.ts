@@ -19,6 +19,15 @@ export const ContactsStyled = styled.section`
   ul a {
     text-decoration: none;
   }
+
+  @media (min-width: 768px) {
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
 `
 
 export const ContactStyled = styled.li`
@@ -56,23 +65,23 @@ export const ContactStyled = styled.li`
 
   @media (min-width: 768px) {
     animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-    font-size: 0.8em;
+    font-size: 1em;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 3px;
+    gap: 20px;
 
     div {
       display: flex;
       flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
+      justify-content: flex-start;
+      align-items: flex-start;
     }
 
     h3,
     p {
-      margin: 2px;
+      margin: 7px;
     }
     span:hover {
       animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -115,6 +124,14 @@ export const ContactFormStyle = styled.section`
     z-index: 1;
 
     transform: translate(-50%, -50%);
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  hr {
+    width: 100%;
   }
 
   form {
@@ -207,8 +224,6 @@ export const ContactFormStyle = styled.section`
   }
 
   @media (min-width: 768px) {
-    margin: auto;
-    width: 50vw;
 
     .custom-input input,
     .custom-input textarea {

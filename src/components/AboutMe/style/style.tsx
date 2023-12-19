@@ -15,6 +15,10 @@ export const AboutMeStyle = styled.section`
     justify-content: center;
     align-items: center;
 
+    hr {
+      width: 100%;
+    }
+
     p {
       animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
     }

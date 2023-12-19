@@ -2,27 +2,36 @@ import styled from "styled-components"
 
 export const TopicSeparatorStyled = styled.section`
   color: ${(props) => props.theme.colors.secundary};
-  margin: 5px;
+  text-align: center;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 5px;
 
   h3 {
+    display: flex;
+    justify-self: center;
+    margin: 50px 0 0 0;
     margin-top: 50px;
   }
 
   hr {
+    display: inline;
+    margin: 0;
     border-color: ${(props) => props.theme.colors.secundary};
+    width: 150px;
   }
 
   @media (min-width: 768px) {
-    text-align: center;
-
-    margin: auto;
-    width: 50vw;
-
     h3 {
-      margin-top: 200px;
+      text-align: center;
       animation: text-pop-up-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
   }
+
   @keyframes text-pop-up-top {
     0% {
       transform: translateY(0);
