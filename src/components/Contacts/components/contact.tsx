@@ -1,25 +1,30 @@
+import { Button } from "@mui/material"
 import { ContactStyled } from "../style/style"
 
 interface Props {
-  title: string
   icon: React.ReactNode
+  title: string
+  username: string
   link: string
 }
 
-const Contact: React.FC<Props> = ({ icon, title, link }) => {
+const Contact: React.FC<Props> = ({ icon, title, username, link }) => {
   return (
-    <ContactStyled>
-      <div id="icon" key={title}>
+    <ContactStyled key={title}>
+      <span className="span-contact">
         <a
           href={link}
           rel="nofollow"
           target="_blank"
-          aria-label={`This link opens my ${title} in a new tab`}
+          aria-label={`Esse link abre ${title} em uma nova guia`}
         >
-          <span>{icon}</span>
+          {icon}
         </a>
+      </span>
+      <div>
+        <h3>{title}</h3>
+        <p>{username}</p>
       </div>
-      <p>{title}</p>
     </ContactStyled>
   )
 }

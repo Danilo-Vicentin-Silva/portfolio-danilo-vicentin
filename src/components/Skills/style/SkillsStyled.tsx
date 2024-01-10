@@ -22,6 +22,10 @@ export const SKillsStyled = styled.section`
 
   @media (min-width: 768px) {
     max-width: 50vw;
+
+    hr {
+      width: 100%;
+    }
   }
 `
 
