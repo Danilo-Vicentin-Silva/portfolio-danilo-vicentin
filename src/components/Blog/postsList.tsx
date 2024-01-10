@@ -11,6 +11,14 @@ import { postsImages } from "../../Imports/ImportPosts"
 
 export const posts: PostProps[] = [
   {
+    title: "Princípios do Webdesign",
+    author: "@danilo_vicentin_silva",
+    text: "Lendo o livro Princípios do Web Design Maravilhoso, escrito por Jason Beaird e James George, eu finalmente consegui entender os pilares de um bom webdesign: Layout, Cores e Conteúdo/Tipografia. São elementos gráficos que contribuem de forma ativa para o sucesso de um site, por isso devem ser bem trabalhados e tudo deve ser fundamentado para que não existam elementos incongruentes com o tipo do site.",
+    image: postsImages.webdesign,
+    date: "10 de Janeira de 2024",
+    tags: ["#webdesign", "#book"],
+  },
+  {
     title: "Notion - uma nova forma de se organizar",
     author: "@danilo_vicentin_silva",
     text: "Sempre imaginei um aplicativo que poderia se comportar como um caderno físico, onde eu pudesse anotar tudo que quisesse, do jeito que eu quisesse. E depois de passar anos anotando em cadernos físicos, sempre com o medo de perde-los e levando vários nas costas, também com medo de ter problemas na coluna já com 21 anos, finalmente encontrei o que procurava: o Notion! Muito melhor que alternativas como o Microsoft OneNote ou até o bloco de notas, hoje, organizo e anoto tudo pelo Notion, onde poderei acessar todos os dados anotados em qualquer momento. Com ele, projetos se tornaram como livros, onde posso anotar tudo sobre e planejar cada passo, permitindo assim melhorar não “só” minha produtividade, mas minha organização em linhas gerais.",
