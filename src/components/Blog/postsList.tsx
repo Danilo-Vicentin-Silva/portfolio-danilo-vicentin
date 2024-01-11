@@ -11,6 +11,14 @@ import { postsImages } from "../../Imports/ImportPosts"
 
 export const posts: PostProps[] = [
   {
+    title: "Next.js, criando sites mais rápidos!",
+    author: "@danilo_vicentin_silva",
+    text: "Como sempre me mantive focado em estudar a tecnologia com maior potencial e modernidade, comecei meus intermináveis estudos sobre Next.js, um framework fullstack capaz de criar sites com a tecnologia SSR, que consiste em deixar o site já pré-renderizado no próprio servidor de hospedagem.",
+    image: postsImages.nextjsBestTech,
+    date: "11 de Janeira de 2024",
+    tags: ["#VantagensDoNextJS", "#ReactNoServidor", "#RenderizaçãoNoServidor"],
+  },
+  {
     title: "Princípios do Webdesign",
     author: "@danilo_vicentin_silva",
     text: "Lendo o livro Princípios do Web Design Maravilhoso, escrito por Jason Beaird e James George, eu finalmente consegui entender os pilares de um bom webdesign: Layout, Cores e Conteúdo/Tipografia. São elementos gráficos que contribuem de forma ativa para o sucesso de um site, por isso devem ser bem trabalhados e tudo deve ser fundamentado para que não existam elementos incongruentes com o tipo do site.",
