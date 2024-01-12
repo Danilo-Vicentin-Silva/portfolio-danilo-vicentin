@@ -11,6 +11,14 @@ import { postsImages } from "../../Imports/ImportPosts"
 
 export const posts: PostProps[] = [
   {
+    title: "Desbravando os Benefícios de Ter um E-commerce",
+    author: "@danilo_vicentin_silva",
+    text: "Investir em um e-commerce oferece uma série de vantagens para empreendedores e consumidores. Estudando Web Development, entendi como uma loja virtual pode diminuir a despesas de qualquer loja e potencializar o alcance de uma loja com o poder da internet e um bom SEO/Marketing Digital.",
+    image: postsImages.benefitsEcommerce,
+    date: "12 de Janeira de 2024",
+    tags: ["#eCommerce", "#eCommerceWebsite", "#ecommercebrasil"],
+  },
+  {
     title: "Next.js, criando sites mais rápidos!",
     author: "@danilo_vicentin_silva",
     text: "Como sempre me mantive focado em estudar a tecnologia com maior potencial e modernidade, comecei meus intermináveis estudos sobre Next.js, um framework fullstack capaz de criar sites com a tecnologia SSR, que consiste em deixar o site já pré-renderizado no próprio servidor de hospedagem.",
