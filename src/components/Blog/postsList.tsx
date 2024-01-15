@@ -11,11 +11,19 @@ import { postsImages } from "../../Imports/ImportPosts"
 
 export const posts: PostProps[] = [
   {
+    title: "Uma nova visão das IA´s",
+    author: "@danilo_vicentin_silva",
+    text: "Enquanto iniciava meus estudos de Programação, acontecia a ascensão das IA´s, então logo tive medo que elas substituíssem os devs, porém o efeito foi bem diferente do que imaginava. Com essa nova tecnologia, surgiram novas áreas, enquanto as vagas que estariam “ameaçadas”, se aproveitaram disso para aprimorar seu trabalho. Assim surgiram os Copilots, verdadeiros “ajudantes dos devs”",
+    image: postsImages.IaNewVision,
+    date: "15 de Janeiro de 2024",
+    tags: ["#inteligenciaartificial"],
+  },
+  {
     title: "Desbravando os Benefícios de Ter um E-commerce",
     author: "@danilo_vicentin_silva",
     text: "Investir em um e-commerce oferece uma série de vantagens para empreendedores e consumidores. Estudando Web Development, entendi como uma loja virtual pode diminuir a despesas de qualquer loja e potencializar o alcance de uma loja com o poder da internet e um bom SEO/Marketing Digital.",
     image: postsImages.benefitsEcommerce,
-    date: "12 de Janeira de 2024",
+    date: "12 de Janeiro de 2024",
     tags: ["#eCommerce", "#eCommerceWebsite", "#ecommercebrasil"],
   },
   {
@@ -23,7 +31,7 @@ export const posts: PostProps[] = [
     author: "@danilo_vicentin_silva",
     text: "Como sempre me mantive focado em estudar a tecnologia com maior potencial e modernidade, comecei meus intermináveis estudos sobre Next.js, um framework fullstack capaz de criar sites com a tecnologia SSR, que consiste em deixar o site já pré-renderizado no próprio servidor de hospedagem.",
     image: postsImages.nextjsBestTech,
-    date: "11 de Janeira de 2024",
+    date: "11 de Janeiro de 2024",
     tags: ["#VantagensDoNextJS", "#ReactNoServidor", "#RenderizaçãoNoServidor"],
   },
   {
@@ -31,7 +39,7 @@ export const posts: PostProps[] = [
     author: "@danilo_vicentin_silva",
     text: "Lendo o livro Princípios do Web Design Maravilhoso, escrito por Jason Beaird e James George, eu finalmente consegui entender os pilares de um bom webdesign: Layout, Cores e Conteúdo/Tipografia. São elementos gráficos que contribuem de forma ativa para o sucesso de um site, por isso devem ser bem trabalhados e tudo deve ser fundamentado para que não existam elementos incongruentes com o tipo do site.",
     image: postsImages.webdesign,
-    date: "10 de Janeira de 2024",
+    date: "10 de Janeiro de 2024",
     tags: ["#webdesign", "#book"],
   },
   {
