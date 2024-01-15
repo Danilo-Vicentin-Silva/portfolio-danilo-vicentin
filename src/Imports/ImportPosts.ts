@@ -3,11 +3,13 @@ import NotionNewWayToOrganizate from "../assets/images/posts/notion-new-way-to-o
 import webdesign from "../assets/images/posts/webdesign.webp"
 import nextjsBestTech from '../assets/images/posts/nextjs-best-tech.webp'
 import benefitsEcommerce from "../assets/images/posts/benefics-ecommerce.jpg"
+import IaNewVision from "../assets/images/posts/ia-new-vision.png"
 
 export const postsImages = {
-    DynamicRoutes,
-    NotionNewWayToOrganizate,
-    webdesign,
-    nextjsBestTech,
-    benefitsEcommerce
+  DynamicRoutes,
+  NotionNewWayToOrganizate,
+  webdesign,
+  nextjsBestTech,
+  benefitsEcommerce,
+  IaNewVision,
 }
