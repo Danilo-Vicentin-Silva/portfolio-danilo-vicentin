@@ -11,6 +11,14 @@ import { postsImages } from "../../Imports/ImportPosts"
 
 export const posts: PostProps[] = [
   {
+    title: "3 tendências de programação para 2024",
+    author: "@danilo_vicentin_silva",
+    text: "A programação é uma área em constante evolução, com novas tendências surgindo o tempo todo. Neste post, vamos explorar três tendências de programação que estão ganhando força em 2024. A inteligência artificial (IA) está se tornando cada vez mais importante na programação. IA pode ser usada para automatizar tarefas, melhorar a segurança e a confiabilidade dos sistemas, e criar novas funcionalidades. A computação em nuvem também está ganhando força na programação. Computação em nuvem permite que os desenvolvedores acessem recursos de computação, armazenamento e rede sem a necessidade de investir em hardware e infraestrutura. A internet das coisas (IoT) está conectando cada vez mais dispositivos à internet. IoT abre novas possibilidades para a programação, como criar sistemas de automação, monitoramento e segurança.",
+    image: postsImages.trendsDev,
+    date: "17 de Janeiro de 2024",
+    tags: ["#programação", "#tendências", "#2024"],
+  },
+  {
     title: "Uma nova visão das IA´s",
     author: "@danilo_vicentin_silva",
     text: "Enquanto iniciava meus estudos de Programação, acontecia a ascensão das IA´s, então logo tive medo que elas substituíssem os devs, porém o efeito foi bem diferente do que imaginava. Com essa nova tecnologia, surgiram novas áreas, enquanto as vagas que estariam “ameaçadas”, se aproveitaram disso para aprimorar seu trabalho. Assim surgiram os Copilots, verdadeiros “ajudantes dos devs”",
