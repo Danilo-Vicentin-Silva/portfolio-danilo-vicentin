@@ -5,8 +5,10 @@ import nextjsBestTech from "../assets/images/posts/nextjs-best-tech.webp"
 import benefitsEcommerce from "../assets/images/posts/benefics-ecommerce.webp"
 import IaNewVision from "../assets/images/posts/ia-new-vision.webp"
 import trendsDev from "../assets/images/posts/trends-dev.webp"
+import bestLanguagesForDev from '../assets/images/posts/best-languages-for-devs.webp'
 
 export const postsImages = {
+bestLanguagesForDev,
   trendsDev,
   DynamicRoutes,
   NotionNewWayToOrganizate,

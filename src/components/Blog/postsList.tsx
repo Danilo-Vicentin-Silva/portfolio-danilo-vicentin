@@ -11,6 +11,14 @@ import { postsImages } from "../../Imports/ImportPosts"
 
 export const posts: PostProps[] = [
   {
+    title: "A linguagem de programação mais usada em cada nicho",
+    author: "@danilo_vicentin_silva",
+    text: "A programação é uma área ampla e diversificada, com diferentes nichos e especializações. Cada nicho exige diferentes habilidades e conhecimentos, e as linguagens de programação mais adequadas para cada um também variam. Para o desenvolvimento web a linguagem de programação mais popular  é o JavaScript é uma linguagem de programação multiplataforma que é usada para criar interfaces de usuário (UIs) e experiências de usuário (UXs) interativas. É uma linguagem essencial para qualquer desenvolvedor de front-end. Para ciência de dados, Python é uma linguagem de programação de propósito geral que é fácil de aprender e usar. É uma boa escolha para iniciantes em ciência de dados e também é usada em uma ampla variedade de aplicações, incluindo aprendizado de máquina e inteligência artificial. Para Desenvolvimento de jogos, C++ é uma linguagem de programação de alto desempenho que é usada para criar games de alta qualidade.",
+    image: postsImages.bestLanguagesForDev,
+    date: "19 de Janeiro de 2024",
+    tags: ["#linguagemdeprogramacao", "#nichodeprogramacao", "#programacao"],
+  },
+  {
     title: "3 tendências de programação para 2024",
     author: "@danilo_vicentin_silva",
     text: "A programação é uma área em constante evolução, com novas tendências surgindo o tempo todo. Neste post, vamos explorar três tendências de programação que estão ganhando força em 2024. A inteligência artificial (IA) está se tornando cada vez mais importante na programação. IA pode ser usada para automatizar tarefas, melhorar a segurança e a confiabilidade dos sistemas, e criar novas funcionalidades. A computação em nuvem também está ganhando força na programação. Computação em nuvem permite que os desenvolvedores acessem recursos de computação, armazenamento e rede sem a necessidade de investir em hardware e infraestrutura. A internet das coisas (IoT) está conectando cada vez mais dispositivos à internet. IoT abre novas possibilidades para a programação, como criar sistemas de automação, monitoramento e segurança.",
