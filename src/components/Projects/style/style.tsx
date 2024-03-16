@@ -43,7 +43,8 @@ export const ProjectSection = styled.section`
     border-radius: 5px 5px 0 0;
     border-bottom: 1px solid ${(props) => props.theme.colors.secundary};
 
-    width: 90vw;
+    width: 420px;
+    height: 263px;
   }
 
   img:hover {

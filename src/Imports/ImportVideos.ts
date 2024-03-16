@@ -12,8 +12,11 @@ const DataGalaxyVideo =
   "https://www.youtube.com/embed/1pd2czSTis8?si=7ImOVcTt51DAvm0r"
 const LandingPageVideo =
   "https://www.youtube.com/embed/BjVJaCdmPxg?si=1c_YwTDIGx4BDB-z"
+const SevenPilarsVideo =
+  "https://www.youtube.com/embed/OOz8Jw_XxC8?si=K0yk4iEDbBkZeWvD"
 
 export const videos = {
+  SevenPilarsVideo,
   LandingPageVideo,
   RacingF1Video,
   TaskListVideo,
