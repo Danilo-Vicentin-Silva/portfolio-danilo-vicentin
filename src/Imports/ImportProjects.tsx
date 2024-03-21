@@ -1,27 +1,22 @@
-import { SiTailwindcss } from "react-icons/si";
-import { useTranslation } from "react-i18next";
+import { SiTailwindcss } from "react-icons/si"
+import { useTranslation } from "react-i18next"
 import {
   BiLogoCss3,
   BiLogoHtml5,
   BiLogoReact,
   BiLogoTypescript,
-} from "react-icons/bi";
-import { RiJavascriptFill } from "react-icons/ri";
-import {
-  SiFigma,
-  SiNextdotjs,
-  SiTypescript,
-  SiWordpress,
-} from "react-icons/si";
-import { projectsCovers } from "../Imports/ImportProjectsCovers";
-import { FaJsSquare, FaReact } from "react-icons/fa";
-import { videos } from "../Imports/ImportVideos";
-import { v4 as uuid } from "uuid";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
+} from "react-icons/bi"
+import { RiJavascriptFill } from "react-icons/ri"
+import { SiFigma, SiNextdotjs, SiTypescript, SiWordpress } from "react-icons/si"
+import { projectsCovers } from "../Imports/ImportProjectsCovers"
+import { FaJsSquare, FaReact } from "react-icons/fa"
+import { videos } from "../Imports/ImportVideos"
+import { v4 as uuid } from "uuid"
+import { AiFillHtml5 } from "react-icons/ai"
+import { DiCss3 } from "react-icons/di"
 
 export const SkillList = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return [
     {
@@ -69,13 +64,30 @@ export const SkillList = () => {
       icon: <SiWordpress />,
       description: t("wordpressDescription"),
     },
-  ];
-};
+  ]
+}
 
 export const ProjectsList = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return [
+    {
+      title: "Os 7 Pilares",
+      date: t("sevenPilarsDate"),
+      description: t("sevenPilarsDescription"),
+      image: projectsCovers.SevenPilarsCover,
+      skillsUsed: [
+        <BiLogoHtml5 />,
+        <BiLogoCss3 />,
+        <RiJavascriptFill />,
+        <SiFigma />,
+      ],
+      skillsName: ["HTML", "CSS", "Javascript", "Figma"],
+      websiteLink: "https://danilo-vicentin-silva.github.io/os-7-pilares/",
+      githubLink: "https://github.com/Danilo-Vicentin-Silva/os-7-pilares",
+      video: videos.SevenPilarsVideo,
+      key: uuid(),
+    },
     {
       title: "Landing Page",
       date: t("landingPageDate"),
@@ -167,5 +179,5 @@ export const ProjectsList = () => {
       video: videos.SiteAndroidVideo,
       key: uuid(),
     },
-  ];
-};
+  ]
+}

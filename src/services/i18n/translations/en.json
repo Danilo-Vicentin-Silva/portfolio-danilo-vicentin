@@ -1,6 +1,8 @@
 {
   "translation": {
-    "powerBiDescription": "Business analytics and data", 
+    "sevenPilarsDescription": "Website for the book saga created by me, containing all the information about the 7 Pillars triology. It also demonstrates my ability to develop a website capable of publicizing a personal or even corporate project.",
+    "sevenPilarsDate": "February 21, 2024",
+    "powerBiDescription": "Business analytics and data",
     "landingPageDate": "Octyber 09, 2023",
     "landingPageDescription": "Practical example of a landing page designed using the Next.js Framework and styling with Tailwind CSS",
     "hello": "Hi! My name is",
