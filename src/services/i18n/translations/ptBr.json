@@ -2,18 +2,18 @@
   "translation": {
     "sevenPilarsDescription": "Website da saga de livros criado por mim, contendo todas as informações sobre a triologia os 7 Pilares. Também demonstra minha capacidade de desenvolver um site capaz de divulgar um projeto pessoal ou até corporativo",
     "sevenPilarsDate": "21 de Fevereiro de 2024",
-    "powerBiDescription": "Ferramenta de analise de dados e negócios",
+    "powerBiDescription": "Analise de dados e negócios",
     "landingPageDate": "09 de Outubro de 2023",
     "landingPageDescription": "Projeto de um exemplo prático de uma landing page criada usando a tecnologia Next.js e Tailwindcss para estilização. Um site propositalmente bem simples.",
     "hello": "Olá, meu nome é",
     "myName": "Danilo Vicentin da Silva",
     "downloadCV": "Baixe meu currículo!",
-    "webDeveloper": "Desenvolvedor Web",
+    "cargo": "Gestão da Tecnologia da Informação",
     "habilits": "Habilidades",
     "contacts": "Contatos",
     "projects": "Projetos",
     "aboutMe": "Sobre mim",
-    "aboutMeDescription": "Desenvolvedor Web Front End focado em oferecer as melhores soluções web! Sempre utilizando as melhores técnicas e tecnologias do mercado, meu fluxo de trabalho é rápido e focado, busco entender os objetivos e necessidades do cliente/empresa de modo a garantir que o website fique 100% fiel a sua ideia. Sou capaz de desenvolver toda parte frontend, desde o protótipo, até a conclusão da interface de usuário.",
+    "aboutMeDescription": "Muito interessado na área da programação, gosto muito de estudar as principais tecnologias do mercado e sempre estou aberto para aprender sobre os principais conhecimentos do mercado de trabalho. Desde 2020 venho estudando linguagens de programação como Javascript e Typescript, e outras tecnologias e frameworks como CSS3, HTML5 e Next.js. Também desenvolvo projetos utilizando a Microsoft Power Platfform, desde Power BI até o Power Apps.Já desenvolvi diversos projetos utilizando os conhecimentos que adquiri pela autodidática, pois sempre estou focado em evoluir como profissional e pessoa.",
     "skillsTitle": "Habilidades",
     "reactDescription": "Framework para aplicações web",
     "typescriptDescription": "Versão mais sofisticada do JS",
@@ -59,6 +59,8 @@
     "figmaDescription": "Ferramenta de criação de UX/UI de sites",
     "wordpressDescription": "CMS para criação de sites",
     "tailwindDescription": "Framework CSS ",
-    "landingPageTitle": "Landing Page"
+    "landingPageTitle": "Landing Page",
+    "powerAppsDescription": "Desenvolvimento de aplicativos",
+    "powerAutomateDescription": "Automação de processos"
   }
 }

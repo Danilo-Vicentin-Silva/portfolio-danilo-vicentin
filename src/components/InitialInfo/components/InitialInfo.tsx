@@ -20,7 +20,7 @@ const InitialInfo = () => {
       <article>
         <h2 className="animated-text">{t("hello")}</h2>
         <h2 className="animated-text">{t("myName")}</h2>
-        <p className="animated-text">{t("webDeveloper")}</p>
+        <p className="animated-text">{t("cargo")}</p>
         <Button variant="contained" id="download-cv-button">
           <a
             href={language === "en" ? EnCv : PtbrCv}

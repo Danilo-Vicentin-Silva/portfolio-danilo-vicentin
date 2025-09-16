@@ -8,12 +8,12 @@
     "hello": "Hi! My name is",
     "myName": "Danilo Vicentin da Silva",
     "downloadCV": "Download my CV!",
-    "webDeveloper": "Web Developer",
+    "cargo": "Information Technology Management",
     "habilits": "Skills",
     "contacts": "Contacts",
     "projects": "Projects",
     "aboutMe": "About me",
-    "aboutMeDescription": "Web Front End Developer focused on providing the best web solutions! Always using the best techniques and technologies on the market, my workflow is fast and focused, I seek to understand the objectives and needs of the client/company in order to ensure that the website is 100% faithful to its idea. I am able to develop every part of the frontend, from the prototype to the completion of the user interface",
+    "aboutMeDescription": "Highly interested in the field of programming, I greatly enjoy studying the leading technologies in the market and am always open to learning about the key skills required in the job market. Since 2020, I have been studying programming languages such as JavaScript and TypeScript, as well as other technologies and frameworks like CSS3, HTML5, and Next.js. I also develop projects using the Microsoft Power Platform, from Power BI to Power Apps. I have already developed several projects using the knowledge I have acquired through self-learning, as I am always focused on growing both as a professional and as a person.",
     "skillsTitle": "Skills",
     "reactDescription": "Framework for web applications",
     "typescriptDescription": "More sofisticated version of JS",
@@ -58,6 +58,8 @@
     "dataGalaxyDescription": "My first website developed using Next.js technology, this website pulls data from an API that contains information about Star Wars characters. Simple website for setting ideals to be professionally applied in future real projects.",
     "figmaDescription": "UX/UI website prototyping tool",
     "wordpressDescription": "CMS for website creation",
-    "tailwindDescription": "CSS Framework"
+    "tailwindDescription": "CSS Framework",
+    "powerAppsDescription": "App development",
+    "powerAutomateDescription": "Process automatio"
   }
 }

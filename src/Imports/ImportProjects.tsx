@@ -1,4 +1,4 @@
-import { SiTailwindcss } from "react-icons/si"
+import { SiPowerautomate, SiPowerbi, SiTailwindcss } from "react-icons/si"
 import { useTranslation } from "react-i18next"
 import {
   BiLogoCss3,
@@ -14,6 +14,7 @@ import { videos } from "../Imports/ImportVideos"
 import { v4 as uuid } from "uuid"
 import { AiFillHtml5 } from "react-icons/ai"
 import { DiCss3 } from "react-icons/di"
+import { SiPowerapps } from "react-icons/si"
 
 export const SkillList = () => {
   const { t } = useTranslation()
@@ -64,6 +65,21 @@ export const SkillList = () => {
       icon: <SiWordpress />,
       description: t("wordpressDescription"),
     },
+    {
+      title: "Power Apps",
+      icon: <SiPowerapps />,
+      description: t("powerAppsDescription"),
+    },
+    {
+      title: "Power Automate",
+      icon: <SiPowerautomate />,
+      description: t("powerAutomateDescription"),
+    },
+    {
+      title: "Power BI",
+      icon: <SiPowerbi />,
+      description: t("powerBiDescription"),
+    }
   ]
 }
 
