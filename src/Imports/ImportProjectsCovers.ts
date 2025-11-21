@@ -6,6 +6,7 @@ import TaskListCover from "../assets/images/project-covers/task-list.webp";
 import CordelModernoCover from "../assets/images/project-covers/modern-cordel.webp";
 import SiteAndroidCover from "../assets/images/project-covers/android-site.webp";
 import LoginScreenCover from "../assets/images/project-covers/login-screen.webp";
+import SevenPilarsWikiCover from "../assets/images/project-covers/seven-pilars-wiki.webp";
 
 export const projectsCovers = {
   SevenPilarsCover,
@@ -16,4 +17,5 @@ export const projectsCovers = {
   CordelModernoCover,
   SiteAndroidCover,
   LoginScreenCover,
+  SevenPilarsWikiCover
 };

@@ -60,6 +60,9 @@
     "wordpressDescription": "CMS for website creation",
     "tailwindDescription": "CSS Framework",
     "powerAppsDescription": "App development",
-    "powerAutomateDescription": "Process automatio"
+    "powerAutomateDescription": "Process automatio",
+    "sevenPilarWikiDate": "March 23, 2025",
+    "sevenPilarsWikiDescription": "This website functions as an interactive wiki, allowing readers and fans to dive into the universe of the book The 7 Pillars - The Journey Beyond the Mountain",
+    "viteDescription": "Build tool for modern web projects"
   }
 }

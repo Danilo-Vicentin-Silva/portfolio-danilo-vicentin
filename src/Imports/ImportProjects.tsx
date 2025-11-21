@@ -1,4 +1,4 @@
-import { SiPowerautomate, SiPowerbi, SiTailwindcss } from "react-icons/si"
+import { SiPowerautomate, SiPowerbi, SiTailwindcss, SiVitest } from "react-icons/si"
 import { useTranslation } from "react-i18next"
 import {
   BiLogoCss3,
@@ -29,6 +29,11 @@ export const SkillList = () => {
       title: "React",
       icon: <BiLogoReact />,
       description: t("reactDescription"),
+    },
+    {
+      title: "Vite",
+      icon: <SiVitest />,
+      description: t("viteDescription"),
     },
     {
       title: "Typescript",
@@ -79,7 +84,7 @@ export const SkillList = () => {
       title: "Power BI",
       icon: <SiPowerbi />,
       description: t("powerBiDescription"),
-    }
+    },
   ]
 }
 
@@ -87,6 +92,18 @@ export const ProjectsList = () => {
   const { t } = useTranslation()
 
   return [
+    {
+      title: "Os 7 Pilares - Wiki",
+      date: t("sevenPilarWikiDate"),
+      description: t("sevenPilarsWikiDescription"),
+      image: projectsCovers.SevenPilarsWikiCover,
+      skillsUsed: [<SiVitest />, <SiTypescript />, <FaReact />],
+      skillsName: ["Vite", "Typescript", "React"],
+      websiteLink: "https://os-7-pilares-wiki.vercel.app",
+      githubLink: "https://github.com/Danilo-Vicentin-Silva/os-7-pilares-wiki",
+      video: videos.SevenPilarsWikiCover,
+      key: uuid(),
+    },
     {
       title: "Os 7 Pilares",
       date: t("sevenPilarsDate"),
@@ -104,6 +121,7 @@ export const ProjectsList = () => {
       video: videos.SevenPilarsVideo,
       key: uuid(),
     },
+
     {
       title: "Landing Page",
       date: t("landingPageDate"),

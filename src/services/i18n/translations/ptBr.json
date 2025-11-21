@@ -61,6 +61,9 @@
     "tailwindDescription": "Framework CSS ",
     "landingPageTitle": "Landing Page",
     "powerAppsDescription": "Desenvolvimento de aplicativos",
-    "powerAutomateDescription": "Automação de processos"
+    "powerAutomateDescription": "Automação de processos",
+    "sevenPilarWikiDate": "23 de Março de 2025",
+    "sevenPilarsWikiDescription": "Este site funciona como uma wiki interativa, permitindo que leitores e fãs mergulhem no universo do livro Os 7 Pilares - A Jornada Além da Montanha",
+    "viteDescription": "Ferramenta de build para projetos web modernos"
   }
 }
