@@ -7,7 +7,7 @@ export default {
     tertiary: "#325CD9",
     quarternay: "#142559",
 
-    background: "#FFFF",
+    background: "rgba(184, 190, 208, 1)",
     text: "#363540",
   },
-};
+}
