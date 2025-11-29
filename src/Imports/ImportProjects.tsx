@@ -1,4 +1,10 @@
-import { SiPowerautomate, SiPowerbi, SiTailwindcss, SiVitest } from "react-icons/si"
+import {
+  SiPowerautomate,
+  SiPowerbi,
+  SiPython,
+  SiTailwindcss,
+  SiVitest,
+} from "react-icons/si"
 import { useTranslation } from "react-i18next"
 import {
   BiLogoCss3,
@@ -85,6 +91,11 @@ export const SkillList = () => {
       icon: <SiPowerbi />,
       description: t("powerBiDescription"),
     },
+    {
+      title: "Python",
+      icon: <SiPython />,
+      description: t("pythonDescription"),
+    },
   ]
 }
 
@@ -92,6 +103,20 @@ export const ProjectsList = () => {
   const { t } = useTranslation()
 
   return [
+    {
+      title: "GuaraByte-Protocolo-ODS",
+      date: t("guaraByteDate"),
+      description: t("guaraByteDescription"),
+      image: projectsCovers.guarabyteCover,
+      skillsUsed: [<SiPython />],
+      skillsName: ["Python"],
+      websiteLink:
+        "https://github.com/Danilo-Vicentin-Silva/GameJam2025-GuaraByte-Protocolo-ODS.git",
+      githubLink:
+        "https://github.com/Danilo-Vicentin-Silva/GameJam2025-GuaraByte-Protocolo-ODS.git",
+      video: videos.guarabyteVideo,
+      key: uuid(),
+    },
     {
       title: "Os 7 Pilares - Wiki",
       date: t("sevenPilarWikiDate"),

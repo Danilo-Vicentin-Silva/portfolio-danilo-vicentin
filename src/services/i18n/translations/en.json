@@ -1,9 +1,12 @@
 {
   "translation": {
+    "guaraByteDescription": "Fully developed game using Python and Pygame, project developed by a team to which I joined as a developer, helping with tests and necessary hotfixes.",
+    "guaraByteDate": "October 26, 2025",
+    "pythonDescription": "Programming language for general purposes",
     "sevenPilarsDescription": "Website for the book saga created by me, containing all the information about the 7 Pillars triology. It also demonstrates my ability to develop a website capable of publicizing a personal or even corporate project.",
     "sevenPilarsDate": "February 21, 2024",
     "powerBiDescription": "Business analytics and data",
-    "landingPageDate": "Octyber 09, 2023",
+    "landingPageDate": "October 09, 2023",
     "landingPageDescription": "Practical example of a landing page designed using the Next.js Framework and styling with Tailwind CSS",
     "hello": "Hi! My name is",
     "myName": "Danilo Vicentin da Silva",

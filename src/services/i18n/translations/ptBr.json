@@ -1,5 +1,8 @@
 {
   "translation": {
+    "guaraByteDescription": "Jogo totalmente desenvolvido usando Python e Pygame, projeto desenvolvido por uma equipe a qual fiz parte como desenvolvedor, ajudando nos testes e hotfixes necessários.",
+    "guaraByteDate": "26 de Outubro de 2025",
+    "pythonDescription": "Linguagem de programação para uso geral",
     "sevenPilarsDescription": "Website da saga de livros criado por mim, contendo todas as informações sobre a triologia os 7 Pilares. Também demonstra minha capacidade de desenvolver um site capaz de divulgar um projeto pessoal ou até corporativo",
     "sevenPilarsDate": "21 de Fevereiro de 2024",
     "powerBiDescription": "Analise de dados e negócios",
@@ -64,6 +67,6 @@
     "powerAutomateDescription": "Automação de processos",
     "sevenPilarWikiDate": "23 de Março de 2025",
     "sevenPilarsWikiDescription": "Este site funciona como uma wiki interativa, permitindo que leitores e fãs mergulhem no universo do livro Os 7 Pilares - A Jornada Além da Montanha",
-    "viteDescription": "Ferramenta de build para projetos web modernos"
+    "viteDescription": "Ferramenta para projetos web modernos"
   }
 }

@@ -16,6 +16,8 @@ const SevenPilarsVideo =
   "https://www.youtube.com/embed/OOz8Jw_XxC8?si=K0yk4iEDbBkZeWvD"
 const SevenPilarsWikiCover =
   "https://www.youtube.com/embed/W_6QjdD7cEk?si=Ns4H4zBQPI7KR10N"
+const guarabyteVideo =
+  "https://www.youtube.com/embed/zm2dgu9QdHI?si=3skdUJDbC2yH7sm9"
 
 export const videos = {
   SevenPilarsVideo,
@@ -27,4 +29,5 @@ export const videos = {
   TelaLoginVideo,
   DataGalaxyVideo,
   SevenPilarsWikiCover,
+  guarabyteVideo,
 }
